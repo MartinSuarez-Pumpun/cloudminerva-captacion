@@ -2,11 +2,11 @@ import { useEffect } from 'react'
 import { useStore } from '../core/store'
 import './TransitionScreen.css'
 
-export default function TransitionScreen({ title, description, items, nextText, onReady }) {
+export default function TransitionScreen({ title, description, items, nextText, completedText, onReady }) {
   const { setAraText, setAraNextText } = useStore()
 
   useEffect(() => {
-    setAraText(description)
+    setAraText(completedText ? `${completedText} ${description}` : description)
     if (nextText) setAraNextText(nextText)
   }, [description]) // eslint-disable-line react-hooks/exhaustive-deps
 
