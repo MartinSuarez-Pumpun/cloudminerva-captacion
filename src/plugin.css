@@ -1,5 +1,5 @@
 /*
- * Scoped CSS para demo-recruitment corriendo como plugin dentro de INNOVADEF-2026.
+ * Scoped CSS para cloudminerva-captacion corriendo como plugin dentro de INNOVADEF-2026.
  *
  * .recruitment-plugin — scopa los design tokens para no contaminar el :root del host.
  * .recruitment-plugin .app-shell — sobreescribe height: 100svh a height: 100% para
