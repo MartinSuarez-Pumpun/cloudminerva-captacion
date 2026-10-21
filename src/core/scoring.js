@@ -227,14 +227,17 @@ function personalityScore(personalidad, requirements) {
   return 0.5
 }
 
-export function computeAffinity(intereses, gti, personalidad, specialty) {
+// Pesos de la fórmula de afinidad: intereses, GTI y personalidad
+export const AFFINITY_WEIGHTS = { interests: 0.50, gti: 0.30, personality: 0.20 }
+
+export function computeAffinity(intereses, gti, personalidad, specialty, weights = AFFINITY_WEIGHTS) {
   const iScore = interestScore(intereses, specialty.interests)
   const gtiScore = gti / 100
   const pScore = personalityScore(personalidad, specialty.personality)
-  return 0.50 * iScore + 0.30 * gtiScore + 0.20 * pScore
+  return weights.interests * iScore + weights.gti * gtiScore + weights.personality * pScore
 }
 
-export function rankSpecialties(intereses, gti, personalidad, motivacion) {
+export function rankSpecialties(intereses, gti, personalidad, motivacion, weights = AFFINITY_WEIGHTS) {
   // Filtro duro: M4.3='no' → no recomendar ninguna especialidad
   if (motivacion.riesgo === 'no') {
     return { redirected: true }
@@ -248,7 +251,7 @@ export function rankSpecialties(intereses, gti, personalidad, motivacion) {
 
   const ranked = SPECIALTIES
     .filter(s => !excluded.has(s.id))
-    .map(s => ({ ...s, affinity: computeAffinity(intereses, gti, personalidad, s) }))
+    .map(s => ({ ...s, affinity: computeAffinity(intereses, gti, personalidad, s, weights) }))
     .sort((a, b) => b.affinity - a.affinity)
 
   const primary = ranked[0]

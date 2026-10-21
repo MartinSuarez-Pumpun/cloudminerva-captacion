@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-const Schema = z.object({
+export const Schema = z.object({
   headline:     z.string(),
   narrative:    z.string(),
   specialtyMatch: z.object({
@@ -19,7 +19,7 @@ const Schema = z.object({
   disclaimer:         z.string(),
 })
 
-const SYSTEM = `Eres ARA, evaluador de orientación vocacional militar para las Fuerzas Armadas españolas (Pumpún Dixital).
+export const SYSTEM = `Eres ARA, evaluador de orientación vocacional militar para las Fuerzas Armadas españolas (Pumpún Dixital).
 Tu función es interpretar los resultados de una batería de evaluación (intereses vocacionales, índice de entrenabilidad GTI, perfil de personalidad y filtros de disponibilidad) y emitir un informe de orientación hacia la especialidad fundamental más adecuada del catálogo español.
 
 REGLAS INNEGOCIABLES:
@@ -34,7 +34,7 @@ REGLAS INNEGOCIABLES:
 CRITERIOS DE GTI: <40 bajo (mencionar preparación), 40-69 competente, ≥70 destacado (abrir puerta a Suboficiales si procede).
 ESPECIALIDADES DISPONIBLES: Infantería Ligera (ET), Caballería (ET), Ingenieros (ET), Transmisiones (ET), Sanidad (ET/Armada/EAE), Logística (ET), Operaciones y Sistemas (Armada), Energía y Propulsión (Armada), Aprovisionamiento (Armada), Maniobra y Navegación (Armada), Infantería de Marina (Armada), Protección y Apoyo a la Fuerza (EAE), Mantenimiento Operativo (EAE).`
 
-function buildPrompt(scores) {
+export function buildPrompt(scores) {
   const { intereses, gti, personalidad, motivacion, ranking, suboficialesPath, lowGTI, profilePlano } = scores
   const familyNames = { F1:'Combate', F2:'Técnica/Mecánica', F3:'Tecnología/Cyber', F4:'Sanidad/Cuidado', F5:'Logística/Admin', F6:'Mando/Liderazgo', F7:'Marítimo/Aéreo', F8:'Creativo/Artístico' }
 
