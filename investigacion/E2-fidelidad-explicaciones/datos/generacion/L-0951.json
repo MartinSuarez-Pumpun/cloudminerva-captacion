@@ -1,0 +1,70 @@
+{
+  "id": "L-0951",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:55:38.515Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "308e6c05-bf9d-9575-ba7b-0e9ddc080eb8",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 88%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 100%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 100%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 100%\n\nÍndice de entrenabilidad GTI: 100/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 2/3,   Trabajo en equipo: 1/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Sanidad (ET/Armada/EAE) — afinidad 90%\nEspecialidad alternativa: Operaciones y Sistemas (Armada) — afinidad 88%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Evaluación orientativa para especialidad fundamental\",\n  \"narrative\": \"Candidato con puntuaciones máximas en intereses de Sanidad/Cuidado, Mando/Liderazgo y Marítimo/Aéreo. Índice GTI de 100 indica capacidad de aprendizaje destacada. Perfil de personalidad muestra Disciplina máxima y Resiliencia moderada, con Trabajo en equipo y Aspiración/Autoridad bajos. Disponibilidad para despliegues internacionales y riesgo físico confirmada.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.90\n    },\n    \"alternative\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.88\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Intereses máximos en Sanidad/Cuidado, Mando/Liderazgo, Marítimo/Aéreo y Creativo/Artístico. Interés alto en Combate y moderado en Tecnología/Cyber y Técnica/Mecánica. Ausencia total de interés en Logística/Admin.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 100/100 indica capacidad de aprendizaje destacada.\",\n    \"personality\": \"Disciplina máxima, Resiliencia moderada, Orientación técnica moderada, Trabajo en equipo bajo, Aspiración/Autoridad nula.\"\n  },\n  \"strengths\": [\n    \"Capacidad de aprendizaje destacada según GTI\",\n    \"Interés máximo en Sanidad/Cuidado y Mando/Liderazgo\",\n    \"Disponibilidad para despliegues internacionales y riesgo físico\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo requiere refuerzo\",\n    \"Aspiración/Autoridad nula limita opciones de mando inmediato\",\n    \"Movilidad geográfica condicionada\"\n  ],\n  \"recommendation\": \"Sanidad (ET/Armada/EAE) y Operaciones y Sistemas (Armada) presentan afinidades equivalentes. Ambas especialidades son válidas según el perfil evaluado.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1043,
+    "completion_tokens": 521,
+    "total_tokens": 1564,
+    "prompt_tokens_details": {
+      "text_tokens": 1043,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 19342500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Evaluación orientativa para especialidad fundamental",
+    "narrative": "Candidato con puntuaciones máximas en intereses de Sanidad/Cuidado, Mando/Liderazgo y Marítimo/Aéreo. Índice GTI de 100 indica capacidad de aprendizaje destacada. Perfil de personalidad muestra Disciplina máxima y Resiliencia moderada, con Trabajo en equipo y Aspiración/Autoridad bajos. Disponibilidad para despliegues internacionales y riesgo físico confirmada.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.9
+      },
+      "alternative": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.88
+      }
+    },
+    "profileSummary": {
+      "interests": "Intereses máximos en Sanidad/Cuidado, Mando/Liderazgo, Marítimo/Aéreo y Creativo/Artístico. Interés alto en Combate y moderado en Tecnología/Cyber y Técnica/Mecánica. Ausencia total de interés en Logística/Admin.",
+      "cognitive": "Índice de entrenabilidad GTI de 100/100 indica capacidad de aprendizaje destacada.",
+      "personality": "Disciplina máxima, Resiliencia moderada, Orientación técnica moderada, Trabajo en equipo bajo, Aspiración/Autoridad nula."
+    },
+    "strengths": [
+      "Capacidad de aprendizaje destacada según GTI",
+      "Interés máximo en Sanidad/Cuidado y Mando/Liderazgo",
+      "Disponibilidad para despliegues internacionales y riesgo físico"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo requiere refuerzo",
+      "Aspiración/Autoridad nula limita opciones de mando inmediato",
+      "Movilidad geográfica condicionada"
+    ],
+    "recommendation": "Sanidad (ET/Armada/EAE) y Operaciones y Sistemas (Armada) presentan afinidades equivalentes. Ambas especialidades son válidas según el perfil evaluado.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

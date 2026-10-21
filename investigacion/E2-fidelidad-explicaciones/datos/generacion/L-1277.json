@@ -1,0 +1,70 @@
+{
+  "id": "L-1277",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:55:01.992Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "6da46840-6ac1-986a-bee8-c29443ce8d68",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 20%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 40%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 60/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 3/3,   Trabajo en equipo: 1/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: depende\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 53%\nEspecialidad alternativa: Ingenieros (ET) — afinidad 49%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional: Aprovisionamiento (Armada) e Ingenieros (ET)\",\n  \"narrative\": \"El perfil muestra afinidad equilibrada entre dos especialidades. La puntuación GTI de 60 indica nivel competente de entrenabilidad. Los intereses predominantes en Logística/Admin (50%) y Mando/Liderazgo (40%) se alinean con funciones de apoyo y gestión. La personalidad presenta alta Disciplina y Resiliencia con baja Orientación técnica y Aspiración/Autoridad.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.53\n    },\n    \"alternative\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.49\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés principal en Logística/Admin (50%), seguido de Mando/Liderazgo (40%), Tecnología/Cyber (33%) y Creativo/Artístico (33%). Nulo interés en Sanidad/Cuidado y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 60/100, nivel competente. Requiere preparación estándar para el acceso.\",\n    \"personality\": \"Disciplina alta (3/3), Resiliencia alta (3/3), Trabajo en equipo bajo (1/3), Orientación técnica baja (1/3), Aspiración/Autoridad nula (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta Disciplina y Resiliencia\",\n    \"Interés en funciones logísticas y administrativas\",\n    \"Disponibilidad para despliegues internacionales\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo limitado\",\n    \"Orientación técnica baja\",\n    \"Aspiración a roles de autoridad ausente\"\n  ],\n  \"recommendation\": \"Ambas especialidades resultan igualmente válidas por empate técnico. Aprovisionamiento (Armada) prioriza la afinidad logística. Ingenieros (ET) ofrece alternativa técnica con menor ajuste al perfil de intereses.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1036,
+    "completion_tokens": 524,
+    "total_tokens": 1560,
+    "prompt_tokens_details": {
+      "text_tokens": 1036,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 19330000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional: Aprovisionamiento (Armada) e Ingenieros (ET)",
+    "narrative": "El perfil muestra afinidad equilibrada entre dos especialidades. La puntuación GTI de 60 indica nivel competente de entrenabilidad. Los intereses predominantes en Logística/Admin (50%) y Mando/Liderazgo (40%) se alinean con funciones de apoyo y gestión. La personalidad presenta alta Disciplina y Resiliencia con baja Orientación técnica y Aspiración/Autoridad.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.53
+      },
+      "alternative": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.49
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés principal en Logística/Admin (50%), seguido de Mando/Liderazgo (40%), Tecnología/Cyber (33%) y Creativo/Artístico (33%). Nulo interés en Sanidad/Cuidado y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI 60/100, nivel competente. Requiere preparación estándar para el acceso.",
+      "personality": "Disciplina alta (3/3), Resiliencia alta (3/3), Trabajo en equipo bajo (1/3), Orientación técnica baja (1/3), Aspiración/Autoridad nula (0/3)."
+    },
+    "strengths": [
+      "Alta Disciplina y Resiliencia",
+      "Interés en funciones logísticas y administrativas",
+      "Disponibilidad para despliegues internacionales"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo limitado",
+      "Orientación técnica baja",
+      "Aspiración a roles de autoridad ausente"
+    ],
+    "recommendation": "Ambas especialidades resultan igualmente válidas por empate técnico. Aprovisionamiento (Armada) prioriza la afinidad logística. Ingenieros (ET) ofrece alternativa técnica con menor ajuste al perfil de intereses.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

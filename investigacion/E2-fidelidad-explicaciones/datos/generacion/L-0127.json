@@ -1,0 +1,72 @@
+{
+  "id": "L-0127",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:41.557Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "6410071e-8cfc-9b69-8804-83bc5af3d443",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 0%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 17%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 83%\n\nÍndice de entrenabilidad GTI: 60/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 0/3,   Trabajo en equipo: 1/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Mantenimiento Operativo (EAE) — afinidad 54%\nEspecialidad alternativa: Logística (ET) — afinidad 50%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional: Mando y Creatividad con GTI competente\",\n  \"narrative\": \"El candidato presenta puntuación máxima en intereses de Mando/Liderazgo y Creativo/Artístico, con GTI de 60 que indica nivel competente. El perfil de personalidad muestra alta Disciplina y Orientación técnica moderada, junto con Aspiración/Autoridad media. Los filtros de disponibilidad permiten movilidad geográfica y despliegues internacionales, con limitaciones en riesgo físico y aspiración a Suboficial condicionada.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Mantenimiento Operativo\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.54\n    },\n    \"alternative\": {\n      \"name\": \"Logística\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.50\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés dominante en Mando/Liderazgo (80%) y Creativo/Artístico (83%), con Técnica/Mecánica moderada (40%). Ausencia total de interés en Combate, Sanidad/Cuidado, Logística/Admin y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 60/100, dentro del rango competente. Capacidad adecuada para formación técnica sin destacar para posiciones de Suboficiales.\",\n    \"personality\": \"Disciplina elevada (3/3), Orientación técnica moderada (2/3), Aspiración/Autoridad media (2/3), Trabajo en equipo bajo (1/3) y Resiliencia nula (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta Disciplina para cumplimiento de normas y procedimientos\",\n    \"Interés marcado en funciones de mando y liderazgo\",\n    \"Capacidad creativa para resolución de problemas\",\n    \"Disponibilidad para movilidad geográfica y despliegues internacionales\"\n  ],\n  \"developmentAreas\": [\n    \"Ausencia de Resiliencia observada en evaluación\",\n    \"Bajo interés en Trabajo en equipo\",\n    \"Limitación en exposición a riesgo físico\",\n    \"Aspiración a Suboficiales condicionada\"\n  ],\n  \"recommendation\": \"Se orienta hacia Mantenimiento Operativo (EAE) o Logística (ET) como especialidades igualmente válidas. Ambas permiten aplicar la orientación técnica y el interés en mando dentro de un marco estructurado y disciplinado.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1038,
+    "completion_tokens": 586,
+    "total_tokens": 1624,
+    "prompt_tokens_details": {
+      "text_tokens": 1038,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 20905000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional: Mando y Creatividad con GTI competente",
+    "narrative": "El candidato presenta puntuación máxima en intereses de Mando/Liderazgo y Creativo/Artístico, con GTI de 60 que indica nivel competente. El perfil de personalidad muestra alta Disciplina y Orientación técnica moderada, junto con Aspiración/Autoridad media. Los filtros de disponibilidad permiten movilidad geográfica y despliegues internacionales, con limitaciones en riesgo físico y aspiración a Suboficial condicionada.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Mantenimiento Operativo",
+        "branch": "EAE",
+        "affinity": 0.54
+      },
+      "alternative": {
+        "name": "Logística",
+        "branch": "ET",
+        "affinity": 0.5
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés dominante en Mando/Liderazgo (80%) y Creativo/Artístico (83%), con Técnica/Mecánica moderada (40%). Ausencia total de interés en Combate, Sanidad/Cuidado, Logística/Admin y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI de 60/100, dentro del rango competente. Capacidad adecuada para formación técnica sin destacar para posiciones de Suboficiales.",
+      "personality": "Disciplina elevada (3/3), Orientación técnica moderada (2/3), Aspiración/Autoridad media (2/3), Trabajo en equipo bajo (1/3) y Resiliencia nula (0/3)."
+    },
+    "strengths": [
+      "Alta Disciplina para cumplimiento de normas y procedimientos",
+      "Interés marcado en funciones de mando y liderazgo",
+      "Capacidad creativa para resolución de problemas",
+      "Disponibilidad para movilidad geográfica y despliegues internacionales"
+    ],
+    "developmentAreas": [
+      "Ausencia de Resiliencia observada en evaluación",
+      "Bajo interés en Trabajo en equipo",
+      "Limitación en exposición a riesgo físico",
+      "Aspiración a Suboficiales condicionada"
+    ],
+    "recommendation": "Se orienta hacia Mantenimiento Operativo (EAE) o Logística (ET) como especialidades igualmente válidas. Ambas permiten aplicar la orientación técnica y el interés en mando dentro de un marco estructurado y disciplinado.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

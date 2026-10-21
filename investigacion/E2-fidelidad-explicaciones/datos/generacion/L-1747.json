@@ -1,0 +1,72 @@
+{
+  "id": "L-1747",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:50:38.337Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "28fa79a9-0013-93e2-a7bf-b268c83c3d8e",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 50%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 83%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 100%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 17%\n\nÍndice de entrenabilidad GTI: 75/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 0/3,   Trabajo en equipo: 0/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Logística (ET) — afinidad 93%\nEspecialidad alternativa: Transmisiones (ET) — afinidad 81%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n  • VIA_SUBOFICIALES: mencionar explícitamente como recorrido natural\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia especialidades de apoyo técnico y mando en Ejército de Tierra\",\n  \"narrative\": \"El candidato presenta afinidad máxima en Logística y Mando/Liderazgo junto con alta orientación tecnológica. El GTI de 75 indica capacidad destacada para formación avanzada. La combinación de intereses en Logística/Admin y Tecnología/Cyber, junto con puntuaciones máximas en Orientación técnica y Disciplina, orienta hacia especialidades de apoyo técnico con componente de mando.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Logística\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.93\n    },\n    \"alternative\": {\n      \"name\": \"Transmisiones\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.81\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Máxima afinidad en Logística/Admin y Mando/Liderazgo. Alta afinidad en Tecnología/Cyber. Afinidad media en Combate y Marítimo/Aéreo. Baja afinidad en Sanidad/Cuidado y Creativo/Artístico.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 75, dentro del rango destacado. Capacidad para formación técnica avanzada y acceso a Suboficiales.\",\n    \"personality\": \"Puntuación máxima en Disciplina y Orientación técnica. Puntuación media en Aspiración/Autoridad. Puntuación nula en Resiliencia y Trabajo en equipo.\"\n  },\n  \"strengths\": [\n    \"Alta afinidad con funciones logísticas y de mando\",\n    \"Capacidad destacada para formación técnica\",\n    \"Orientación técnica máxima\",\n    \"Disciplina máxima\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo requiere desarrollo\",\n    \"Resiliencia requiere desarrollo\",\n    \"Movilidad geográfica limitada\",\n    \"Disponibilidad para despliegues condicionada\"\n  ],\n  \"recommendation\": \"Ambas especialidades resultan igualmente válidas. Logística (ET) y Transmisiones (ET) presentan afinidades altas y complementarias con el perfil evaluado.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1052,
+    "completion_tokens": 521,
+    "total_tokens": 1573,
+    "prompt_tokens_details": {
+      "text_tokens": 1052,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24831000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia especialidades de apoyo técnico y mando en Ejército de Tierra",
+    "narrative": "El candidato presenta afinidad máxima en Logística y Mando/Liderazgo junto con alta orientación tecnológica. El GTI de 75 indica capacidad destacada para formación avanzada. La combinación de intereses en Logística/Admin y Tecnología/Cyber, junto con puntuaciones máximas en Orientación técnica y Disciplina, orienta hacia especialidades de apoyo técnico con componente de mando.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Logística",
+        "branch": "ET",
+        "affinity": 0.93
+      },
+      "alternative": {
+        "name": "Transmisiones",
+        "branch": "ET",
+        "affinity": 0.81
+      }
+    },
+    "profileSummary": {
+      "interests": "Máxima afinidad en Logística/Admin y Mando/Liderazgo. Alta afinidad en Tecnología/Cyber. Afinidad media en Combate y Marítimo/Aéreo. Baja afinidad en Sanidad/Cuidado y Creativo/Artístico.",
+      "cognitive": "Índice de entrenabilidad GTI de 75, dentro del rango destacado. Capacidad para formación técnica avanzada y acceso a Suboficiales.",
+      "personality": "Puntuación máxima en Disciplina y Orientación técnica. Puntuación media en Aspiración/Autoridad. Puntuación nula en Resiliencia y Trabajo en equipo."
+    },
+    "strengths": [
+      "Alta afinidad con funciones logísticas y de mando",
+      "Capacidad destacada para formación técnica",
+      "Orientación técnica máxima",
+      "Disciplina máxima"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo requiere desarrollo",
+      "Resiliencia requiere desarrollo",
+      "Movilidad geográfica limitada",
+      "Disponibilidad para despliegues condicionada"
+    ],
+    "recommendation": "Ambas especialidades resultan igualmente válidas. Logística (ET) y Transmisiones (ET) presentan afinidades altas y complementarias con el perfil evaluado.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "L-1450",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:50:58.678Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "bb5ca43a-7a20-9a4b-b190-4c146bce6ea0",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 50%\n  Técnica/Mecánica: 100%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 100%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 100%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 75/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 0/3,   Trabajo en equipo: 3/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 1/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: no\n\nEspecialidad recomendada por scoring: Ingenieros (ET) — afinidad 85%\nEspecialidad alternativa: Sanidad (ET/Armada/EAE) — afinidad 83%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia especialidades técnicas con componente sanitario\",\n  \"narrative\": \"El candidato presenta un perfil de intereses orientado a la técnica y la sanidad, con puntuación máxima en ambas dimensiones. El índice GTI de 75 indica capacidad destacada para el aprendizaje militar. La personalidad muestra alta disciplina y trabajo en equipo, con baja resiliencia y orientación técnica moderada.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.85\n    },\n    \"alternative\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.83\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Intereses máximos en Técnica/Mecánica, Sanidad/Cuidado y Mando/Liderazgo. Interés moderado en Combate y Marítimo/Aéreo. Ausencia de interés en Tecnología/Cyber y Logística/Admin.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 75/100. Nivel destacado que abre posibilidades de acceso a formación de Suboficiales.\",\n    \"personality\": \"Disciplina alta, Trabajo en equipo alto, Orientación técnica baja, Aspiración/Autoridad baja, Resiliencia baja.\"\n  },\n  \"strengths\": [\n    \"Alta capacidad de aprendizaje militar\",\n    \"Fuerte orientación técnica y sanitaria\",\n    \"Alta disciplina y trabajo en equipo\"\n  ],\n  \"developmentAreas\": [\n    \"Baja resiliencia observada\",\n    \"Limitada movilidad geográfica declarada\",\n    \"Disponibilidad para despliegues condicionada\"\n  ],\n  \"recommendation\": \"Se recomienda considerar tanto Ingenieros del Ejército de Tierra como Sanidad en cualquiera de los tres ejércitos. Ambas especialidades presentan afinidad similar y satisfacen los intereses técnicos y sanitarios del candidato.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1040,
+    "completion_tokens": 478,
+    "total_tokens": 1518,
+    "prompt_tokens_details": {
+      "text_tokens": 1040,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18230000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia especialidades técnicas con componente sanitario",
+    "narrative": "El candidato presenta un perfil de intereses orientado a la técnica y la sanidad, con puntuación máxima en ambas dimensiones. El índice GTI de 75 indica capacidad destacada para el aprendizaje militar. La personalidad muestra alta disciplina y trabajo en equipo, con baja resiliencia y orientación técnica moderada.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.85
+      },
+      "alternative": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.83
+      }
+    },
+    "profileSummary": {
+      "interests": "Intereses máximos en Técnica/Mecánica, Sanidad/Cuidado y Mando/Liderazgo. Interés moderado en Combate y Marítimo/Aéreo. Ausencia de interés en Tecnología/Cyber y Logística/Admin.",
+      "cognitive": "Índice de entrenabilidad GTI 75/100. Nivel destacado que abre posibilidades de acceso a formación de Suboficiales.",
+      "personality": "Disciplina alta, Trabajo en equipo alto, Orientación técnica baja, Aspiración/Autoridad baja, Resiliencia baja."
+    },
+    "strengths": [
+      "Alta capacidad de aprendizaje militar",
+      "Fuerte orientación técnica y sanitaria",
+      "Alta disciplina y trabajo en equipo"
+    ],
+    "developmentAreas": [
+      "Baja resiliencia observada",
+      "Limitada movilidad geográfica declarada",
+      "Disponibilidad para despliegues condicionada"
+    ],
+    "recommendation": "Se recomienda considerar tanto Ingenieros del Ejército de Tierra como Sanidad en cualquiera de los tres ejércitos. Ambas especialidades presentan afinidad similar y satisfacen los intereses técnicos y sanitarios del candidato.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

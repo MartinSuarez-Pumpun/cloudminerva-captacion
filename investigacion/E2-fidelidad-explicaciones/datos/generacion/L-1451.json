@@ -1,0 +1,69 @@
+{
+  "id": "L-1451",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:57.181Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "962f994b-10a4-9c1e-9c43-6119fe7c38fa",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 10%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 100%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 40%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 100%\n\nÍndice de entrenabilidad GTI: 100/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 3/3,   Trabajo en equipo: 2/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 1/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Sanidad (ET/Armada/EAE) — afinidad 90%\nEspecialidad alternativa: Maniobra y Navegación (Armada) — afinidad 89%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional militar - Candidato evaluado\",\n  \"narrative\": \"El perfil muestra interés máximo en Sanidad/Cuidado y Marítimo/Aéreo, junto con Creativo/Artístico. El índice GTI de 100 indica capacidad destacada para formación avanzada. La personalidad presenta alta Resiliencia, Trabajo en equipo moderado y niveles bajos en Disciplina, Orientación técnica y Aspiración/Autoridad.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.90\n    },\n    \"alternative\": {\n      \"name\": \"Maniobra y Navegación\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.89\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Sanidad/Cuidado, Marítimo/Aéreo y Creativo/Artístico. Interés moderado en Mando/Liderazgo y Tecnología/Cyber. Interés bajo en Combate y nulo en Logística/Admin.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 100/100. Capacidad destacada para formación técnica y operativa.\",\n    \"personality\": \"Resiliencia alta, Trabajo en equipo moderado, Disciplina baja, Orientación técnica baja, Aspiración/Autoridad baja.\"\n  },\n  \"strengths\": [\n    \"Alta capacidad de aprendizaje y adaptación\",\n    \"Interés consolidado en Sanidad y entornos marítimos/aéreos\",\n    \"Resiliencia elevada ante exigencias físicas y operativas\"\n  ],\n  \"developmentAreas\": [\n    \"Refuerzo de disciplina y orientación técnica\",\n    \"Desarrollo de habilidades de mando y liderazgo\"\n  ],\n  \"recommendation\": \"Ambas especialidades resultan igualmente válidas. Sanidad ofrece alineación directa con el interés máximo en cuidado y atención. Maniobra y Navegación aprovecha el interés marítimo/aéreo y la capacidad de formación destacada.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1045,
+    "completion_tokens": 504,
+    "total_tokens": 1549,
+    "prompt_tokens_details": {
+      "text_tokens": 1045,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18942500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional militar - Candidato evaluado",
+    "narrative": "El perfil muestra interés máximo en Sanidad/Cuidado y Marítimo/Aéreo, junto con Creativo/Artístico. El índice GTI de 100 indica capacidad destacada para formación avanzada. La personalidad presenta alta Resiliencia, Trabajo en equipo moderado y niveles bajos en Disciplina, Orientación técnica y Aspiración/Autoridad.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.9
+      },
+      "alternative": {
+        "name": "Maniobra y Navegación",
+        "branch": "Armada",
+        "affinity": 0.89
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Sanidad/Cuidado, Marítimo/Aéreo y Creativo/Artístico. Interés moderado en Mando/Liderazgo y Tecnología/Cyber. Interés bajo en Combate y nulo en Logística/Admin.",
+      "cognitive": "Índice de entrenabilidad GTI de 100/100. Capacidad destacada para formación técnica y operativa.",
+      "personality": "Resiliencia alta, Trabajo en equipo moderado, Disciplina baja, Orientación técnica baja, Aspiración/Autoridad baja."
+    },
+    "strengths": [
+      "Alta capacidad de aprendizaje y adaptación",
+      "Interés consolidado en Sanidad y entornos marítimos/aéreos",
+      "Resiliencia elevada ante exigencias físicas y operativas"
+    ],
+    "developmentAreas": [
+      "Refuerzo de disciplina y orientación técnica",
+      "Desarrollo de habilidades de mando y liderazgo"
+    ],
+    "recommendation": "Ambas especialidades resultan igualmente válidas. Sanidad ofrece alineación directa con el interés máximo en cuidado y atención. Maniobra y Navegación aprovecha el interés marítimo/aéreo y la capacidad de formación destacada.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

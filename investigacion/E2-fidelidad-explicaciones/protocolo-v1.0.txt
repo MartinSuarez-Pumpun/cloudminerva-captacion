@@ -1,0 +1,136 @@
+Protocolo del experimento E2 · Fidelidad de las explicaciones de ARA
+
+Documento: Protocolo de verificación E2
+Línea: L5 · Inteligencia de capacidades y selección explicable
+Requisito: R-L5.5 · Explicación en lenguaje natural fiel a la puntuación
+Incertidumbre: L5.5 · Cómo garantizar que la explicación es fiel a la puntuación que la origina, de forma auditable para el mando que decide
+Hipótesis asociada: ninguna formal en la memoria (E2 verifica el requisito, no una hipótesis Hx.n)
+Versión: 1.0 (borrador para fechar antes de ejecutar)
+Fecha del protocolo: [fecha de firma, anterior a la primera ejecución]
+Responsable: [nombre]
+Estado: protocolo cerrado; pendiente de ejecución
+
+1. Objetivo
+
+Medir si el verificador con roles semánticos detecta las explicaciones en lenguaje natural que no son fieles a la puntuación determinista que las origina, con una exhaustividad ≥ 90 % y una tasa de falsas alarmas ≤ 10 % sobre un conjunto de explicaciones con errores introducidos de forma controlada.
+
+E2 no mide la calidad literaria de la explicación ni su utilidad para el mando. Mide una sola cosa: si el verificador marca como infiel lo que es infiel y deja pasar lo que es fiel.
+
+2. Requisito y criterio de aceptación
+
+Elemento	Valor
+Requisito	R-L5.5
+Criterio de aceptación	Exhaustividad (recall) ≥ 90 % y falsas alarmas (FPR) ≤ 10 %
+Línea base	El mismo verificador sin roles semánticos (veredicto directo)
+Métrica principal	Exhaustividad sobre explicaciones infieles; tasa de falsas alarmas sobre explicaciones fieles
+Métricas secundarias	Precisión, F1, exhaustividad por tipo de error, intervalo de confianza al 95 % de cada métrica
+Decisión	Se declara cumplido si ambas condiciones se alcanzan simultáneamente con el intervalo de confianza inferior de la exhaustividad ≥ 0,90 y el superior de las falsas alarmas ≤ 0,10. Si no, se declara no alcanzado y se registra como resultado.
+Nota metodológica. El criterio se fija en el protocolo y no se modifica después de ver los resultados. Si la ejecución revela un problema de diseño (por ejemplo, un tipo de error que el verificador no puede juzgar por construcción), se registra como enmienda fechada, con la medición anterior y la nueva, igual que se hizo en E4.
+
+3. Datos
+
+3.1 Origen
+
+Perfiles sintéticos de ARA: los mismos que se usaron en la plataforma INNOVADEF FOCO 2026 (13 especialidades, intereses, aptitud, personalidad, motivación), sin datos personales.
+Puntuación determinista: la salida del algoritmo de afinidad de ARA para cada perfil, con su ordenación de especialidades y los factores que la componen.
+Explicación generada: el texto que el modelo de lenguaje produce a partir de la puntuación, con el esquema validado y las reglas que le impiden inventar o diagnosticar.
+No se usan datos personales. E2 no requiere autorización del responsable del tratamiento (Requisitos, sección 8).
+
+3.2 Tamaño y composición
+
+Conjunto	Composición	Uso
+Base fiel	N_f explicaciones generadas por el sistema sin alteración, sobre perfiles sintéticos	Medir falsas alarmas
+Con errores introducidos	N_e explicaciones de la base fiel con un error controlado introducido	Medir exhaustividad
+Tamaño propuesto: N_f = 150 y N_e = 150 (300 explicaciones en total), con al menos 25 casos por tipo de error. El tamaño se fija para que el intervalo de confianza al 95 % de una proporción en torno a 0,90 tenga una amplitud de ±0,05. Si el etiquetado disponible es menor, se declara en el informe y se ajusta la interpretación; no se cambia el criterio de aceptación.
+
+Semilla y reproducibilidad: la selección de perfiles y la generación de errores usan una semilla fija declarada en el protocolo. La misma semilla debe reproducir el mismo conjunto.
+
+3.3 Tipos de error introducidos
+
+Cada error se introduce en la explicación, no en la puntuación. La puntuación determinista es la verdad de referencia. Los tipos, alineados con los fallos observados en autorIA (P1, P2, P7) y con las reglas de ARA:
+
+Código	Tipo de error	Ejemplo	Casos
+T1	Inversión de agente/paciente	La explicación atribuye a la persona una aptitud que la puntuación asigna a otra dimensión, o invierte quién cumple el requisito	≥ 25
+T2	Cifra o dato no respaldado	La explicación afirma un valor (puntuación, percentil, peso) que no aparece en la puntuación	≥ 25
+T3	Atribución a la especialidad equivocada	La explicación justifica la recomendación con un factor que corresponde a otra especialidad	≥ 25
+T4	Omisión de una habilitación o requisito	La explicación presenta como elegible un perfil que la puntuación marca como no elegible por una habilitación caducada o ausente	≥ 25
+T5	Generalización o adorno sin respaldo	Frase de finalidad o beneficio que la puntuación no sostiene	≥ 25
+T6	Contradicción con la puntuación	La explicación afirma lo contrario de lo que la puntuación indica (por ejemplo, "destaca en mando bajo presión" cuando la puntuación es baja)	≥ 25
+Los errores se introducen de forma controlada y registrada: cada caso lleva su código de tipo, la frase alterada, la frase original y la referencia a la puntuación. El conjunto de errores se conserva para repetir la medición.
+
+4. Procedimiento
+
+Generación de la base fiel. Ejecutar ARA sobre los perfiles sintéticos con la semilla fija y guardar: perfil, puntuación determinista, ordenación de especialidades, explicación generada y recibo (si aplica). Verificar que ninguna explicación de la base fiel contiene errores según la revisión humana (paso 5).
+Introducción de errores. Aplicar el generador de errores con la semilla fija, un error por explicación, y registrar cada caso con su código, frase original, frase alterada y referencia a la puntuación.
+Revisión humana de la base fiel. Dos revisores independientes comprueban que las N_f explicaciones son fieles a su puntuación. Las discrepancias se resuelven por mayoría con un tercer revisor. Las explicaciones que no se consideren fieles se retiran de la base fiel y se registran como incidencia.
+Ejecución del verificador. Pasar las N_f + N_e explicaciones por el verificador con roles semánticos (configuración de producción, versión fijada en el protocolo) y, por separado, por el verificador sin roles (línea base). Cada ejecución produce un veredicto por explicación: fiel / infiel / no concluyente.
+Cálculo de métricas. Sobre los veredictos, calcular:
+
+Exhaustividad = infieles marcadas como infieles / total de infieles (N_e).
+Falsas alarmas = fieles marcadas como infieles / total de fieles (N_f).
+Precisión, F1 y exhaustividad por tipo de error (T1–T6).
+Intervalos de confianza al 95 % (Wilson para proporciones).
+Los no concluyente se reportan por separado y no cuentan como acierto ni como error; si superan el 10 % del total, se declara en el informe y se interpreta.
+Comparación con la línea base. Repetir el cálculo con los veredictos del verificador sin roles y comparar.
+5. Evaluación ciega y control de sesgos
+
+Ciego del verificador: el verificador no conoce qué explicaciones son fieles y cuáles llevan error. El orden de las 300 explicaciones se aleatoriza con la semilla fija.
+Ciego de los revisores humanos: los revisores de la base fiel no ven los errores introducidos ni los veredictos del verificador.
+Ciego del analista: el cálculo de métricas se hace sobre el fichero de veredictos sin acceso a la etiqueta de error hasta el cierre; si esto no es posible, se declara y se justifica.
+Registro de decisiones: cualquier decisión tomada durante la ejecución (retirada de un caso, cambio de versión del verificador, incidencia) se registra con fecha y motivo.
+6. Materiales y versiones fijadas
+
+Elemento	Versión / identificador	Fecha
+Verificador con roles	verify.php, commit [hash]	[fecha]
+Verificador sin roles (línea base)	misma versión, configuración sin ROLES	[fecha]
+Modelo de lenguaje	[Qwen3-30B-A3B / Mistral-24B], versión y pesos (sha256)	[fecha]
+Generador de perfiles sintéticos	[script], commit [hash]	[fecha]
+Generador de errores	[script], commit [hash], semilla [valor]	[fecha]
+Esquema de la explicación	[versión]	[fecha]
+Las versiones se fijan antes de la primera ejecución y no se cambian durante la medición. Si hay que cambiar una, se registra como enmienda y se repite la medición completa.
+
+7. Resultados esperados y criterio de cierre
+
+Resultado	Interpretación
+Exhaustividad ≥ 90 % y falsas alarmas ≤ 10 % (con IC)	R-L5.5 cumplido con E2
+Exhaustividad ≥ 90 % y falsas alarmas > 10 %	No cumplido; se analiza qué tipos de error generan las falsas alarmas
+Exhaustividad < 90 % y falsas alarmas ≤ 10 %	No cumplido; se analiza qué tipos de error se escapan (probablemente T4 o T5)
+Ambos fuera de criterio	No cumplido; se registra como resultado y se reformula el diseño del verificador para 2027
+Un resultado negativo se registra como resultado, con la misma validez que uno positivo (regla común de la sección 8 de Requisitos).
+
+8. Entregables
+
+Este protocolo, fechado antes de la primera ejecución.
+Conjunto de evaluación: perfiles, puntuaciones, explicaciones fieles, explicaciones con error, etiquetas y semilla. Se conserva para repetir la medición.
+Fichero de veredictos del verificador con roles y sin roles, con marca de tiempo.
+Informe de E2: método, resultados por métrica y por tipo de error, intervalos de confianza, comparación con la línea base, incidencias y conclusión (cumplido / no cumplido).
+Entrada en el documento de Evidencias (sección 8 y tabla de trazabilidad de Requisitos, sección 10), con la referencia al informe y a los ficheros.
+9. Calendario
+
+Hito	Fecha prevista
+Firma del protocolo	[fecha]
+Generación de la base fiel y revisión humana	[semana 1]
+Introducción de errores y revisión	[semana 1]
+Ejecución del verificador (con y sin roles)	[semana 2]
+Cálculo de métricas e informe	[semana 2]
+Incorporación a Evidencias y Requisitos	[semana 3]
+El calendario declarado en Requisitos es nov.–dic. 2026. Este protocolo está pensado para ejecutarse en dos semanas una vez disponibles los perfiles sintéticos y el verificador.
+
+10. Riesgos y mitigaciones
+
+Riesgo	Mitigación
+El verificador no puede juzgar algunos casos por construcción (por ejemplo, T5 sin contexto suficiente)	Se registran como no concluyente y se reportan por separado; si superan el 10 %, se declara en el informe
+La revisión humana de la base fiel no alcanza acuerdo	Tercer revisor y mayoría; las discrepancias se registran
+El tamaño del conjunto no permite alcanzar el IC deseado	Se declara en el informe y se ajusta la interpretación, sin cambiar el criterio de aceptación
+Cambio de versión del verificador durante la medición	Se registra como enmienda y se repite la medición completa
+Sesgo del analista	Ciego del analista o declaración expresa si no es posible
+11. Relación con el resto del expediente
+
+Requ ISITO: R-L5.5 (Requisitos, sección L5).
+Incertidumbre: L5.5 (memoria, sección 8, L5).
+Hueco del estado de la técnica: Anexo I, apartado 3.3 («Walk the Talk?», 2025; patentes US11636411B2 y US11392954B2 sin separación entre puntuación auditable y explicación).
+Línea base: verificador sin roles semánticos, medido en P1 (autorIA) con 2 de 4 contradicciones frente a 4 de 4 con roles.
+Reutilización: el verificador con roles semánticos es el de autorIA (fragmento 1), lo que conecta E2 con L6 y refuerza el argumento de que las líneas comparten técnicas.
+Salida: informe de E2 → Evidencias (sección 8) y trazabilidad (Requisitos, sección 10).
+Notas para la firma
+

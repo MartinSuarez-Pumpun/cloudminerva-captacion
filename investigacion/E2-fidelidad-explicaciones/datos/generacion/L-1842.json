@@ -1,0 +1,72 @@
+{
+  "id": "L-1842",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:27.358Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "d8a35a12-942e-9681-8bd1-0dfe0cbdee93",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 50%\n  Técnica/Mecánica: 0%\n  Tecnología/Cyber: 17%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 0%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 17%\n\nÍndice de entrenabilidad GTI: 40/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 4/3,   Resiliencia: 2/3,   Trabajo en equipo: 1/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 72%\nEspecialidad alternativa: Energía y Propulsión (Armada) — afinidad 47%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Evaluación de orientación vocacional militar - Perfil Logística Marítima\",\n  \"narrative\": \"El candidato presenta un patrón de intereses centrado en Logística/Admin y Marítimo/Aéreo con puntuaciones máximas. El índice GTI de 40 indica nivel competente. El perfil de personalidad muestra Disciplina elevada y Resiliencia moderada, con puntuaciones bajas en Trabajo en equipo y Orientación técnica. La disponibilidad indica restricciones de movilidad geográfica y aspiración a Suboficiales.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.72\n    },\n    \"alternative\": {\n      \"name\": \"Energía y Propulsión\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.47\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta preferencia por actividades logísticas y marítimas. Ausencia de interés en áreas técnica, sanidad y mando.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 40/100. Nivel competente. Requiere preparación adicional para especialidades técnicas.\",\n    \"personality\": \"Disciplina alta, Resiliencia moderada, Trabajo en equipo bajo, Orientación técnica baja, Aspiración/Autoridad nula.\"\n  },\n  \"strengths\": [\n    \"Disciplina elevada\",\n    \"Interés máximo en logística y ámbito marítimo\",\n    \"Disponibilidad para riesgo físico y despliegues condicionados\",\n    \"Aspiración a Suboficiales declarada\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo limitado\",\n    \"Orientación técnica reducida\",\n    \"Movilidad geográfica restringida\",\n    \"Preparación adicional requerida para especialidades técnicas\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) como especialidad principal por máxima afinidad con perfil logístico y marítimo. Energía y Propulsión (Armada) como alternativa con afinidad moderada.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1023,
+    "completion_tokens": 506,
+    "total_tokens": 1529,
+    "prompt_tokens_details": {
+      "text_tokens": 1023,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18717500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Evaluación de orientación vocacional militar - Perfil Logística Marítima",
+    "narrative": "El candidato presenta un patrón de intereses centrado en Logística/Admin y Marítimo/Aéreo con puntuaciones máximas. El índice GTI de 40 indica nivel competente. El perfil de personalidad muestra Disciplina elevada y Resiliencia moderada, con puntuaciones bajas en Trabajo en equipo y Orientación técnica. La disponibilidad indica restricciones de movilidad geográfica y aspiración a Suboficiales.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.72
+      },
+      "alternative": {
+        "name": "Energía y Propulsión",
+        "branch": "Armada",
+        "affinity": 0.47
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta preferencia por actividades logísticas y marítimas. Ausencia de interés en áreas técnica, sanidad y mando.",
+      "cognitive": "Índice de entrenabilidad GTI 40/100. Nivel competente. Requiere preparación adicional para especialidades técnicas.",
+      "personality": "Disciplina alta, Resiliencia moderada, Trabajo en equipo bajo, Orientación técnica baja, Aspiración/Autoridad nula."
+    },
+    "strengths": [
+      "Disciplina elevada",
+      "Interés máximo en logística y ámbito marítimo",
+      "Disponibilidad para riesgo físico y despliegues condicionados",
+      "Aspiración a Suboficiales declarada"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo limitado",
+      "Orientación técnica reducida",
+      "Movilidad geográfica restringida",
+      "Preparación adicional requerida para especialidades técnicas"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) como especialidad principal por máxima afinidad con perfil logístico y marítimo. Energía y Propulsión (Armada) como alternativa con afinidad moderada.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

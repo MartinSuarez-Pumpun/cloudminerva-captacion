@@ -1,0 +1,71 @@
+{
+  "id": "L-1608",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:56:04.299Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "eb736429-81b4-973d-9bdc-c1b43853e0db",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 83%\n  Sanidad/Cuidado: 100%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 50%\n\nÍndice de entrenabilidad GTI: 75/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 3/3,   Trabajo en equipo: 3/3,   Orientación técnica: 0/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Maniobra y Navegación (Armada) — afinidad 89%\nEspecialidad alternativa: Infantería de Marina (Armada) — afinidad 84%\n\nFlags especiales:\n  • VIA_SUBOFICIALES: mencionar explícitamente como recorrido natural\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a entornos marítimos con alta afinidad tecnológica y sanitaria.\",\n  \"narrative\": \"El candidato presenta intereses elevados en Sanidad/Cuidado (100%) y Marítimo/Aéreo (100%), junto con Tecnología/Cyber (83%) y Combate (75%). El GTI de 75 indica capacidad destacada para formación técnica avanzada. La personalidad muestra Resiliencia y Trabajo en equipo máximos, Aspiración/Autoridad moderada y ausencia de Orientación técnica y Disciplina marcadas.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Maniobra y Navegación\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.89\n    },\n    \"alternative\": {\n      \"name\": \"Infantería de Marina\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.84\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Intereses centrados en Sanidad/Cuidado y Marítimo/Aéreo con componente tecnológico.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 75: capacidad destacada para formación técnica.\",\n    \"personality\": \"Alta Resiliencia y Trabajo en equipo. Aspiración/Autoridad moderada. Baja Orientación técnica y Disciplina.\"\n  },\n  \"strengths\": [\n    \"Alta afinidad con entornos marítimos y sanitarios\",\n    \"Capacidad destacada para formación técnica (GTI 75)\",\n    \"Resiliencia y Trabajo en equipo máximos\",\n    \"Disponibilidad para movilidad geográfica y despliegues internacionales\"\n  ],\n  \"developmentAreas\": [\n    \"Ausencia de Orientación técnica marcada\",\n    \"Disciplina baja\",\n    \"Disponibilidad condicional a riesgo físico y horizonte temporal\"\n  ],\n  \"recommendation\": \"Maniobra y Navegación (Armada) como especialidad principal. Recorrido natural hacia Suboficiales por GTI destacado y aspiración declarada.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1046,
+    "completion_tokens": 491,
+    "total_tokens": 1537,
+    "prompt_tokens_details": {
+      "text_tokens": 1046,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18630000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a entornos marítimos con alta afinidad tecnológica y sanitaria.",
+    "narrative": "El candidato presenta intereses elevados en Sanidad/Cuidado (100%) y Marítimo/Aéreo (100%), junto con Tecnología/Cyber (83%) y Combate (75%). El GTI de 75 indica capacidad destacada para formación técnica avanzada. La personalidad muestra Resiliencia y Trabajo en equipo máximos, Aspiración/Autoridad moderada y ausencia de Orientación técnica y Disciplina marcadas.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Maniobra y Navegación",
+        "branch": "Armada",
+        "affinity": 0.89
+      },
+      "alternative": {
+        "name": "Infantería de Marina",
+        "branch": "Armada",
+        "affinity": 0.84
+      }
+    },
+    "profileSummary": {
+      "interests": "Intereses centrados en Sanidad/Cuidado y Marítimo/Aéreo con componente tecnológico.",
+      "cognitive": "Índice de entrenabilidad GTI 75: capacidad destacada para formación técnica.",
+      "personality": "Alta Resiliencia y Trabajo en equipo. Aspiración/Autoridad moderada. Baja Orientación técnica y Disciplina."
+    },
+    "strengths": [
+      "Alta afinidad con entornos marítimos y sanitarios",
+      "Capacidad destacada para formación técnica (GTI 75)",
+      "Resiliencia y Trabajo en equipo máximos",
+      "Disponibilidad para movilidad geográfica y despliegues internacionales"
+    ],
+    "developmentAreas": [
+      "Ausencia de Orientación técnica marcada",
+      "Disciplina baja",
+      "Disponibilidad condicional a riesgo físico y horizonte temporal"
+    ],
+    "recommendation": "Maniobra y Navegación (Armada) como especialidad principal. Recorrido natural hacia Suboficiales por GTI destacado y aspiración declarada.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

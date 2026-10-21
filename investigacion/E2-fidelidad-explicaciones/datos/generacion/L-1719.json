@@ -1,0 +1,70 @@
+{
+  "id": "L-1719",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:53:50.712Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "77bf52e0-c407-98e9-8836-7581da703db6",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 90%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 0%\n\nÍndice de entrenabilidad GTI: 50/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 3/3,   Trabajo en equipo: 2/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: depende\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Maniobra y Navegación (Armada) — afinidad 81%\nEspecialidad alternativa: Infantería de Marina (Armada) — afinidad 76%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación a especialidad fundamental Armada\",\n  \"narrative\": \"Candidato con interés máximo en Logística/Admin y Marítimo/Aéreo. GTI 50 indica nivel competente. Alta resiliencia y disposición a despliegues internacionales. Afinidad principal en Maniobra y Navegación.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Maniobra y Navegación\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.81\n    },\n    \"alternative\": {\n      \"name\": \"Infantería de Marina\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.76\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Logística/Admin y Marítimo/Aéreo. Interés alto en Combate y Técnica/Mecánica. Sin interés en Tecnología/Cyber ni Creativo/Artístico.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 50. Nivel competente para formación militar.\",\n    \"personality\": \"Resiliencia alta, Trabajo en equipo medio, Aspiración/Autoridad media, Orientación técnica baja, Disciplina baja.\"\n  },\n  \"strengths\": [\n    \"Alta resiliencia ante situaciones exigentes\",\n    \"Interés total en funciones logísticas y marítimas\",\n    \"Disposición a despliegues internacionales\"\n  ],\n  \"developmentAreas\": [\n    \"Disciplina baja requiere refuerzo en rutinas y normas\",\n    \"Orientación técnica limitada puede limitar especialidades muy mecánicas\",\n    \"Movilidad geográfica y horizonte temporal condicionados\"\n  ],\n  \"recommendation\": \"Maniobra y Navegación (Armada) como primera opción por máxima afinidad con intereses marítimos y logísticos. Infantería de Marina como alternativa operativa.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1026,
+    "completion_tokens": 456,
+    "total_tokens": 1482,
+    "prompt_tokens_details": {
+      "text_tokens": 1026,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 17505000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación a especialidad fundamental Armada",
+    "narrative": "Candidato con interés máximo en Logística/Admin y Marítimo/Aéreo. GTI 50 indica nivel competente. Alta resiliencia y disposición a despliegues internacionales. Afinidad principal en Maniobra y Navegación.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Maniobra y Navegación",
+        "branch": "Armada",
+        "affinity": 0.81
+      },
+      "alternative": {
+        "name": "Infantería de Marina",
+        "branch": "Armada",
+        "affinity": 0.76
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Logística/Admin y Marítimo/Aéreo. Interés alto en Combate y Técnica/Mecánica. Sin interés en Tecnología/Cyber ni Creativo/Artístico.",
+      "cognitive": "Índice de entrenabilidad GTI 50. Nivel competente para formación militar.",
+      "personality": "Resiliencia alta, Trabajo en equipo medio, Aspiración/Autoridad media, Orientación técnica baja, Disciplina baja."
+    },
+    "strengths": [
+      "Alta resiliencia ante situaciones exigentes",
+      "Interés total en funciones logísticas y marítimas",
+      "Disposición a despliegues internacionales"
+    ],
+    "developmentAreas": [
+      "Disciplina baja requiere refuerzo en rutinas y normas",
+      "Orientación técnica limitada puede limitar especialidades muy mecánicas",
+      "Movilidad geográfica y horizonte temporal condicionados"
+    ],
+    "recommendation": "Maniobra y Navegación (Armada) como primera opción por máxima afinidad con intereses marítimos y logísticos. Infantería de Marina como alternativa operativa.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

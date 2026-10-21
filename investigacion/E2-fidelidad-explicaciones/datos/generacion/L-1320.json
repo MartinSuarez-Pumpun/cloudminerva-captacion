@@ -1,0 +1,72 @@
+{
+  "id": "L-1320",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:37.354Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "288507d2-1ec1-95a9-926e-bd360aff25e7",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 60/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 2/3,   Trabajo en equipo: 2/3,   Orientación técnica: 0/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: depende\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Infantería Ligera (ET) — afinidad 73%\nEspecialidad alternativa: Sanidad (ET/Armada/EAE) — afinidad 61%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Evaluación de orientación vocacional militar - Perfil compatible con Infantería Ligera y Sanidad\",\n  \"narrative\": \"El candidato presenta afinidad elevada en intereses de combate y sanidad, con GTI competente. Perfil de personalidad equilibrado en disciplina, resiliencia, trabajo en equipo y aspiración. Disponibilidad condicionada a factores de movilidad y riesgo físico.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.73\n    },\n    \"alternative\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.61\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Intereses predominantes en combate (75%) y sanidad/cuidado (67%), secundados por mando/liderazgo (60%). Ausencia de interés en tecnología/cyber y logística/administración.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 60/100, nivel competente. Requiere preparación adicional para especialidades técnicas.\",\n    \"personality\": \"Disciplina 2/3, Resiliencia 2/3, Trabajo en equipo 2/3, Orientación técnica 0/3, Aspiración/Autoridad 2/3. Perfil orientado a roles operativos y de apoyo.\"\n  },\n  \"strengths\": [\n    \"Alta afinidad con actividades de combate\",\n    \"Interés simultáneo en funciones sanitarias\",\n    \"Capacidad de trabajo en equipo demostrada\",\n    \"Disposición para despliegues internacionales\"\n  ],\n  \"developmentAreas\": [\n    \"Ausencia de orientación técnica\",\n    \"Disponibilidad geográfica condicionada\",\n    \"Riesgo físico sujeto a evaluación\",\n    \"Horizonte temporal por definir\"\n  ],\n  \"recommendation\": \"Infantería Ligera (ET) como opción principal por afinidad 0.73. Sanidad (ET/Armada/EAE) como alternativa válida con afinidad 0.61. Ambas especialidades consideradas igualmente válidas por empate técnico.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1043,
+    "completion_tokens": 529,
+    "total_tokens": 1572,
+    "prompt_tokens_details": {
+      "text_tokens": 1043,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24918500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Evaluación de orientación vocacional militar - Perfil compatible con Infantería Ligera y Sanidad",
+    "narrative": "El candidato presenta afinidad elevada en intereses de combate y sanidad, con GTI competente. Perfil de personalidad equilibrado en disciplina, resiliencia, trabajo en equipo y aspiración. Disponibilidad condicionada a factores de movilidad y riesgo físico.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.73
+      },
+      "alternative": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.61
+      }
+    },
+    "profileSummary": {
+      "interests": "Intereses predominantes en combate (75%) y sanidad/cuidado (67%), secundados por mando/liderazgo (60%). Ausencia de interés en tecnología/cyber y logística/administración.",
+      "cognitive": "Índice de entrenabilidad GTI 60/100, nivel competente. Requiere preparación adicional para especialidades técnicas.",
+      "personality": "Disciplina 2/3, Resiliencia 2/3, Trabajo en equipo 2/3, Orientación técnica 0/3, Aspiración/Autoridad 2/3. Perfil orientado a roles operativos y de apoyo."
+    },
+    "strengths": [
+      "Alta afinidad con actividades de combate",
+      "Interés simultáneo en funciones sanitarias",
+      "Capacidad de trabajo en equipo demostrada",
+      "Disposición para despliegues internacionales"
+    ],
+    "developmentAreas": [
+      "Ausencia de orientación técnica",
+      "Disponibilidad geográfica condicionada",
+      "Riesgo físico sujeto a evaluación",
+      "Horizonte temporal por definir"
+    ],
+    "recommendation": "Infantería Ligera (ET) como opción principal por afinidad 0.73. Sanidad (ET/Armada/EAE) como alternativa válida con afinidad 0.61. Ambas especialidades consideradas igualmente válidas por empate técnico.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

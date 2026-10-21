@@ -1,0 +1,74 @@
+{
+  "id": "L-0230",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:09.004Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "959b946b-8af1-9f59-b3e2-85424306b243",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 13%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 65/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 3/3,   Trabajo en equipo: 3/3,   Orientación técnica: 0/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: no\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 70%\nEspecialidad alternativa: Infantería Ligera (ET) — afinidad 56%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Evaluación de orientación vocacional militar\",\n  \"narrative\": \"El perfil muestra alta afinidad con funciones logísticas y administrativas, combinada con interés en mando y liderazgo. El índice GTI de 65 indica nivel competente para el entrenamiento militar. La personalidad destaca por resiliencia y trabajo en equipo, con aspiración a roles de autoridad. La disponibilidad para despliegues internacionales y aspiración a Suboficiales amplían las opciones de especialidad.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.70\n    },\n    \"alternative\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.56\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Logística/Admin (100%), seguido de Mando/Liderazgo (80%) y Tecnología/Cyber (67%). Nulo interés en Sanidad/Cuidado y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice GTI de 65/100, dentro del rango competente para el entrenamiento militar.\",\n    \"personality\": \"Resiliencia alta (3/3), Trabajo en equipo alto (3/3), Aspiración/Autoridad media (2/3), Disciplina baja (0/3), Orientación técnica baja (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta capacidad para funciones logísticas y administrativas\",\n    \"Disposición para roles de mando y liderazgo\",\n    \"Resiliencia y trabajo en equipo elevados\",\n    \"Disponibilidad para despliegues internacionales\",\n    \"Aspiración a Suboficiales\"\n  ],\n  \"developmentAreas\": [\n    \"Baja disciplina evaluada (0/3)\",\n    \"Nula orientación técnica (0/3)\",\n    \"Limitación de movilidad geográfica\",\n    \"Horizonte temporal restringido\",\n    \"Riesgo físico condicionado\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) e Infantería Ligera (ET) presentan afinidades equivalentes (70% y 56%) y son opciones igualmente válidas según el perfil evaluado.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1039,
+    "completion_tokens": 546,
+    "total_tokens": 1585,
+    "prompt_tokens_details": {
+      "text_tokens": 1039,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 19917500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Evaluación de orientación vocacional militar",
+    "narrative": "El perfil muestra alta afinidad con funciones logísticas y administrativas, combinada con interés en mando y liderazgo. El índice GTI de 65 indica nivel competente para el entrenamiento militar. La personalidad destaca por resiliencia y trabajo en equipo, con aspiración a roles de autoridad. La disponibilidad para despliegues internacionales y aspiración a Suboficiales amplían las opciones de especialidad.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.7
+      },
+      "alternative": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.56
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Logística/Admin (100%), seguido de Mando/Liderazgo (80%) y Tecnología/Cyber (67%). Nulo interés en Sanidad/Cuidado y Marítimo/Aéreo.",
+      "cognitive": "Índice GTI de 65/100, dentro del rango competente para el entrenamiento militar.",
+      "personality": "Resiliencia alta (3/3), Trabajo en equipo alto (3/3), Aspiración/Autoridad media (2/3), Disciplina baja (0/3), Orientación técnica baja (0/3)."
+    },
+    "strengths": [
+      "Alta capacidad para funciones logísticas y administrativas",
+      "Disposición para roles de mando y liderazgo",
+      "Resiliencia y trabajo en equipo elevados",
+      "Disponibilidad para despliegues internacionales",
+      "Aspiración a Suboficiales"
+    ],
+    "developmentAreas": [
+      "Baja disciplina evaluada (0/3)",
+      "Nula orientación técnica (0/3)",
+      "Limitación de movilidad geográfica",
+      "Horizonte temporal restringido",
+      "Riesgo físico condicionado"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) e Infantería Ligera (ET) presentan afinidades equivalentes (70% y 56%) y son opciones igualmente válidas según el perfil evaluado.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

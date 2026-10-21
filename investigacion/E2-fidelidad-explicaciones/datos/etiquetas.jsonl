@@ -1,0 +1,300 @@
+{"id":"E2-001","perfil_id":"L-1052","tipo":"fiel"}
+{"id":"E2-002","perfil_id":"L-0898","tipo":"T2","campo":"profileSummary.cognitive","original":"","alterada":"Índice de entrenabilidad GTI 33/100.","referencia":"gti=50"}
+{"id":"E2-003","perfil_id":"L-0230","tipo":"fiel"}
+{"id":"E2-004","perfil_id":"L-0769","tipo":"T3","campo":"narrative","original":"","alterada":"El interés por Tecnología/Cyber justifica la orientación hacia Aprovisionamiento.","referencia":"aprovisionamiento: F5"}
+{"id":"E2-005","perfil_id":"L-1807","tipo":"T6","campo":"narrative","original":"","alterada":"Muestra una orientación técnica alta.","referencia":"O=0"}
+{"id":"E2-006","perfil_id":"L-1502","tipo":"T1","campo":"strengths","original":"","alterada":"Aspiración/Autoridad (3/3)","referencia":"A=0, D=3"}
+{"id":"E2-007","perfil_id":"L-0524","tipo":"T5","campo":"narrative","original":"","alterada":"Su perfil predice un rendimiento sobresaliente en la formación.","referencia":"sin respaldo"}
+{"id":"E2-008","perfil_id":"L-0415","tipo":"T6","campo":"narrative","original":"","alterada":"Muestra una orientación técnica alta.","referencia":"O=0"}
+{"id":"E2-009","perfil_id":"L-1140","tipo":"fiel"}
+{"id":"E2-010","perfil_id":"L-1152","tipo":"T3","campo":"recommendation","original":"","alterada":"Se recomienda Protección y Apoyo a la Fuerza por la afinidad mostrada con Técnica/Mecánica.","referencia":"proteccion_apoyo: F1+F6"}
+{"id":"E2-011","perfil_id":"L-1931","tipo":"fiel"}
+{"id":"E2-012","perfil_id":"L-1035","tipo":"fiel"}
+{"id":"E2-013","perfil_id":"L-0327","tipo":"fiel"}
+{"id":"E2-014","perfil_id":"L-1027","tipo":"T4","campo":"recommendation","original":"","alterada":"Maniobra y Navegación resultaría igualmente compatible con sus intereses.","referencia":"movilidad=no excluye maniobra_navegacion"}
+{"id":"E2-015","perfil_id":"L-0199","tipo":"fiel"}
+{"id":"E2-016","perfil_id":"L-1907","tipo":"T6","campo":"profileSummary.interests","original":"","alterada":"Interés muy marcado por Tecnología/Cyber.","referencia":"F3=0"}
+{"id":"E2-017","perfil_id":"L-0127","tipo":"T1","campo":"profileSummary.personality","original":"","alterada":"Resiliencia alta (3/3), uno de los rasgos más definidos del perfil.","referencia":"R=0, D=3"}
+{"id":"E2-018","perfil_id":"L-1896","tipo":"fiel"}
+{"id":"E2-019","perfil_id":"L-0943","tipo":"fiel"}
+{"id":"E2-020","perfil_id":"L-0269","tipo":"fiel"}
+{"id":"E2-021","perfil_id":"L-0997","tipo":"fiel"}
+{"id":"E2-022","perfil_id":"L-1035","tipo":"T1","campo":"strengths","original":"","alterada":"Aspiración/Autoridad (3/3)","referencia":"A=0, D=3"}
+{"id":"E2-023","perfil_id":"L-1151","tipo":"fiel"}
+{"id":"E2-024","perfil_id":"L-1285","tipo":"T3","campo":"narrative","original":"","alterada":"El interés por Creativo/Artístico justifica la orientación hacia Energía y Propulsión.","referencia":"energia_propulsion: F2+F7"}
+{"id":"E2-025","perfil_id":"L-0738","tipo":"T3","campo":"headline","original":"","alterada":"Su perfil en Combate es coherente con Energía y Propulsión.","referencia":"energia_propulsion: F2+F7"}
+{"id":"E2-026","perfil_id":"L-1766","tipo":"fiel"}
+{"id":"E2-027","perfil_id":"L-1621","tipo":"T1","campo":"narrative","original":"","alterada":"El rasgo de Trabajo en equipo alcanza 3 sobre 3.","referencia":"T=0, O=3"}
+{"id":"E2-028","perfil_id":"L-1159","tipo":"fiel"}
+{"id":"E2-029","perfil_id":"L-1420","tipo":"fiel"}
+{"id":"E2-030","perfil_id":"L-0524","tipo":"fiel"}
+{"id":"E2-031","perfil_id":"L-0951","tipo":"T1","campo":"profileSummary.interests","original":"","alterada":"Interés en Logística/Admin del 100%.","referencia":"F5=0, F4=100"}
+{"id":"E2-032","perfil_id":"L-0988","tipo":"fiel"}
+{"id":"E2-033","perfil_id":"L-1935","tipo":"fiel"}
+{"id":"E2-034","perfil_id":"L-1643","tipo":"fiel"}
+{"id":"E2-035","perfil_id":"L-0959","tipo":"fiel"}
+{"id":"E2-036","perfil_id":"L-0522","tipo":"fiel"}
+{"id":"E2-037","perfil_id":"L-1288","tipo":"fiel"}
+{"id":"E2-038","perfil_id":"L-0004","tipo":"fiel"}
+{"id":"E2-039","perfil_id":"L-0914","tipo":"T2","campo":"specialtyMatch.primary.affinity","original":"0.9","alterada":"0.79","referencia":"afinidad=90"}
+{"id":"E2-040","perfil_id":"L-1119","tipo":"fiel"}
+{"id":"E2-041","perfil_id":"L-1765","tipo":"T3","campo":"recommendation","original":"","alterada":"Se recomienda Transmisiones por la afinidad mostrada con Mando/Liderazgo.","referencia":"transmisiones: F3+F2"}
+{"id":"E2-042","perfil_id":"L-0284","tipo":"fiel"}
+{"id":"E2-043","perfil_id":"L-0320","tipo":"T4","campo":"recommendation","original":"","alterada":"Infantería de Marina (Armada) es también una opción adecuada para su perfil.","referencia":"movilidad=no excluye infanteria_marina"}
+{"id":"E2-044","perfil_id":"L-1885","tipo":"fiel"}
+{"id":"E2-045","perfil_id":"L-1418","tipo":"T4","campo":"narrative","original":"","alterada":"Acepta la movilidad geográfica que exige la carrera militar.","referencia":"movilidad=no"}
+{"id":"E2-046","perfil_id":"L-1143","tipo":"T2","campo":"narrative","original":"","alterada":"El GTI obtenido es de 10 puntos.","referencia":"gti=35"}
+{"id":"E2-047","perfil_id":"L-0967","tipo":"fiel"}
+{"id":"E2-048","perfil_id":"L-0323","tipo":"fiel"}
+{"id":"E2-049","perfil_id":"L-1052","tipo":"T5","campo":"narrative","original":"","alterada":"Su perfil predice un rendimiento sobresaliente en la formación.","referencia":"sin respaldo"}
+{"id":"E2-050","perfil_id":"L-1285","tipo":"fiel"}
+{"id":"E2-051","perfil_id":"L-0190","tipo":"T1","campo":"profileSummary.interests","original":"","alterada":"Interés en Logística/Admin del 100%.","referencia":"F5=0, F2=100"}
+{"id":"E2-052","perfil_id":"L-0572","tipo":"fiel"}
+{"id":"E2-053","perfil_id":"L-1606","tipo":"fiel"}
+{"id":"E2-054","perfil_id":"L-1881","tipo":"T5","campo":"narrative","original":"","alterada":"Su perfil predice un rendimiento sobresaliente en la formación.","referencia":"sin respaldo"}
+{"id":"E2-055","perfil_id":"L-1643","tipo":"T5","campo":"narrative","original":"","alterada":"Con este perfil, superar las pruebas de acceso es muy probable.","referencia":"sin respaldo"}
+{"id":"E2-056","perfil_id":"L-0762","tipo":"T6","campo":"strengths","original":"","alterada":"Trabajo en equipo elevada","referencia":"T=0"}
+{"id":"E2-057","perfil_id":"L-1834","tipo":"T1","campo":"narrative","original":"","alterada":"Sus intereses se concentran en Técnica/Mecánica, con un 100%.","referencia":"F2=20, F3=100"}
+{"id":"E2-058","perfil_id":"L-0367","tipo":"fiel"}
+{"id":"E2-059","perfil_id":"L-1883","tipo":"T6","campo":"profileSummary.interests","original":"","alterada":"Interés muy marcado por Logística/Admin.","referencia":"F5=0"}
+{"id":"E2-060","perfil_id":"L-1240","tipo":"T5","campo":"recommendation","original":"","alterada":"Esta especialidad le garantiza estabilidad profesional a largo plazo.","referencia":"sin respaldo"}
+{"id":"E2-061","perfil_id":"L-1807","tipo":"fiel"}
+{"id":"E2-062","perfil_id":"L-1484","tipo":"T6","campo":"profileSummary.personality","original":"","alterada":"Disciplina es uno de sus puntos fuertes.","referencia":"D=0"}
+{"id":"E2-063","perfil_id":"L-0480","tipo":"fiel"}
+{"id":"E2-064","perfil_id":"L-1451","tipo":"T2","campo":"profileSummary.interests","original":"","alterada":"Interés en Marítimo/Aéreo (83%).","referencia":"F7=100"}
+{"id":"E2-065","perfil_id":"L-0496","tipo":"T4","campo":"narrative","original":"","alterada":"Acepta la movilidad geográfica que exige la carrera militar.","referencia":"movilidad=no"}
+{"id":"E2-066","perfil_id":"L-0762","tipo":"fiel"}
+{"id":"E2-067","perfil_id":"L-0750","tipo":"T6","campo":"profileSummary.interests","original":"","alterada":"Interés muy marcado por Tecnología/Cyber.","referencia":"F3=0"}
+{"id":"E2-068","perfil_id":"L-1838","tipo":"T4","campo":"narrative","original":"","alterada":"Acepta la movilidad geográfica que exige la carrera militar.","referencia":"movilidad=no"}
+{"id":"E2-069","perfil_id":"L-1306","tipo":"T4","campo":"narrative","original":"","alterada":"Acepta la movilidad geográfica que exige la carrera militar.","referencia":"movilidad=no"}
+{"id":"E2-070","perfil_id":"L-1838","tipo":"fiel"}
+{"id":"E2-071","perfil_id":"L-0093","tipo":"T4","campo":"recommendation","original":"","alterada":"Podría valorar Infantería de Marina como segunda alternativa.","referencia":"movilidad=no excluye infanteria_marina"}
+{"id":"E2-072","perfil_id":"L-0034","tipo":"T6","campo":"profileSummary.interests","original":"","alterada":"Interés muy marcado por Tecnología/Cyber.","referencia":"F3=0"}
+{"id":"E2-073","perfil_id":"L-0351","tipo":"T4","campo":"strengths","original":"","alterada":"Disponibilidad plena para cambios de destino geográfico","referencia":"movilidad=no"}
+{"id":"E2-074","perfil_id":"L-1896","tipo":"T4","campo":"recommendation","original":"","alterada":"Infantería de Marina (Armada) es también una opción adecuada para su perfil.","referencia":"movilidad=no excluye infanteria_marina"}
+{"id":"E2-075","perfil_id":"L-1837","tipo":"T6","campo":"narrative","original":"","alterada":"Muestra una disciplina alta.","referencia":"D=1"}
+{"id":"E2-076","perfil_id":"L-0525","tipo":"T3","campo":"recommendation","original":"","alterada":"Ingenieros encaja por su interés en Logística/Admin.","referencia":"ingenieros: F2+F1"}
+{"id":"E2-077","perfil_id":"L-0730","tipo":"T5","campo":"narrative","original":"","alterada":"Su perfil predice un rendimiento sobresaliente en la formación.","referencia":"sin respaldo"}
+{"id":"E2-078","perfil_id":"L-1451","tipo":"fiel"}
+{"id":"E2-079","perfil_id":"L-1339","tipo":"T5","campo":"recommendation","original":"","alterada":"Esta especialidad le garantiza estabilidad profesional a largo plazo.","referencia":"sin respaldo"}
+{"id":"E2-080","perfil_id":"L-0016","tipo":"T6","campo":"developmentAreas","original":"","alterada":"Bajo nivel de aspiración/Autoridad","referencia":"A=3"}
+{"id":"E2-081","perfil_id":"L-0230","tipo":"T1","campo":"strengths","original":"","alterada":"Orientación técnica (3/3)","referencia":"O=0, R=3"}
+{"id":"E2-082","perfil_id":"L-1469","tipo":"fiel"}
+{"id":"E2-083","perfil_id":"L-0190","tipo":"fiel"}
+{"id":"E2-084","perfil_id":"L-1626","tipo":"fiel"}
+{"id":"E2-085","perfil_id":"L-0042","tipo":"T5","campo":"recommendation","original":"","alterada":"Esta especialidad le garantiza estabilidad profesional a largo plazo.","referencia":"sin respaldo"}
+{"id":"E2-086","perfil_id":"L-0351","tipo":"fiel"}
+{"id":"E2-087","perfil_id":"L-1900","tipo":"fiel"}
+{"id":"E2-088","perfil_id":"L-0464","tipo":"T1","campo":"profileSummary.personality","original":"","alterada":"Resiliencia alta (3/3), uno de los rasgos más definidos del perfil.","referencia":"R=0, T=3"}
+{"id":"E2-089","perfil_id":"L-0145","tipo":"T1","campo":"profileSummary.personality","original":"","alterada":"Orientación técnica alta (3/3), uno de los rasgos más definidos del perfil.","referencia":"O=0, R=3"}
+{"id":"E2-090","perfil_id":"L-0295","tipo":"fiel"}
+{"id":"E2-091","perfil_id":"L-0511","tipo":"T2","campo":"recommendation","original":"","alterada":"Afinidad con Operaciones y Sistemas del 67%.","referencia":"afinidad=59"}
+{"id":"E2-092","perfil_id":"L-1403","tipo":"T3","campo":"headline","original":"","alterada":"Su perfil en Técnica/Mecánica es coherente con Aprovisionamiento.","referencia":"aprovisionamiento: F5"}
+{"id":"E2-093","perfil_id":"L-1345","tipo":"fiel"}
+{"id":"E2-094","perfil_id":"L-0171","tipo":"T5","campo":"recommendation","original":"","alterada":"Esta especialidad le garantiza estabilidad profesional a largo plazo.","referencia":"sin respaldo"}
+{"id":"E2-095","perfil_id":"L-1687","tipo":"fiel"}
+{"id":"E2-096","perfil_id":"L-0769","tipo":"fiel"}
+{"id":"E2-097","perfil_id":"L-1325","tipo":"T6","campo":"profileSummary.interests","original":"","alterada":"Interés muy marcado por Combate.","referencia":"F1=0"}
+{"id":"E2-098","perfil_id":"L-0037","tipo":"T1","campo":"profileSummary.interests","original":"","alterada":"Interés en Marítimo/Aéreo del 100%.","referencia":"F7=0, F5=100"}
+{"id":"E2-099","perfil_id":"L-0389","tipo":"T1","campo":"profileSummary.interests","original":"","alterada":"Interés en Marítimo/Aéreo del 100%.","referencia":"F7=0, F3=100"}
+{"id":"E2-100","perfil_id":"L-1791","tipo":"fiel"}
+{"id":"E2-101","perfil_id":"L-0505","tipo":"T3","campo":"narrative","original":"","alterada":"El interés por Técnica/Mecánica justifica la orientación hacia Sanidad.","referencia":"sanidad: F4"}
+{"id":"E2-102","perfil_id":"L-1649","tipo":"T4","campo":"strengths","original":"","alterada":"Disponibilidad plena para cambios de destino geográfico","referencia":"movilidad=no"}
+{"id":"E2-103","perfil_id":"L-1766","tipo":"T6","campo":"narrative","original":"","alterada":"Muestra una orientación técnica alta.","referencia":"O=0"}
+{"id":"E2-104","perfil_id":"L-0818","tipo":"fiel"}
+{"id":"E2-105","perfil_id":"L-1606","tipo":"T4","campo":"narrative","original":"","alterada":"Acepta la movilidad geográfica que exige la carrera militar.","referencia":"movilidad=no"}
+{"id":"E2-106","perfil_id":"L-0988","tipo":"T4","campo":"recommendation","original":"","alterada":"Infantería de Marina (Armada) es también una opción adecuada para su perfil.","referencia":"movilidad=no excluye infanteria_marina"}
+{"id":"E2-107","perfil_id":"L-1548","tipo":"T3","campo":"narrative","original":"","alterada":"El interés por Tecnología/Cyber justifica la orientación hacia Ingenieros.","referencia":"ingenieros: F2+F1"}
+{"id":"E2-108","perfil_id":"L-0959","tipo":"T2","campo":"recommendation","original":"","alterada":"Afinidad con Operaciones y Sistemas del 76%.","referencia":"afinidad=91"}
+{"id":"E2-109","perfil_id":"L-0323","tipo":"T5","campo":"narrative","original":"","alterada":"Con este perfil, superar las pruebas de acceso es muy probable.","referencia":"sin respaldo"}
+{"id":"E2-110","perfil_id":"L-0511","tipo":"fiel"}
+{"id":"E2-111","perfil_id":"L-0447","tipo":"fiel"}
+{"id":"E2-112","perfil_id":"L-0199","tipo":"T4","campo":"recommendation","original":"","alterada":"Maniobra y Navegación resultaría igualmente compatible con sus intereses.","referencia":"movilidad=no excluye maniobra_navegacion"}
+{"id":"E2-113","perfil_id":"L-0943","tipo":"T5","campo":"narrative","original":"","alterada":"Con este perfil, superar las pruebas de acceso es muy probable.","referencia":"sin respaldo"}
+{"id":"E2-114","perfil_id":"L-1137","tipo":"T4","campo":"recommendation","original":"","alterada":"Podría valorar Infantería de Marina como segunda alternativa.","referencia":"movilidad=no excluye infanteria_marina"}
+{"id":"E2-115","perfil_id":"L-0135","tipo":"fiel"}
+{"id":"E2-116","perfil_id":"L-1769","tipo":"T6","campo":"strengths","original":"","alterada":"Resiliencia elevada","referencia":"R=0"}
+{"id":"E2-117","perfil_id":"L-1403","tipo":"fiel"}
+{"id":"E2-118","perfil_id":"L-0042","tipo":"fiel"}
+{"id":"E2-119","perfil_id":"L-0506","tipo":"T1","campo":"profileSummary.interests","original":"","alterada":"Interés en Marítimo/Aéreo del 100%.","referencia":"F7=0, F3=100"}
+{"id":"E2-120","perfil_id":"L-1484","tipo":"fiel"}
+{"id":"E2-121","perfil_id":"L-0775","tipo":"fiel"}
+{"id":"E2-122","perfil_id":"L-1791","tipo":"T5","campo":"narrative","original":"","alterada":"Con este perfil, superar las pruebas de acceso es muy probable.","referencia":"sin respaldo"}
+{"id":"E2-123","perfil_id":"L-1009","tipo":"T5","campo":"recommendation","original":"","alterada":"La especialidad ofrece una excelente proyección y buenas salidas en el ámbito civil.","referencia":"sin respaldo"}
+{"id":"E2-124","perfil_id":"L-0743","tipo":"T2","campo":"specialtyMatch.primary.affinity","original":"1","alterada":"0.87","referencia":"afinidad=100"}
+{"id":"E2-125","perfil_id":"L-1912","tipo":"T1","campo":"narrative","original":"","alterada":"El rasgo de Orientación técnica alcanza 3 sobre 3.","referencia":"O=0, T=3"}
+{"id":"E2-126","perfil_id":"L-0579","tipo":"fiel"}
+{"id":"E2-127","perfil_id":"L-1320","tipo":"fiel"}
+{"id":"E2-128","perfil_id":"L-0119","tipo":"T3","campo":"narrative","original":"","alterada":"El interés por Sanidad/Cuidado justifica la orientación hacia Operaciones y Sistemas.","referencia":"operaciones_sistemas: F3+F7"}
+{"id":"E2-129","perfil_id":"L-1834","tipo":"fiel"}
+{"id":"E2-130","perfil_id":"L-1755","tipo":"T1","campo":"narrative","original":"","alterada":"Sus intereses se concentran en Marítimo/Aéreo, con un 100%.","referencia":"F7=0, F5=100"}
+{"id":"E2-131","perfil_id":"L-1907","tipo":"fiel"}
+{"id":"E2-132","perfil_id":"L-0135","tipo":"T1","campo":"profileSummary.interests","original":"","alterada":"Interés en Tecnología/Cyber del 100%.","referencia":"F3=0, F7=100"}
+{"id":"E2-133","perfil_id":"L-1152","tipo":"fiel"}
+{"id":"E2-134","perfil_id":"L-1018","tipo":"T4","campo":"narrative","original":"","alterada":"Acepta la movilidad geográfica que exige la carrera militar.","referencia":"movilidad=no"}
+{"id":"E2-135","perfil_id":"L-1074","tipo":"fiel"}
+{"id":"E2-136","perfil_id":"L-0716","tipo":"fiel"}
+{"id":"E2-137","perfil_id":"L-1842","tipo":"T6","campo":"profileSummary.personality","original":"","alterada":"Aspiración/Autoridad es uno de sus puntos fuertes.","referencia":"A=0"}
+{"id":"E2-138","perfil_id":"L-0004","tipo":"T4","campo":"recommendation","original":"","alterada":"Podría valorar Infantería de Marina como segunda alternativa.","referencia":"movilidad=no excluye infanteria_marina"}
+{"id":"E2-139","perfil_id":"L-0435","tipo":"fiel"}
+{"id":"E2-140","perfil_id":"L-0951","tipo":"fiel"}
+{"id":"E2-141","perfil_id":"L-1997","tipo":"T2","campo":"recommendation","original":"","alterada":"Afinidad con Infantería Ligera del 66%.","referencia":"afinidad=52"}
+{"id":"E2-142","perfil_id":"L-0129","tipo":"fiel"}
+{"id":"E2-143","perfil_id":"L-1943","tipo":"T2","campo":"specialtyMatch.primary.affinity","original":"0.9","alterada":"0.78","referencia":"afinidad=90"}
+{"id":"E2-144","perfil_id":"L-0115","tipo":"T3","campo":"recommendation","original":"","alterada":"Operaciones y Sistemas encaja por su interés en Sanidad/Cuidado.","referencia":"operaciones_sistemas: F3+F7"}
+{"id":"E2-145","perfil_id":"L-0269","tipo":"T4","campo":"strengths","original":"","alterada":"Disponibilidad plena para cambios de destino geográfico","referencia":"movilidad=no"}
+{"id":"E2-146","perfil_id":"L-1502","tipo":"fiel"}
+{"id":"E2-147","perfil_id":"L-0738","tipo":"fiel"}
+{"id":"E2-148","perfil_id":"L-1074","tipo":"T3","campo":"recommendation","original":"","alterada":"Se recomienda Sanidad por la afinidad mostrada con Creativo/Artístico.","referencia":"sanidad: F4"}
+{"id":"E2-149","perfil_id":"L-1264","tipo":"fiel"}
+{"id":"E2-150","perfil_id":"L-1268","tipo":"fiel"}
+{"id":"E2-151","perfil_id":"L-1842","tipo":"fiel"}
+{"id":"E2-152","perfil_id":"L-1159","tipo":"T1","campo":"narrative","original":"","alterada":"El rasgo de Resiliencia alcanza 3 sobre 3.","referencia":"R=0, A=3"}
+{"id":"E2-153","perfil_id":"L-1687","tipo":"T5","campo":"recommendation","original":"","alterada":"La especialidad ofrece una excelente proyección y buenas salidas en el ámbito civil.","referencia":"sin respaldo"}
+{"id":"E2-154","perfil_id":"L-0666","tipo":"T6","campo":"profileSummary.personality","original":"","alterada":"Orientación técnica por debajo de lo esperado.","referencia":"O=3"}
+{"id":"E2-155","perfil_id":"L-0967","tipo":"T3","campo":"headline","original":"","alterada":"Su perfil en Mando/Liderazgo es coherente con Energía y Propulsión.","referencia":"energia_propulsion: F2+F7"}
+{"id":"E2-156","perfil_id":"L-1418","tipo":"fiel"}
+{"id":"E2-157","perfil_id":"L-1608","tipo":"fiel"}
+{"id":"E2-158","perfil_id":"L-1432","tipo":"fiel"}
+{"id":"E2-159","perfil_id":"L-0782","tipo":"fiel"}
+{"id":"E2-160","perfil_id":"L-1268","tipo":"T1","campo":"narrative","original":"","alterada":"El rasgo de Aspiración/Autoridad alcanza 4 sobre 3.","referencia":"A=0, D=4"}
+{"id":"E2-161","perfil_id":"L-0743","tipo":"fiel"}
+{"id":"E2-162","perfil_id":"L-0890","tipo":"fiel"}
+{"id":"E2-163","perfil_id":"L-1119","tipo":"T2","campo":"narrative","original":"","alterada":"El GTI obtenido es de 76 puntos.","referencia":"gti=100"}
+{"id":"E2-164","perfil_id":"L-0750","tipo":"fiel"}
+{"id":"E2-165","perfil_id":"L-0415","tipo":"fiel"}
+{"id":"E2-166","perfil_id":"L-1070","tipo":"fiel"}
+{"id":"E2-167","perfil_id":"L-0579","tipo":"T2","campo":"profileSummary.interests","original":"","alterada":"Interés en Técnica/Mecánica (44%).","referencia":"F2=20"}
+{"id":"E2-168","perfil_id":"L-1837","tipo":"fiel"}
+{"id":"E2-169","perfil_id":"L-1320","tipo":"T2","campo":"profileSummary.cognitive","original":"","alterada":"Índice de entrenabilidad GTI 40/100.","referencia":"gti=60"}
+{"id":"E2-170","perfil_id":"L-1703","tipo":"T2","campo":"profileSummary.interests","original":"","alterada":"Interés en Tecnología/Cyber (77%).","referencia":"F3=83"}
+{"id":"E2-171","perfil_id":"L-1009","tipo":"fiel"}
+{"id":"E2-172","perfil_id":"L-0009","tipo":"T3","campo":"recommendation","original":"","alterada":"Operaciones y Sistemas encaja por su interés en Creativo/Artístico.","referencia":"operaciones_sistemas: F3+F7"}
+{"id":"E2-173","perfil_id":"L-1742","tipo":"T6","campo":"strengths","original":"","alterada":"Aspiración/Autoridad elevada","referencia":"A=0"}
+{"id":"E2-174","perfil_id":"L-0113","tipo":"fiel"}
+{"id":"E2-175","perfil_id":"L-1700","tipo":"fiel"}
+{"id":"E2-176","perfil_id":"L-0113","tipo":"T5","campo":"narrative","original":"","alterada":"Con este perfil, superar las pruebas de acceso es muy probable.","referencia":"sin respaldo"}
+{"id":"E2-177","perfil_id":"L-1277","tipo":"T1","campo":"narrative","original":"","alterada":"Sus intereses se concentran en Marítimo/Aéreo, con un 50%.","referencia":"F7=0, F5=50"}
+{"id":"E2-178","perfil_id":"L-0680","tipo":"fiel"}
+{"id":"E2-179","perfil_id":"L-0496","tipo":"fiel"}
+{"id":"E2-180","perfil_id":"L-1288","tipo":"T4","campo":"recommendation","original":"","alterada":"Infantería de Marina (Armada) es también una opción adecuada para su perfil.","referencia":"movilidad=no excluye infanteria_marina"}
+{"id":"E2-181","perfil_id":"L-0730","tipo":"fiel"}
+{"id":"E2-182","perfil_id":"L-0327","tipo":"T2","campo":"recommendation","original":"","alterada":"Afinidad con Aprovisionamiento del 83%.","referencia":"afinidad=97"}
+{"id":"E2-183","perfil_id":"L-0367","tipo":"T4","campo":"strengths","original":"","alterada":"Disponibilidad plena para cambios de destino geográfico","referencia":"movilidad=no"}
+{"id":"E2-184","perfil_id":"L-1420","tipo":"T2","campo":"narrative","original":"","alterada":"El GTI obtenido es de 71 puntos.","referencia":"gti=100"}
+{"id":"E2-185","perfil_id":"L-1769","tipo":"fiel"}
+{"id":"E2-186","perfil_id":"L-1070","tipo":"T6","campo":"developmentAreas","original":"","alterada":"Bajo nivel de resiliencia","referencia":"R=3"}
+{"id":"E2-187","perfil_id":"L-1782","tipo":"fiel"}
+{"id":"E2-188","perfil_id":"L-1931","tipo":"T2","campo":"specialtyMatch.primary.affinity","original":"0.78","alterada":"0.65","referencia":"afinidad=78"}
+{"id":"E2-189","perfil_id":"L-1649","tipo":"fiel"}
+{"id":"E2-190","perfil_id":"L-1747","tipo":"T4","campo":"recommendation","original":"","alterada":"Maniobra y Navegación resultaría igualmente compatible con sus intereses.","referencia":"movilidad=no excluye maniobra_navegacion"}
+{"id":"E2-191","perfil_id":"L-1935","tipo":"T3","campo":"headline","original":"","alterada":"Su perfil en Combate es coherente con Aprovisionamiento.","referencia":"aprovisionamiento: F5"}
+{"id":"E2-192","perfil_id":"L-1703","tipo":"fiel"}
+{"id":"E2-193","perfil_id":"L-0775","tipo":"T6","campo":"profileSummary.personality","original":"","alterada":"Resiliencia es uno de sus puntos fuertes.","referencia":"R=0"}
+{"id":"E2-194","perfil_id":"L-1560","tipo":"T5","campo":"recommendation","original":"","alterada":"Esta especialidad le garantiza estabilidad profesional a largo plazo.","referencia":"sin respaldo"}
+{"id":"E2-195","perfil_id":"L-1965","tipo":"fiel"}
+{"id":"E2-196","perfil_id":"L-0320","tipo":"fiel"}
+{"id":"E2-197","perfil_id":"L-1626","tipo":"T4","campo":"recommendation","original":"","alterada":"Maniobra y Navegación resultaría igualmente compatible con sus intereses.","referencia":"movilidad=no excluye maniobra_navegacion"}
+{"id":"E2-198","perfil_id":"L-1747","tipo":"fiel"}
+{"id":"E2-199","perfil_id":"L-1411","tipo":"fiel"}
+{"id":"E2-200","perfil_id":"L-0711","tipo":"fiel"}
+{"id":"E2-201","perfil_id":"L-1432","tipo":"T1","campo":"narrative","original":"","alterada":"Sus intereses se concentran en Creativo/Artístico, con un 100%.","referencia":"F8=0, F5=100"}
+{"id":"E2-202","perfil_id":"L-0999","tipo":"fiel"}
+{"id":"E2-203","perfil_id":"L-0480","tipo":"T5","campo":"narrative","original":"","alterada":"Con este perfil, superar las pruebas de acceso es muy probable.","referencia":"sin respaldo"}
+{"id":"E2-204","perfil_id":"L-1240","tipo":"fiel"}
+{"id":"E2-205","perfil_id":"L-1883","tipo":"fiel"}
+{"id":"E2-206","perfil_id":"L-1265","tipo":"fiel"}
+{"id":"E2-207","perfil_id":"L-1821","tipo":"fiel"}
+{"id":"E2-208","perfil_id":"L-1264","tipo":"T2","campo":"profileSummary.cognitive","original":"","alterada":"Índice de entrenabilidad GTI 0/100.","referencia":"gti=15"}
+{"id":"E2-209","perfil_id":"L-0881","tipo":"T3","campo":"headline","original":"","alterada":"Su perfil en Mando/Liderazgo es coherente con Ingenieros.","referencia":"ingenieros: F2+F1"}
+{"id":"E2-210","perfil_id":"L-0389","tipo":"fiel"}
+{"id":"E2-211","perfil_id":"L-0284","tipo":"T6","campo":"profileSummary.personality","original":"","alterada":"Disciplina por debajo de lo esperado.","referencia":"D=4"}
+{"id":"E2-212","perfil_id":"L-0997","tipo":"T5","campo":"recommendation","original":"","alterada":"Esta especialidad le garantiza estabilidad profesional a largo plazo.","referencia":"sin respaldo"}
+{"id":"E2-213","perfil_id":"L-1912","tipo":"fiel"}
+{"id":"E2-214","perfil_id":"L-1881","tipo":"fiel"}
+{"id":"E2-215","perfil_id":"L-0507","tipo":"fiel"}
+{"id":"E2-216","perfil_id":"L-0430","tipo":"fiel"}
+{"id":"E2-217","perfil_id":"L-1943","tipo":"fiel"}
+{"id":"E2-218","perfil_id":"L-0525","tipo":"fiel"}
+{"id":"E2-219","perfil_id":"L-0119","tipo":"fiel"}
+{"id":"E2-220","perfil_id":"L-0171","tipo":"fiel"}
+{"id":"E2-221","perfil_id":"L-1018","tipo":"fiel"}
+{"id":"E2-222","perfil_id":"L-0129","tipo":"T3","campo":"headline","original":"","alterada":"Su perfil en Creativo/Artístico es coherente con Energía y Propulsión.","referencia":"energia_propulsion: F2+F7"}
+{"id":"E2-223","perfil_id":"L-0890","tipo":"T4","campo":"recommendation","original":"","alterada":"Infantería de Marina (Armada) es también una opción adecuada para su perfil.","referencia":"movilidad=no excluye infanteria_marina"}
+{"id":"E2-224","perfil_id":"L-0703","tipo":"fiel"}
+{"id":"E2-225","perfil_id":"L-0680","tipo":"T1","campo":"profileSummary.personality","original":"","alterada":"Aspiración/Autoridad alta (3/3), uno de los rasgos más definidos del perfil.","referencia":"A=0, D=3"}
+{"id":"E2-226","perfil_id":"L-0127","tipo":"fiel"}
+{"id":"E2-227","perfil_id":"L-0397","tipo":"T6","campo":"profileSummary.personality","original":"","alterada":"Resiliencia por debajo de lo esperado.","referencia":"R=3"}
+{"id":"E2-228","perfil_id":"L-1265","tipo":"T6","campo":"strengths","original":"","alterada":"Aspiración/Autoridad elevada","referencia":"A=0"}
+{"id":"E2-229","perfil_id":"L-0670","tipo":"fiel"}
+{"id":"E2-230","perfil_id":"L-0999","tipo":"T6","campo":"profileSummary.interests","original":"","alterada":"Interés muy marcado por Logística/Admin.","referencia":"F5=0"}
+{"id":"E2-231","perfil_id":"L-1965","tipo":"T1","campo":"profileSummary.interests","original":"","alterada":"Interés en Marítimo/Aéreo del 100%.","referencia":"F7=0, F4=100"}
+{"id":"E2-232","perfil_id":"L-0505","tipo":"fiel"}
+{"id":"E2-233","perfil_id":"L-1277","tipo":"fiel"}
+{"id":"E2-234","perfil_id":"L-1140","tipo":"T3","campo":"recommendation","original":"","alterada":"Aprovisionamiento encaja por su interés en Tecnología/Cyber.","referencia":"aprovisionamiento: F5"}
+{"id":"E2-235","perfil_id":"L-1765","tipo":"fiel"}
+{"id":"E2-236","perfil_id":"L-0464","tipo":"fiel"}
+{"id":"E2-237","perfil_id":"L-0099","tipo":"T5","campo":"recommendation","original":"","alterada":"La especialidad ofrece una excelente proyección y buenas salidas en el ámbito civil.","referencia":"sin respaldo"}
+{"id":"E2-238","perfil_id":"L-1027","tipo":"fiel"}
+{"id":"E2-239","perfil_id":"L-0016","tipo":"fiel"}
+{"id":"E2-240","perfil_id":"L-0522","tipo":"T6","campo":"developmentAreas","original":"","alterada":"Bajo nivel de orientación técnica","referencia":"O=3"}
+{"id":"E2-241","perfil_id":"L-0447","tipo":"T5","campo":"narrative","original":"","alterada":"Su perfil predice un rendimiento sobresaliente en la formación.","referencia":"sin respaldo"}
+{"id":"E2-242","perfil_id":"L-0711","tipo":"T3","campo":"narrative","original":"","alterada":"El interés por Sanidad/Cuidado justifica la orientación hacia Transmisiones.","referencia":"transmisiones: F3+F2"}
+{"id":"E2-243","perfil_id":"L-0009","tipo":"fiel"}
+{"id":"E2-244","perfil_id":"L-1782","tipo":"T3","campo":"narrative","original":"","alterada":"El interés por Tecnología/Cyber justifica la orientación hacia Aprovisionamiento.","referencia":"aprovisionamiento: F5"}
+{"id":"E2-245","perfil_id":"L-1469","tipo":"T2","campo":"recommendation","original":"","alterada":"Afinidad con Aprovisionamiento del 58%.","referencia":"afinidad=73"}
+{"id":"E2-246","perfil_id":"L-1339","tipo":"fiel"}
+{"id":"E2-247","perfil_id":"L-1621","tipo":"fiel"}
+{"id":"E2-248","perfil_id":"L-0409","tipo":"T6","campo":"profileSummary.interests","original":"","alterada":"Interés muy marcado por Logística/Admin.","referencia":"F5=0"}
+{"id":"E2-249","perfil_id":"L-1151","tipo":"T3","campo":"recommendation","original":"","alterada":"Aprovisionamiento encaja por su interés en Mando/Liderazgo.","referencia":"aprovisionamiento: F5"}
+{"id":"E2-250","perfil_id":"L-1450","tipo":"fiel"}
+{"id":"E2-251","perfil_id":"L-1137","tipo":"fiel"}
+{"id":"E2-252","perfil_id":"L-0409","tipo":"fiel"}
+{"id":"E2-253","perfil_id":"L-1486","tipo":"T3","campo":"recommendation","original":"","alterada":"Aprovisionamiento encaja por su interés en Creativo/Artístico.","referencia":"aprovisionamiento: F5"}
+{"id":"E2-254","perfil_id":"L-0507","tipo":"T6","campo":"profileSummary.personality","original":"","alterada":"Orientación técnica por debajo de lo esperado.","referencia":"O=3"}
+{"id":"E2-255","perfil_id":"L-0145","tipo":"fiel"}
+{"id":"E2-256","perfil_id":"L-0818","tipo":"T3","campo":"recommendation","original":"","alterada":"Se recomienda Aprovisionamiento por la afinidad mostrada con Creativo/Artístico.","referencia":"aprovisionamiento: F5"}
+{"id":"E2-257","perfil_id":"L-0666","tipo":"fiel"}
+{"id":"E2-258","perfil_id":"L-1560","tipo":"fiel"}
+{"id":"E2-259","perfil_id":"L-1450","tipo":"T4","campo":"narrative","original":"","alterada":"Acepta la movilidad geográfica que exige la carrera militar.","referencia":"movilidad=no"}
+{"id":"E2-260","perfil_id":"L-1143","tipo":"fiel"}
+{"id":"E2-261","perfil_id":"L-0037","tipo":"fiel"}
+{"id":"E2-262","perfil_id":"L-0670","tipo":"T2","campo":"profileSummary.interests","original":"","alterada":"Interés en Sanidad/Cuidado (69%).","referencia":"F4=17"}
+{"id":"E2-263","perfil_id":"L-0397","tipo":"fiel"}
+{"id":"E2-264","perfil_id":"L-0716","tipo":"T2","campo":"profileSummary.cognitive","original":"","alterada":"Índice de entrenabilidad GTI 62/100.","referencia":"gti=40"}
+{"id":"E2-265","perfil_id":"L-0103","tipo":"fiel"}
+{"id":"E2-266","perfil_id":"L-0435","tipo":"T1","campo":"strengths","original":"","alterada":"Aspiración/Autoridad (3/3)","referencia":"A=0, D=3"}
+{"id":"E2-267","perfil_id":"L-1796","tipo":"fiel"}
+{"id":"E2-268","perfil_id":"L-1900","tipo":"T1","campo":"profileSummary.interests","original":"","alterada":"Interés en Técnica/Mecánica del 100%.","referencia":"F2=0, F4=100"}
+{"id":"E2-269","perfil_id":"L-0782","tipo":"T4","campo":"recommendation","original":"","alterada":"Podría valorar Infantería de Marina como segunda alternativa.","referencia":"movilidad=no excluye infanteria_marina"}
+{"id":"E2-270","perfil_id":"L-1700","tipo":"T3","campo":"narrative","original":"","alterada":"El interés por Sanidad/Cuidado justifica la orientación hacia Ingenieros.","referencia":"ingenieros: F2+F1"}
+{"id":"E2-271","perfil_id":"L-1885","tipo":"T2","campo":"specialtyMatch.primary.affinity","original":"1","alterada":"0.9","referencia":"afinidad=100"}
+{"id":"E2-272","perfil_id":"L-1608","tipo":"T5","campo":"narrative","original":"","alterada":"Con este perfil, superar las pruebas de acceso es muy probable.","referencia":"sin respaldo"}
+{"id":"E2-273","perfil_id":"L-1796","tipo":"T5","campo":"recommendation","original":"","alterada":"La especialidad ofrece una excelente proyección y buenas salidas en el ámbito civil.","referencia":"sin respaldo"}
+{"id":"E2-274","perfil_id":"L-0295","tipo":"T2","campo":"profileSummary.interests","original":"","alterada":"Interés en Tecnología/Cyber (93%).","referencia":"F3=0"}
+{"id":"E2-275","perfil_id":"L-1755","tipo":"fiel"}
+{"id":"E2-276","perfil_id":"L-1997","tipo":"fiel"}
+{"id":"E2-277","perfil_id":"L-1742","tipo":"fiel"}
+{"id":"E2-278","perfil_id":"L-0099","tipo":"fiel"}
+{"id":"E2-279","perfil_id":"L-1719","tipo":"T2","campo":"recommendation","original":"","alterada":"Afinidad con Maniobra y Navegación del 70%.","referencia":"afinidad=81"}
+{"id":"E2-280","perfil_id":"L-0103","tipo":"T5","campo":"recommendation","original":"","alterada":"La especialidad ofrece una excelente proyección y buenas salidas en el ámbito civil.","referencia":"sin respaldo"}
+{"id":"E2-281","perfil_id":"L-1411","tipo":"T1","campo":"narrative","original":"","alterada":"El rasgo de Trabajo en equipo alcanza 4 sobre 3.","referencia":"T=0, D=4"}
+{"id":"E2-282","perfil_id":"L-1290","tipo":"T3","campo":"narrative","original":"","alterada":"El interés por Creativo/Artístico justifica la orientación hacia Aprovisionamiento.","referencia":"aprovisionamiento: F5"}
+{"id":"E2-283","perfil_id":"L-1548","tipo":"fiel"}
+{"id":"E2-284","perfil_id":"L-0430","tipo":"T5","campo":"narrative","original":"","alterada":"Su perfil predice un rendimiento sobresaliente en la formación.","referencia":"sin respaldo"}
+{"id":"E2-285","perfil_id":"L-0034","tipo":"fiel"}
+{"id":"E2-286","perfil_id":"L-0898","tipo":"fiel"}
+{"id":"E2-287","perfil_id":"L-0572","tipo":"T2","campo":"specialtyMatch.primary.affinity","original":"0.8","alterada":"0.68","referencia":"afinidad=80"}
+{"id":"E2-288","perfil_id":"L-1719","tipo":"fiel"}
+{"id":"E2-289","perfil_id":"L-0506","tipo":"fiel"}
+{"id":"E2-290","perfil_id":"L-0914","tipo":"fiel"}
+{"id":"E2-291","perfil_id":"L-0115","tipo":"fiel"}
+{"id":"E2-292","perfil_id":"L-1290","tipo":"fiel"}
+{"id":"E2-293","perfil_id":"L-0881","tipo":"fiel"}
+{"id":"E2-294","perfil_id":"L-1821","tipo":"T4","campo":"strengths","original":"","alterada":"Disponibilidad plena para cambios de destino geográfico","referencia":"movilidad=no"}
+{"id":"E2-295","perfil_id":"L-0093","tipo":"fiel"}
+{"id":"E2-296","perfil_id":"L-1325","tipo":"fiel"}
+{"id":"E2-297","perfil_id":"L-1306","tipo":"fiel"}
+{"id":"E2-298","perfil_id":"L-1345","tipo":"T5","campo":"strengths","original":"","alterada":"Ascenso rápido asegurado dentro de la escala","referencia":"sin respaldo"}
+{"id":"E2-299","perfil_id":"L-1486","tipo":"fiel"}
+{"id":"E2-300","perfil_id":"L-0703","tipo":"T2","campo":"profileSummary.cognitive","original":"","alterada":"Índice de entrenabilidad GTI 82/100.","referencia":"gti=60"}

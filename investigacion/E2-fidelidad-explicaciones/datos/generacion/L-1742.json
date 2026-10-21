@@ -1,0 +1,71 @@
+{
+  "id": "L-1742",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:52.354Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "bf88bd99-c35f-9428-89ea-0bc8984195d1",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 100%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 100%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 90/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 3/3,   Trabajo en equipo: 1/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Logística (ET) — afinidad 97%\nEspecialidad alternativa: Infantería Ligera (ET) — afinidad 87%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional militar - Perfil de alto potencial\",\n  \"narrative\": \"Candidato con índice de entrenabilidad destacado (GTI 90). Intereses vocacionales alineados con funciones de mando y gestión operativa. Perfil de personalidad muestra alta resiliencia y disciplina, con menor énfasis en trabajo en equipo. Disponibilidad para despliegues internacionales confirmada.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Logística\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.97\n    },\n    \"alternative\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.87\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Intereses máximos en Combate, Logística/Admin y Mando/Liderazgo. Interés moderado en Sanidad/Cuidado y Técnica/Mecánica. Ausencia de interés en ámbitos marítimo/aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 90/100. Nivel destacado que abre puerta a formación de Suboficiales.\",\n    \"personality\": \"Disciplina 2/3, Resiliencia 3/3, Trabajo en equipo 1/3, Orientación técnica 2/3, Aspiración/Autoridad 0/3.\"\n  },\n  \"strengths\": [\n    \"Alta capacidad de adaptación y recuperación ante situaciones exigentes\",\n    \"Disciplina consistente en el cumplimiento de procedimientos\",\n    \"Interés simultáneo en funciones de mando y gestión logística\",\n    \"Apertura a despliegues internacionales\"\n  ],\n  \"developmentAreas\": [\n    \"Fortalecimiento de dinámicas de trabajo en equipo\",\n    \"Definición de preferencia entre especialidades de mando y apoyo logístico\",\n    \"Clarificación de restricciones de movilidad geográfica y horizonte temporal\"\n  ],\n  \"recommendation\": \"Se presentan dos especialidades con alta afinidad: Logística (ET) e Infantería Ligera (ET). Ambas son igualmente válidas según el perfil evaluado. Se recomienda completar la evaluación oficial en Centro de Reclutamiento para dirimir la asignación definitiva.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1037,
+    "completion_tokens": 536,
+    "total_tokens": 1573,
+    "prompt_tokens_details": {
+      "text_tokens": 1037,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 25018500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional militar - Perfil de alto potencial",
+    "narrative": "Candidato con índice de entrenabilidad destacado (GTI 90). Intereses vocacionales alineados con funciones de mando y gestión operativa. Perfil de personalidad muestra alta resiliencia y disciplina, con menor énfasis en trabajo en equipo. Disponibilidad para despliegues internacionales confirmada.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Logística",
+        "branch": "ET",
+        "affinity": 0.97
+      },
+      "alternative": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.87
+      }
+    },
+    "profileSummary": {
+      "interests": "Intereses máximos en Combate, Logística/Admin y Mando/Liderazgo. Interés moderado en Sanidad/Cuidado y Técnica/Mecánica. Ausencia de interés en ámbitos marítimo/aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI 90/100. Nivel destacado que abre puerta a formación de Suboficiales.",
+      "personality": "Disciplina 2/3, Resiliencia 3/3, Trabajo en equipo 1/3, Orientación técnica 2/3, Aspiración/Autoridad 0/3."
+    },
+    "strengths": [
+      "Alta capacidad de adaptación y recuperación ante situaciones exigentes",
+      "Disciplina consistente en el cumplimiento de procedimientos",
+      "Interés simultáneo en funciones de mando y gestión logística",
+      "Apertura a despliegues internacionales"
+    ],
+    "developmentAreas": [
+      "Fortalecimiento de dinámicas de trabajo en equipo",
+      "Definición de preferencia entre especialidades de mando y apoyo logístico",
+      "Clarificación de restricciones de movilidad geográfica y horizonte temporal"
+    ],
+    "recommendation": "Se presentan dos especialidades con alta afinidad: Logística (ET) e Infantería Ligera (ET). Ambas son igualmente válidas según el perfil evaluado. Se recomienda completar la evaluación oficial en Centro de Reclutamiento para dirimir la asignación definitiva.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

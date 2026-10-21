@@ -1,0 +1,71 @@
+{
+  "id": "L-1159",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:44.770Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "9640b46b-a54b-951d-821b-e7cb65ba23db",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 100%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 75/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 0/3,   Trabajo en equipo: 1/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 93%\nEspecialidad alternativa: Protección y Apoyo a la Fuerza (EAE) — afinidad 76%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a funciones logísticas y operativas con alta aspiración de mando.\",\n  \"narrative\": \"El candidato presenta interés máximo en Combate, Logística/Admin y Marítimo/Aéreo. El índice GTI de 75 indica capacidad destacada para el aprendizaje militar. La personalidad muestra Aspiración/Autoridad elevada, Disciplina y Orientación técnica moderadas, con Resiliencia baja y Trabajo en equipo limitado.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.93\n    },\n    \"alternative\": {\n      \"name\": \"Protección y Apoyo a la Fuerza\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.76\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Combate, Logística/Admin y Marítimo/Aéreo. Interés moderado en Creativo/Artístico y Mando/Liderazgo. Interés bajo en Técnica/Mecánica, Sanidad/Cuidado y nulo en Tecnología/Cyber.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 75/100, nivel destacado.\",\n    \"personality\": \"Aspiración/Autoridad alta, Disciplina y Orientación técnica moderadas, Trabajo en equipo bajo, Resiliencia nula.\"\n  },\n  \"strengths\": [\n    \"Alta afinidad con funciones logísticas y de aprovisionamiento.\",\n    \"Capacidad destacada para el aprendizaje militar.\",\n    \"Fuerte orientación hacia posiciones de autoridad.\",\n    \"Disposición para movilidad geográfica y riesgo físico.\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia baja requiere atención en entrenamiento.\",\n    \"Trabajo en equipo limitado puede afectar cohesión de unidad.\",\n    \"Disponibilidad para despliegues internacionales condicionada.\"\n  ],\n  \"recommendation\": \"Se orienta hacia Aprovisionamiento en la Armada por máxima coincidencia de intereses logísticos y marítimos con perfil de mando.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1026,
+    "completion_tokens": 501,
+    "total_tokens": 1527,
+    "prompt_tokens_details": {
+      "text_tokens": 1026,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24006000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a funciones logísticas y operativas con alta aspiración de mando.",
+    "narrative": "El candidato presenta interés máximo en Combate, Logística/Admin y Marítimo/Aéreo. El índice GTI de 75 indica capacidad destacada para el aprendizaje militar. La personalidad muestra Aspiración/Autoridad elevada, Disciplina y Orientación técnica moderadas, con Resiliencia baja y Trabajo en equipo limitado.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.93
+      },
+      "alternative": {
+        "name": "Protección y Apoyo a la Fuerza",
+        "branch": "EAE",
+        "affinity": 0.76
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Combate, Logística/Admin y Marítimo/Aéreo. Interés moderado en Creativo/Artístico y Mando/Liderazgo. Interés bajo en Técnica/Mecánica, Sanidad/Cuidado y nulo en Tecnología/Cyber.",
+      "cognitive": "Índice de entrenabilidad GTI 75/100, nivel destacado.",
+      "personality": "Aspiración/Autoridad alta, Disciplina y Orientación técnica moderadas, Trabajo en equipo bajo, Resiliencia nula."
+    },
+    "strengths": [
+      "Alta afinidad con funciones logísticas y de aprovisionamiento.",
+      "Capacidad destacada para el aprendizaje militar.",
+      "Fuerte orientación hacia posiciones de autoridad.",
+      "Disposición para movilidad geográfica y riesgo físico."
+    ],
+    "developmentAreas": [
+      "Resiliencia baja requiere atención en entrenamiento.",
+      "Trabajo en equipo limitado puede afectar cohesión de unidad.",
+      "Disponibilidad para despliegues internacionales condicionada."
+    ],
+    "recommendation": "Se orienta hacia Aprovisionamiento en la Armada por máxima coincidencia de intereses logísticos y marítimos con perfil de mando.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

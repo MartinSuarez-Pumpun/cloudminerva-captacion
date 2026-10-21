@@ -1,0 +1,72 @@
+{
+  "id": "L-0997",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:52:59.001Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "048e8312-adc8-99ee-8277-1c13197e2023",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 100%\n  Técnica/Mecánica: 90%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 100%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 0%\n\nÍndice de entrenabilidad GTI: 50/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 4/3,   Resiliencia: 2/3,   Trabajo en equipo: 1/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Ingenieros (ET) — afinidad 82%\nEspecialidad alternativa: Aprovisionamiento (Armada) — afinidad 75%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a funciones técnicas y de apoyo con interés elevado en combate y sanidad.\",\n  \"narrative\": \"El candidato presenta interés máximo en Combate, Sanidad y Logística, junto con alta orientación Técnica/Mecánica. El índice GTI de 50 indica nivel competente. Los rasgos de personalidad muestran Disciplina alta y Resiliencia moderada, con Trabajo en equipo y Orientación técnica bajos. Disponibilidad condicionada a aspectos geográficos y de riesgo físico.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.82\n    },\n    \"alternative\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.75\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Combate, Sanidad y Logística. Alta orientación Técnica/Mecánica. Menor interés en Marítimo/Aéreo y nulo en Creativo/Artístico.\",\n    \"cognitive\": \"Índice GTI de 50 indica nivel competente para formación militar.\",\n    \"personality\": \"Disciplina alta, Resiliencia moderada, Trabajo en equipo bajo, Orientación técnica baja, Aspiración/Autoridad nula.\"\n  },\n  \"strengths\": [\n    \"Alto interés en Combate y Sanidad\",\n    \"Fuerte orientación Técnica/Mecánica\",\n    \"Disciplina elevada\",\n    \"Disponibilidad para despliegues internacionales\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo limitado\",\n    \"Orientación técnica baja\",\n    \"Disponibilidad geográfica condicionada\",\n    \"Tolerancia al riesgo físico dependiente\"\n  ],\n  \"recommendation\": \"Ingenieros del Ejército de Tierra como opción principal por alta afinidad técnica y operativa. Aprovisionamiento de la Armada como alternativa viable.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1019,
+    "completion_tokens": 478,
+    "total_tokens": 1497,
+    "prompt_tokens_details": {
+      "text_tokens": 1019,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 23343500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a funciones técnicas y de apoyo con interés elevado en combate y sanidad.",
+    "narrative": "El candidato presenta interés máximo en Combate, Sanidad y Logística, junto con alta orientación Técnica/Mecánica. El índice GTI de 50 indica nivel competente. Los rasgos de personalidad muestran Disciplina alta y Resiliencia moderada, con Trabajo en equipo y Orientación técnica bajos. Disponibilidad condicionada a aspectos geográficos y de riesgo físico.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.82
+      },
+      "alternative": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.75
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Combate, Sanidad y Logística. Alta orientación Técnica/Mecánica. Menor interés en Marítimo/Aéreo y nulo en Creativo/Artístico.",
+      "cognitive": "Índice GTI de 50 indica nivel competente para formación militar.",
+      "personality": "Disciplina alta, Resiliencia moderada, Trabajo en equipo bajo, Orientación técnica baja, Aspiración/Autoridad nula."
+    },
+    "strengths": [
+      "Alto interés en Combate y Sanidad",
+      "Fuerte orientación Técnica/Mecánica",
+      "Disciplina elevada",
+      "Disponibilidad para despliegues internacionales"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo limitado",
+      "Orientación técnica baja",
+      "Disponibilidad geográfica condicionada",
+      "Tolerancia al riesgo físico dependiente"
+    ],
+    "recommendation": "Ingenieros del Ejército de Tierra como opción principal por alta afinidad técnica y operativa. Aprovisionamiento de la Armada como alternativa viable.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

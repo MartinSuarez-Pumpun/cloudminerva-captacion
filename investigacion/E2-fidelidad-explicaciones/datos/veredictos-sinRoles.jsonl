@@ -1,0 +1,300 @@
+{"id":"E2-001","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-002","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"profileSummary.cognitive","bloque":0,"texto":"Índice de entrenabilidad GTI 33/100.","problemas":[{"regla":"cifra_inexistente","detalle":"33/100"}]}]}
+{"id":"E2-003","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-004","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"strengths","bloque":0,"texto":"Interés máximo en funciones de aprovisionamiento y logística","problemas":[{"regla":"especialidad_no_recomendada","detalle":"logistica"}]}]}
+{"id":"E2-005","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-006","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-007","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-008","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-009","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-010","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-011","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-012","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-013","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-014","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Maniobra y Navegación resultaría igualmente compatible con sus intereses.","problemas":[{"regla":"especialidad_excluida","detalle":"maniobra_navegacion"}]}]}
+{"id":"E2-015","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-016","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-017","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-018","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-019","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-020","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-021","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-022","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-023","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-024","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-025","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-026","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-027","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-028","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-029","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-030","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-031","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-032","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-033","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-034","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-035","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-036","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-037","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-038","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-039","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[{"regla":"campo_afinidad","detalle":"principal 0.79"}],"frases":[]}
+{"id":"E2-040","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-041","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-042","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-043","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Infantería de Marina (Armada) es también una opción adecuada para su perfil.","problemas":[{"regla":"especialidad_excluida","detalle":"infanteria_marina"}]}]}
+{"id":"E2-044","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-045","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-046","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"narrative","bloque":0,"texto":"El GTI obtenido es de 10 puntos.","problemas":[{"regla":"cifra_inexistente","detalle":"10 "}]}]}
+{"id":"E2-047","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-048","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-049","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-050","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-051","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-052","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-053","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-054","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-055","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-056","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-057","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-058","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-059","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-060","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-061","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-062","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-063","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-064","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"profileSummary.interests","bloque":0,"texto":"Interés en Marítimo/Aéreo (83%).","problemas":[{"regla":"cifra_inexistente","detalle":"83%"}]}]}
+{"id":"E2-065","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-066","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-067","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-068","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-069","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-070","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-071","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Podría valorar Infantería de Marina como segunda alternativa.","problemas":[{"regla":"especialidad_excluida","detalle":"infanteria_marina"}]}]}
+{"id":"E2-072","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-073","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-074","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Infantería de Marina (Armada) es también una opción adecuada para su perfil.","problemas":[{"regla":"especialidad_excluida","detalle":"infanteria_marina"}]}]}
+{"id":"E2-075","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-076","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-077","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-078","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-079","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-080","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-081","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-082","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-083","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-084","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-085","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-086","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-087","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-088","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-089","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-090","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-091","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-092","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-093","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-094","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-095","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-096","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"strengths","bloque":0,"texto":"Interés máximo en funciones de aprovisionamiento y logística","problemas":[{"regla":"especialidad_no_recomendada","detalle":"logistica"}]}]}
+{"id":"E2-097","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-098","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-099","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-100","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-101","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-102","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-103","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-104","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-105","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-106","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Infantería de Marina (Armada) es también una opción adecuada para su perfil.","problemas":[{"regla":"especialidad_excluida","detalle":"infanteria_marina"}]}]}
+{"id":"E2-107","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-108","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Afinidad con Operaciones y Sistemas del 76%.","problemas":[{"regla":"cifra_inexistente","detalle":"76%"}]}]}
+{"id":"E2-109","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-110","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-111","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-112","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Maniobra y Navegación resultaría igualmente compatible con sus intereses.","problemas":[{"regla":"especialidad_excluida","detalle":"maniobra_navegacion"}]}]}
+{"id":"E2-113","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-114","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Podría valorar Infantería de Marina como segunda alternativa.","problemas":[{"regla":"especialidad_excluida","detalle":"infanteria_marina"}]}]}
+{"id":"E2-115","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"narrative","bloque":0,"texto":"El candidato presenta interés predominante en actividades marítimas y aéreas, con afinidad moderada hacia logística y administración.","problemas":[{"regla":"especialidad_no_recomendada","detalle":"logistica"}]}]}
+{"id":"E2-116","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-117","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-118","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-119","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-120","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-121","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-122","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-123","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-124","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[{"regla":"campo_afinidad","detalle":"principal 0.87"}],"frases":[]}
+{"id":"E2-125","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-126","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-127","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-128","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-129","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-130","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-131","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-132","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"narrative","bloque":0,"texto":"El candidato presenta interés predominante en actividades marítimas y aéreas, con afinidad moderada hacia logística y administración.","problemas":[{"regla":"especialidad_no_recomendada","detalle":"logistica"}]}]}
+{"id":"E2-133","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-134","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-135","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-136","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-137","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-138","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Podría valorar Infantería de Marina como segunda alternativa.","problemas":[{"regla":"especialidad_excluida","detalle":"infanteria_marina"}]}]}
+{"id":"E2-139","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-140","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-141","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Afinidad con Infantería Ligera del 66%.","problemas":[{"regla":"cifra_inexistente","detalle":"66%"}]}]}
+{"id":"E2-142","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-143","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[{"regla":"campo_afinidad","detalle":"principal 0.78"}],"frases":[]}
+{"id":"E2-144","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-145","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-146","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-147","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-148","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-149","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-150","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-151","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-152","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-153","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-154","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-155","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-156","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-157","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-158","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-159","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-160","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-161","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-162","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-163","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"narrative","bloque":0,"texto":"El GTI obtenido es de 76 puntos.","problemas":[{"regla":"cifra_inexistente","detalle":"76 "}]}]}
+{"id":"E2-164","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-165","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-166","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-167","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-168","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-169","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-170","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"profileSummary.interests","bloque":0,"texto":"Interés en Tecnología/Cyber (77%).","problemas":[{"regla":"cifra_inexistente","detalle":"77%"}]}]}
+{"id":"E2-171","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-172","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-173","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-174","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-175","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-176","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-177","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-178","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-179","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-180","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Infantería de Marina (Armada) es también una opción adecuada para su perfil.","problemas":[{"regla":"especialidad_excluida","detalle":"infanteria_marina"}]}]}
+{"id":"E2-181","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-182","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Afinidad con Aprovisionamiento del 83%.","problemas":[{"regla":"cifra_inexistente","detalle":"83%"}]}]}
+{"id":"E2-183","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-184","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"narrative","bloque":0,"texto":"El GTI obtenido es de 71 puntos.","problemas":[{"regla":"cifra_inexistente","detalle":"71 "}]}]}
+{"id":"E2-185","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-186","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-187","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-188","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[{"regla":"campo_afinidad","detalle":"principal 0.65"}],"frases":[]}
+{"id":"E2-189","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-190","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Maniobra y Navegación resultaría igualmente compatible con sus intereses.","problemas":[{"regla":"especialidad_excluida","detalle":"maniobra_navegacion"}]}]}
+{"id":"E2-191","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-192","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-193","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-194","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-195","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-196","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-197","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Maniobra y Navegación resultaría igualmente compatible con sus intereses.","problemas":[{"regla":"especialidad_excluida","detalle":"maniobra_navegacion"}]}]}
+{"id":"E2-198","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-199","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-200","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-201","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-202","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-203","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-204","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-205","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-206","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-207","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-208","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-209","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-210","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-211","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-212","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-213","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-214","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-215","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-216","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-217","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-218","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-219","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-220","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-221","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-222","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-223","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Infantería de Marina (Armada) es también una opción adecuada para su perfil.","problemas":[{"regla":"especialidad_excluida","detalle":"infanteria_marina"}]}]}
+{"id":"E2-224","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-225","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-226","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-227","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-228","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-229","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-230","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-231","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-232","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-233","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-234","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-235","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-236","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-237","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-238","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-239","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-240","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-241","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-242","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-243","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-244","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-245","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Afinidad con Aprovisionamiento del 58%.","problemas":[{"regla":"cifra_inexistente","detalle":"58%"}]}]}
+{"id":"E2-246","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-247","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-248","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-249","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-250","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-251","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-252","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-253","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-254","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-255","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-256","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-257","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-258","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-259","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-260","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-261","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-262","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"profileSummary.interests","bloque":0,"texto":"Interés en Sanidad/Cuidado (69%).","problemas":[{"regla":"cifra_inexistente","detalle":"69%"}]}]}
+{"id":"E2-263","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-264","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-265","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-266","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-267","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-268","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-269","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Podría valorar Infantería de Marina como segunda alternativa.","problemas":[{"regla":"especialidad_excluida","detalle":"infanteria_marina"}]}]}
+{"id":"E2-270","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-271","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[{"regla":"campo_afinidad","detalle":"principal 0.9"}],"frases":[]}
+{"id":"E2-272","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-273","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-274","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"profileSummary.interests","bloque":0,"texto":"Interés en Tecnología/Cyber (93%).","problemas":[{"regla":"cifra_inexistente","detalle":"93%"}]}]}
+{"id":"E2-275","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-276","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-277","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-278","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-279","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[],"frases":[{"campo":"recommendation","bloque":0,"texto":"Afinidad con Maniobra y Navegación del 70%.","problemas":[{"regla":"cifra_inexistente","detalle":"70%"}]}]}
+{"id":"E2-280","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-281","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-282","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-283","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-284","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-285","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-286","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-287","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"infiel","campos":[{"regla":"campo_afinidad","detalle":"principal 0.68"}],"frases":[]}
+{"id":"E2-288","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-289","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-290","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-291","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-292","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-293","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-294","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-295","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-296","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-297","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-298","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-299","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}
+{"id":"E2-300","modo":"sinRoles","fecha":"2026-10-20T16:56:27.419Z","veredicto":"fiel","campos":[],"frases":[]}

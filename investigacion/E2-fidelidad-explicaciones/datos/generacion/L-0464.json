@@ -1,0 +1,72 @@
+{
+  "id": "L-0464",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:53:46.810Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "2c50ad40-c6dd-9ec2-ac6e-aa44df5d7c88",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 0%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 17%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 17%\n\nÍndice de entrenabilidad GTI: 90/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 0/3,   Trabajo en equipo: 3/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: depende\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 77%\nEspecialidad alternativa: Sanidad (ET/Armada/EAE) — afinidad 70%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Aprovisionamiento (Armada)\",\n  \"narrative\": \"El perfil presenta afinidad máxima en Logística/Admin y puntuación destacada en Sanidad/Cuidado. El GTI de 90 indica capacidad de aprendizaje elevada. La combinación de Trabajo en equipo alto y Aspiración/Autoridad alta orienta hacia funciones de gestión de recursos y apoyo logístico en entornos operativos.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.77\n    },\n    \"alternative\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.70\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Máxima puntuación en Logística/Admin (100%). Puntuaciones medias en Técnica/Mecánica (60%), Mando/Liderazgo (60%) y Sanidad/Cuidado (67%). Ausencia total de interés en Combate y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 90/100, nivel destacado.\",\n    \"personality\": \"Trabajo en equipo 3/3 y Aspiración/Autoridad 3/3. Disciplina 1/3 y Orientación técnica 1/3. Resiliencia 0/3.\"\n  },\n  \"strengths\": [\n    \"Alta capacidad de aprendizaje (GTI 90)\",\n    \"Preferencia clara por funciones logísticas y administrativas\",\n    \"Alta disposición para trabajo en equipo\",\n    \"Interés en roles de autoridad y coordinación\"\n  ],\n  \"developmentAreas\": [\n    \"Baja puntuación en Disciplina (1/3)\",\n    \"Ausencia de Resiliencia registrada (0/3)\",\n    \"Interés nulo en Combate y entornos marítimos/aéreos\",\n    \"Disponibilidad condicionada a riesgo físico y horizonte temporal\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) como primera opción por coincidencia entre interés logístico máximo y perfil de autoridad. Sanidad como alternativa viable por puntuación media-alta en Sanidad/Cuidado.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1025,
+    "completion_tokens": 544,
+    "total_tokens": 1569,
+    "prompt_tokens_details": {
+      "text_tokens": 1025,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 25068500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Aprovisionamiento (Armada)",
+    "narrative": "El perfil presenta afinidad máxima en Logística/Admin y puntuación destacada en Sanidad/Cuidado. El GTI de 90 indica capacidad de aprendizaje elevada. La combinación de Trabajo en equipo alto y Aspiración/Autoridad alta orienta hacia funciones de gestión de recursos y apoyo logístico en entornos operativos.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.77
+      },
+      "alternative": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.7
+      }
+    },
+    "profileSummary": {
+      "interests": "Máxima puntuación en Logística/Admin (100%). Puntuaciones medias en Técnica/Mecánica (60%), Mando/Liderazgo (60%) y Sanidad/Cuidado (67%). Ausencia total de interés en Combate y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI 90/100, nivel destacado.",
+      "personality": "Trabajo en equipo 3/3 y Aspiración/Autoridad 3/3. Disciplina 1/3 y Orientación técnica 1/3. Resiliencia 0/3."
+    },
+    "strengths": [
+      "Alta capacidad de aprendizaje (GTI 90)",
+      "Preferencia clara por funciones logísticas y administrativas",
+      "Alta disposición para trabajo en equipo",
+      "Interés en roles de autoridad y coordinación"
+    ],
+    "developmentAreas": [
+      "Baja puntuación en Disciplina (1/3)",
+      "Ausencia de Resiliencia registrada (0/3)",
+      "Interés nulo en Combate y entornos marítimos/aéreos",
+      "Disponibilidad condicionada a riesgo físico y horizonte temporal"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) como primera opción por coincidencia entre interés logístico máximo y perfil de autoridad. Sanidad como alternativa viable por puntuación media-alta en Sanidad/Cuidado.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "L-1692",
+  "conjunto": "desarrollo",
+  "fecha": "2026-10-20T16:44:12.641Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "cfc8f376-14d5-9f52-bd81-b158ab108a43",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 20%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 0%\n\nÍndice de entrenabilidad GTI: 85/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 2/3,   Trabajo en equipo: 2/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Maniobra y Navegación (Armada) — afinidad 92%\nEspecialidad alternativa: Infantería Ligera (ET) — afinidad 81%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Candidato con alta afinidad para especialidades operativas de la Armada\",\n  \"narrative\": \"El perfil presenta interés dominante en entornos marítimos y aéreos combinado con un GTI destacado. La combinación de Combate y Tecnología/Cyber sugiere idoneidad para roles que integren maniobra y sistemas operativos.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Maniobra y Navegación\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.92\n    },\n    \"alternative\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.81\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Marítimo/Aéreo, alto en Combate y moderado en Tecnología/Cyber y Mando/Liderazgo. Ausencia de interés en Logística/Admin y Creativo/Artístico.\",\n    \"cognitive\": \"GTI 85: nivel destacado que permite acceso a formación de Suboficiales.\",\n    \"personality\": \"Disciplina elevada, Resiliencia y Trabajo en equipo moderados, Orientación técnica baja y Aspiración/Autoridad nula.\"\n  },\n  \"strengths\": [\n    \"Alta disposición para despliegues internacionales y riesgo físico\",\n    \"GTI destacado que abre vía de Suboficiales\",\n    \"Interés coherente con especialidades operativas de la Armada\"\n  ],\n  \"developmentAreas\": [\n    \"Baja Orientación técnica puede requerir refuerzo en formación de sistemas\",\n    \"Aspiración/Autoridad nula limita roles de mando iniciales\",\n    \"Movilidad geográfica condicionada\"\n  ],\n  \"recommendation\": \"Maniobra y Navegación (Armada) como primera opción por máxima afinidad y alineación con intereses marítimos. Infantería Ligera (ET) como alternativa operativa.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1025,
+    "completion_tokens": 483,
+    "total_tokens": 1508,
+    "prompt_tokens_details": {
+      "text_tokens": 1025,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 23543500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Candidato con alta afinidad para especialidades operativas de la Armada",
+    "narrative": "El perfil presenta interés dominante en entornos marítimos y aéreos combinado con un GTI destacado. La combinación de Combate y Tecnología/Cyber sugiere idoneidad para roles que integren maniobra y sistemas operativos.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Maniobra y Navegación",
+        "branch": "Armada",
+        "affinity": 0.92
+      },
+      "alternative": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.81
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Marítimo/Aéreo, alto en Combate y moderado en Tecnología/Cyber y Mando/Liderazgo. Ausencia de interés en Logística/Admin y Creativo/Artístico.",
+      "cognitive": "GTI 85: nivel destacado que permite acceso a formación de Suboficiales.",
+      "personality": "Disciplina elevada, Resiliencia y Trabajo en equipo moderados, Orientación técnica baja y Aspiración/Autoridad nula."
+    },
+    "strengths": [
+      "Alta disposición para despliegues internacionales y riesgo físico",
+      "GTI destacado que abre vía de Suboficiales",
+      "Interés coherente con especialidades operativas de la Armada"
+    ],
+    "developmentAreas": [
+      "Baja Orientación técnica puede requerir refuerzo en formación de sistemas",
+      "Aspiración/Autoridad nula limita roles de mando iniciales",
+      "Movilidad geográfica condicionada"
+    ],
+    "recommendation": "Maniobra y Navegación (Armada) como primera opción por máxima afinidad y alineación con intereses marítimos. Infantería Ligera (ET) como alternativa operativa.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

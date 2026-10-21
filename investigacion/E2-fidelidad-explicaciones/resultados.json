@@ -1,0 +1,345 @@
+{
+  "prueba": "E2 · Fidelidad de las explicaciones de ARA",
+  "fecha": "2026-10-20T16:56:33.981Z",
+  "modos": {
+    "roles": {
+      "n_fieles": 150,
+      "n_con_error": 150,
+      "no_concluyentes": 0,
+      "protocolo_v1": {
+        "exhaustividad": {
+          "p": 0.873,
+          "lo": 0.811,
+          "hi": 0.917,
+          "k": 131,
+          "n": 150
+        },
+        "falsas_alarmas": {
+          "p": 0.713,
+          "lo": 0.636,
+          "hi": 0.78,
+          "k": 107,
+          "n": 150
+        },
+        "precision": 0.55,
+        "f1": 0.675,
+        "cumple": false
+      },
+      "enmienda_E8": {
+        "exhaustividad_localizada": {
+          "p": 0.707,
+          "lo": 0.629,
+          "hi": 0.774,
+          "k": 106,
+          "n": 150
+        },
+        "alarmas_base_total": {
+          "p": 0.713,
+          "lo": 0.636,
+          "hi": 0.78,
+          "k": 107,
+          "n": 150
+        },
+        "alarmas_base_con_regla_objetiva": {
+          "p": 0.633,
+          "lo": 0.554,
+          "hi": 0.706,
+          "k": 95,
+          "n": 150
+        },
+        "alarmas_base_con_regla_interpretativa": {
+          "p": 0.213,
+          "lo": 0.155,
+          "hi": 0.286,
+          "k": 32,
+          "n": 150
+        },
+        "alarmas_base_solo_interpretativas": {
+          "p": 0.08,
+          "lo": 0.046,
+          "hi": 0.135,
+          "k": 12,
+          "n": 150
+        },
+        "cumple": false
+      },
+      "por_tipo": {
+        "T1": {
+          "localizada": {
+            "p": 0.64,
+            "lo": 0.445,
+            "hi": 0.798,
+            "k": 16,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0.84,
+            "lo": 0.653,
+            "hi": 0.936,
+            "k": 21,
+            "n": 25
+          }
+        },
+        "T2": {
+          "localizada": {
+            "p": 0.72,
+            "lo": 0.524,
+            "hi": 0.857,
+            "k": 18,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0.84,
+            "lo": 0.653,
+            "hi": 0.936,
+            "k": 21,
+            "n": 25
+          }
+        },
+        "T3": {
+          "localizada": {
+            "p": 0.84,
+            "lo": 0.653,
+            "hi": 0.936,
+            "k": 21,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0.88,
+            "lo": 0.7,
+            "hi": 0.958,
+            "k": 22,
+            "n": 25
+          }
+        },
+        "T4": {
+          "localizada": {
+            "p": 0.8,
+            "lo": 0.609,
+            "hi": 0.911,
+            "k": 20,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0.88,
+            "lo": 0.7,
+            "hi": 0.958,
+            "k": 22,
+            "n": 25
+          }
+        },
+        "T5": {
+          "localizada": {
+            "p": 0.52,
+            "lo": 0.335,
+            "hi": 0.7,
+            "k": 13,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0.84,
+            "lo": 0.653,
+            "hi": 0.936,
+            "k": 21,
+            "n": 25
+          }
+        },
+        "T6": {
+          "localizada": {
+            "p": 0.72,
+            "lo": 0.524,
+            "hi": 0.857,
+            "k": 18,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0.96,
+            "lo": 0.805,
+            "hi": 0.993,
+            "k": 24,
+            "n": 25
+          }
+        }
+      },
+      "explicaciones_base_por_regla": {
+        "campo_suboficiales": 82,
+        "equivalencia": 25,
+        "factor_ajeno": 5,
+        "nivel": 14,
+        "filtro": 11,
+        "cifra": 1,
+        "adorno": 2,
+        "via_suboficiales": 24,
+        "especialidad_no_recomendada": 2
+      }
+    },
+    "sinRoles": {
+      "n_fieles": 150,
+      "n_con_error": 150,
+      "no_concluyentes": 0,
+      "protocolo_v1": {
+        "exhaustividad": {
+          "p": 0.227,
+          "lo": 0.167,
+          "hi": 0.3,
+          "k": 34,
+          "n": 150
+        },
+        "falsas_alarmas": {
+          "p": 0.013,
+          "lo": 0.004,
+          "hi": 0.047,
+          "k": 2,
+          "n": 150
+        },
+        "precision": 0.944,
+        "f1": 0.366,
+        "cumple": false
+      },
+      "enmienda_E8": {
+        "exhaustividad_localizada": {
+          "p": 0.213,
+          "lo": 0.155,
+          "hi": 0.286,
+          "k": 32,
+          "n": 150
+        },
+        "alarmas_base_total": {
+          "p": 0.013,
+          "lo": 0.004,
+          "hi": 0.047,
+          "k": 2,
+          "n": 150
+        },
+        "alarmas_base_con_regla_objetiva": {
+          "p": 0,
+          "lo": 0,
+          "hi": 0.025,
+          "k": 0,
+          "n": 150
+        },
+        "alarmas_base_con_regla_interpretativa": {
+          "p": 0.013,
+          "lo": 0.004,
+          "hi": 0.047,
+          "k": 2,
+          "n": 150
+        },
+        "alarmas_base_solo_interpretativas": {
+          "p": 0.013,
+          "lo": 0.004,
+          "hi": 0.047,
+          "k": 2,
+          "n": 150
+        },
+        "cumple": false
+      },
+      "por_tipo": {
+        "T1": {
+          "localizada": {
+            "p": 0,
+            "lo": 0,
+            "hi": 0.133,
+            "k": 0,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0.04,
+            "lo": 0.007,
+            "hi": 0.195,
+            "k": 1,
+            "n": 25
+          }
+        },
+        "T2": {
+          "localizada": {
+            "p": 0.76,
+            "lo": 0.566,
+            "hi": 0.885,
+            "k": 19,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0.76,
+            "lo": 0.566,
+            "hi": 0.885,
+            "k": 19,
+            "n": 25
+          }
+        },
+        "T3": {
+          "localizada": {
+            "p": 0,
+            "lo": 0,
+            "hi": 0.133,
+            "k": 0,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0.04,
+            "lo": 0.007,
+            "hi": 0.195,
+            "k": 1,
+            "n": 25
+          }
+        },
+        "T4": {
+          "localizada": {
+            "p": 0.52,
+            "lo": 0.335,
+            "hi": 0.7,
+            "k": 13,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0.52,
+            "lo": 0.335,
+            "hi": 0.7,
+            "k": 13,
+            "n": 25
+          }
+        },
+        "T5": {
+          "localizada": {
+            "p": 0,
+            "lo": 0,
+            "hi": 0.133,
+            "k": 0,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0,
+            "lo": 0,
+            "hi": 0.133,
+            "k": 0,
+            "n": 25
+          }
+        },
+        "T6": {
+          "localizada": {
+            "p": 0,
+            "lo": 0,
+            "hi": 0.133,
+            "k": 0,
+            "n": 25
+          },
+          "por_explicacion": {
+            "p": 0,
+            "lo": 0,
+            "hi": 0.133,
+            "k": 0,
+            "n": 25
+          }
+        }
+      },
+      "explicaciones_base_por_regla": {
+        "especialidad_no_recomendada": 2
+      }
+    }
+  },
+  "commit": "f1d442f",
+  "verificador_sha256": [
+    "30725f54c026e029925c006580606563862dd6e0cd81b6b800ddc6a0d074ffd8  verificador.mjs",
+    "c507e318d14f55bb70ff41f2925868a9889254fcaec891b3ec30756d85c09c09  comun.mjs"
+  ]
+}

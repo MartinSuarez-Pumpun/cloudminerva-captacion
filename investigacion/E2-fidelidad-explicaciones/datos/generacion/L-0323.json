@@ -1,0 +1,70 @@
+{
+  "id": "L-0323",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:52:25.731Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "c07f386c-97d8-9878-94bb-50d2aa95dbb3",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 38%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 17%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 50%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 75/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 2/3,   Trabajo en equipo: 3/3,   Orientación técnica: 0/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Infantería Ligera (ET) — afinidad 63%\nEspecialidad alternativa: Ingenieros (ET) — afinidad 49%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n  • VIA_SUBOFICIALES: mencionar explícitamente como recorrido natural\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a liderazgo operativo con alta entrenabilidad.\",\n  \"narrative\": \"El candidato presenta afinidad moderada con roles de mando y orientación técnica, junto a un índice de entrenabilidad destacado. La combinación de aspiración a autoridad y trabajo en equipo sugiere idoneidad para unidades de maniobra. La disponibilidad total para movilidad y despliegues respalda el acceso a especialidades operativas.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.63\n    },\n    \"alternative\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.49\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés predominante en Creativo/Artístico (67%) y Técnica/Mecánica (60%), seguido de Mando/Liderazgo (50%). Nula preferencia por Logística/Admin y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 75/100, nivel destacado que abre acceso a itinerario de Suboficiales.\",\n    \"personality\": \"Máxima puntuación en Aspiración/Autoridad y Trabajo en equipo. Resiliencia moderada. Ausencia de Disciplina y Orientación técnica en esta evaluación.\"\n  },\n  \"strengths\": [\n    \"Alta aspiración a posiciones de autoridad\",\n    \"Capacidad demostrada de trabajo en equipo\",\n    \"Elevado índice de entrenabilidad\"\n  ],\n  \"developmentAreas\": [\n    \"Ausencia de puntuación en Disciplina\",\n    \"Bajo interés en áreas técnicas específicas\",\n    \"Riesgo físico condicionado\"\n  ],\n  \"recommendation\": \"Infantería Ligera (ET) como vía principal. Ingenieros (ET) como alternativa válida con afinidad similar.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1054,
+    "completion_tokens": 475,
+    "total_tokens": 1529,
+    "prompt_tokens_details": {
+      "text_tokens": 1054,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18330000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a liderazgo operativo con alta entrenabilidad.",
+    "narrative": "El candidato presenta afinidad moderada con roles de mando y orientación técnica, junto a un índice de entrenabilidad destacado. La combinación de aspiración a autoridad y trabajo en equipo sugiere idoneidad para unidades de maniobra. La disponibilidad total para movilidad y despliegues respalda el acceso a especialidades operativas.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.63
+      },
+      "alternative": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.49
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés predominante en Creativo/Artístico (67%) y Técnica/Mecánica (60%), seguido de Mando/Liderazgo (50%). Nula preferencia por Logística/Admin y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI de 75/100, nivel destacado que abre acceso a itinerario de Suboficiales.",
+      "personality": "Máxima puntuación en Aspiración/Autoridad y Trabajo en equipo. Resiliencia moderada. Ausencia de Disciplina y Orientación técnica en esta evaluación."
+    },
+    "strengths": [
+      "Alta aspiración a posiciones de autoridad",
+      "Capacidad demostrada de trabajo en equipo",
+      "Elevado índice de entrenabilidad"
+    ],
+    "developmentAreas": [
+      "Ausencia de puntuación en Disciplina",
+      "Bajo interés en áreas técnicas específicas",
+      "Riesgo físico condicionado"
+    ],
+    "recommendation": "Infantería Ligera (ET) como vía principal. Ingenieros (ET) como alternativa válida con afinidad similar.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

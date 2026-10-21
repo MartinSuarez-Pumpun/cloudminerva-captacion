@@ -1,0 +1,71 @@
+{
+  "id": "L-0575",
+  "conjunto": "desarrollo",
+  "fecha": "2026-10-20T16:43:41.257Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "0f73d4c1-1ed1-9c39-a760-94b1b0acc82b",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 100%\n\nÍndice de entrenabilidad GTI: 75/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 0/3,   Trabajo en equipo: 1/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Operaciones y Sistemas (Armada) — afinidad 66%\nEspecialidad alternativa: Mantenimiento Operativo (EAE) — afinidad 63%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n  • VIA_SUBOFICIALES: mencionar explícitamente como recorrido natural\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a sistemas y mantenimiento técnico con aspiración a Suboficiales\",\n  \"narrative\": \"El candidato presenta afinidad destacada en intereses tecnológicos y creativos, con capacidad de entrenabilidad elevada. El perfil de personalidad muestra orientación técnica máxima y aspiración a autoridad, compatible con roles técnicos de responsabilidad.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.66\n    },\n    \"alternative\": {\n      \"name\": \"Mantenimiento Operativo\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.63\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Intereses predominantes en tecnología/cyber y creativo/artístico, con componente de mando/liderazgo y orientación técnica/mecánica.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 75/100, nivel destacado.\",\n    \"personality\": \"Orientación técnica máxima, aspiración/autoridad máxima, disciplina y trabajo en equipo moderados, resiliencia baja.\"\n  },\n  \"strengths\": [\n    \"Alta capacidad de entrenabilidad\",\n    \"Fuerte orientación técnica\",\n    \"Aspiración a posiciones de autoridad\",\n    \"Disponibilidad para despliegues internacionales y riesgo físico\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia baja\",\n    \"Trabajo en equipo moderado\",\n    \"Intereses logísticos y marítimos/aéreos nulos\"\n  ],\n  \"recommendation\": \"Operaciones y Sistemas (Armada) y Mantenimiento Operativo (EAE) son igualmente válidas. Ambas especialidades presentan afinidad comparable y permiten desarrollo profesional técnico.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1058,
+    "completion_tokens": 437,
+    "total_tokens": 1495,
+    "prompt_tokens_details": {
+      "text_tokens": 1058,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 22806000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a sistemas y mantenimiento técnico con aspiración a Suboficiales",
+    "narrative": "El candidato presenta afinidad destacada en intereses tecnológicos y creativos, con capacidad de entrenabilidad elevada. El perfil de personalidad muestra orientación técnica máxima y aspiración a autoridad, compatible con roles técnicos de responsabilidad.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.66
+      },
+      "alternative": {
+        "name": "Mantenimiento Operativo",
+        "branch": "EAE",
+        "affinity": 0.63
+      }
+    },
+    "profileSummary": {
+      "interests": "Intereses predominantes en tecnología/cyber y creativo/artístico, con componente de mando/liderazgo y orientación técnica/mecánica.",
+      "cognitive": "Índice de entrenabilidad GTI 75/100, nivel destacado.",
+      "personality": "Orientación técnica máxima, aspiración/autoridad máxima, disciplina y trabajo en equipo moderados, resiliencia baja."
+    },
+    "strengths": [
+      "Alta capacidad de entrenabilidad",
+      "Fuerte orientación técnica",
+      "Aspiración a posiciones de autoridad",
+      "Disponibilidad para despliegues internacionales y riesgo físico"
+    ],
+    "developmentAreas": [
+      "Resiliencia baja",
+      "Trabajo en equipo moderado",
+      "Intereses logísticos y marítimos/aéreos nulos"
+    ],
+    "recommendation": "Operaciones y Sistemas (Armada) y Mantenimiento Operativo (EAE) son igualmente válidas. Ambas especialidades presentan afinidad comparable y permiten desarrollo profesional técnico.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

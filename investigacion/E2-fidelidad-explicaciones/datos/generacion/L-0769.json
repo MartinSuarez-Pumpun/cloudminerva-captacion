@@ -1,0 +1,71 @@
+{
+  "id": "L-0769",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:55:50.152Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "fa8084cb-232f-9056-a823-a67f88203c15",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 50%\n  Tecnología/Cyber: 50%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 17%\n\nÍndice de entrenabilidad GTI: 65/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 1/3,   Trabajo en equipo: 1/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 80%\nEspecialidad alternativa: Protección y Apoyo a la Fuerza (EAE) — afinidad 65%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a gestión logística con alta afinidad a Aprovisionamiento\",\n  \"narrative\": \"El candidato presenta interés máximo en Logística/Admin (100%) y Combate (75%), con GTI de 65 que indica nivel competente. La personalidad muestra orientación técnica y aspiración/autoridad elevadas, aunque disciplina y resiliencia bajas. Disponibilidad total para movilidad y riesgo físico, con reservas en despliegues internacionales y aspiración a Suboficial.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.80\n    },\n    \"alternative\": {\n      \"name\": \"Protección y Apoyo a la Fuerza\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.65\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Dominio absoluto en Logística/Admin (100%), seguido de Combate (75%) y Sanidad/Cuidado (67%). Nulo interés en Marítimo/Aéreo (0%).\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 65/100, dentro del rango competente. Requiere preparación adicional para alcanzar umbrales de Suboficiales.\",\n    \"personality\": \"Orientación técnica y Aspiración/Autoridad en nivel máximo (3/3). Disciplina nula (0/3) y Resiliencia y Trabajo en equipo bajos (1/3).\"\n  },\n  \"strengths\": [\n    \"Interés máximo en funciones de aprovisionamiento y logística\",\n    \"Capacidad técnica elevada\",\n    \"Disposición para asumir roles de autoridad\",\n    \"Disponibilidad total para movilidad geográfica y riesgo físico\"\n  ],\n  \"developmentAreas\": [\n    \"Disciplina en nivel mínimo (0/3)\",\n    \"Resiliencia y trabajo en equipo bajos (1/3)\",\n    \"GTI 65 requiere preparación adicional para aspirar a Suboficiales\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) como primera opción por afinidad máxima en logística y gestión. Protección y Apoyo a la Fuerza (EAE) como alternativa viable.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1026,
+    "completion_tokens": 534,
+    "total_tokens": 1560,
+    "prompt_tokens_details": {
+      "text_tokens": 1026,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 19455000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a gestión logística con alta afinidad a Aprovisionamiento",
+    "narrative": "El candidato presenta interés máximo en Logística/Admin (100%) y Combate (75%), con GTI de 65 que indica nivel competente. La personalidad muestra orientación técnica y aspiración/autoridad elevadas, aunque disciplina y resiliencia bajas. Disponibilidad total para movilidad y riesgo físico, con reservas en despliegues internacionales y aspiración a Suboficial.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.8
+      },
+      "alternative": {
+        "name": "Protección y Apoyo a la Fuerza",
+        "branch": "EAE",
+        "affinity": 0.65
+      }
+    },
+    "profileSummary": {
+      "interests": "Dominio absoluto en Logística/Admin (100%), seguido de Combate (75%) y Sanidad/Cuidado (67%). Nulo interés en Marítimo/Aéreo (0%).",
+      "cognitive": "Índice de entrenabilidad GTI 65/100, dentro del rango competente. Requiere preparación adicional para alcanzar umbrales de Suboficiales.",
+      "personality": "Orientación técnica y Aspiración/Autoridad en nivel máximo (3/3). Disciplina nula (0/3) y Resiliencia y Trabajo en equipo bajos (1/3)."
+    },
+    "strengths": [
+      "Interés máximo en funciones de aprovisionamiento y logística",
+      "Capacidad técnica elevada",
+      "Disposición para asumir roles de autoridad",
+      "Disponibilidad total para movilidad geográfica y riesgo físico"
+    ],
+    "developmentAreas": [
+      "Disciplina en nivel mínimo (0/3)",
+      "Resiliencia y trabajo en equipo bajos (1/3)",
+      "GTI 65 requiere preparación adicional para aspirar a Suboficiales"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) como primera opción por afinidad máxima en logística y gestión. Protección y Apoyo a la Fuerza (EAE) como alternativa viable.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

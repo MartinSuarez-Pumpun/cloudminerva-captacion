@@ -1,0 +1,73 @@
+{
+  "id": "L-1755",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:56:08.208Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "3f208e80-a41e-9d7b-98a2-44a6e14fa8e8",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 88%\n  Técnica/Mecánica: 80%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 83%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 10%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 40/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 1/3,   Trabajo en equipo: 0/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 82%\nEspecialidad alternativa: Ingenieros (ET) — afinidad 73%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Aprovisionamiento (Armada)\",\n  \"narrative\": \"El perfil muestra alta afinidad con funciones logísticas y administrativas combinadas con intereses en sanidad y combate. El GTI de 40 indica nivel competente. La disponibilidad total y la aspiración a Suboficiales abren opciones de progresión.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.82\n    },\n    \"alternative\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.73\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Máxima puntuación en Logística/Admin (100%). Alta en Combate (88%), Sanidad/Cuidado (83%) y Técnica/Mecánica (80%). Nula en Marítimo/Aéreo (0%) y baja en Mando/Liderazgo (10%).\",\n    \"cognitive\": \"GTI 40/100: nivel competente. Requiere preparación adicional para especialidades técnicas complejas.\",\n    \"personality\": \"Disciplina máxima (3/3), Orientación técnica (2/3) y Aspiración/Autoridad (2/3). Resiliencia baja (1/3). Trabajo en equipo nulo (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta afinidad logística y administrativa\",\n    \"Interés combinado en sanidad y combate\",\n    \"Disciplina elevada\",\n    \"Disponibilidad total para despliegues y movilidad\",\n    \"Aspiración a Suboficiales\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo ausente\",\n    \"Resiliencia limitada\",\n    \"GTI en umbral competente\",\n    \"Nulo interés marítimo/aéreo\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) como especialidad fundamental. Preparación previa recomendada para elevar GTI antes de acceso a Suboficiales.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1019,
+    "completion_tokens": 506,
+    "total_tokens": 1525,
+    "prompt_tokens_details": {
+      "text_tokens": 1019,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18667500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Aprovisionamiento (Armada)",
+    "narrative": "El perfil muestra alta afinidad con funciones logísticas y administrativas combinadas con intereses en sanidad y combate. El GTI de 40 indica nivel competente. La disponibilidad total y la aspiración a Suboficiales abren opciones de progresión.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.82
+      },
+      "alternative": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.73
+      }
+    },
+    "profileSummary": {
+      "interests": "Máxima puntuación en Logística/Admin (100%). Alta en Combate (88%), Sanidad/Cuidado (83%) y Técnica/Mecánica (80%). Nula en Marítimo/Aéreo (0%) y baja en Mando/Liderazgo (10%).",
+      "cognitive": "GTI 40/100: nivel competente. Requiere preparación adicional para especialidades técnicas complejas.",
+      "personality": "Disciplina máxima (3/3), Orientación técnica (2/3) y Aspiración/Autoridad (2/3). Resiliencia baja (1/3). Trabajo en equipo nulo (0/3)."
+    },
+    "strengths": [
+      "Alta afinidad logística y administrativa",
+      "Interés combinado en sanidad y combate",
+      "Disciplina elevada",
+      "Disponibilidad total para despliegues y movilidad",
+      "Aspiración a Suboficiales"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo ausente",
+      "Resiliencia limitada",
+      "GTI en umbral competente",
+      "Nulo interés marítimo/aéreo"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) como especialidad fundamental. Preparación previa recomendada para elevar GTI antes de acceso a Suboficiales.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "L-1137",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:08.479Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "affcdaee-946a-95ee-8a0c-7ccfe62a88e4",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 90/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 3/3,   Trabajo en equipo: 2/3,   Orientación técnica: 0/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: depende\n  Riesgo físico: depende\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Sanidad (ET/Armada/EAE) — afinidad 70%\nEspecialidad alternativa: Infantería Ligera (ET) — afinidad 65%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional militar - Perfil técnico-sanitario con alta capacidad de aprendizaje\",\n  \"narrative\": \"Candidato con perfil de intereses orientado a Sanidad y Creativo, combinado con alta entrenabilidad. Presenta fortaleza en Disciplina y Resiliencia. Limitaciones en Orientación técnica y Aspiración/Autoridad. Disponibilidad condicionada a aspectos geográficos y de riesgo físico.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.70\n    },\n    \"alternative\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.65\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés predominante en Sanidad/Cuidado (67%) y Creativo/Artístico (67%), seguido de Técnica/Mecánica (60%) y Mando/Liderazgo (60%). Baja afinidad con Combate (25%) y nula con Marítimo/Aéreo (0%).\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 90/100, clasificado como destacado. Capacidad elevada para asimilar contenidos formativos y progresar en itinerarios de especialización.\",\n    \"personality\": \"Disciplina alta (3/3), Resiliencia alta (3/3), Trabajo en equipo moderado (2/3), Orientación técnica nula (0/3), Aspiración/Autoridad nula (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta capacidad de aprendizaje y adaptación formativa\",\n    \"Elevada Disciplina y Resiliencia\",\n    \"Interés combinado en áreas sanitarias y creativas\"\n  ],\n  \"developmentAreas\": [\n    \"Ausencia de Orientación técnica\",\n    \"Baja Aspiración/Autoridad\",\n    \"Restricciones de movilidad geográfica\"\n  ],\n  \"recommendation\": \"Acceso a especialidad de Sanidad en Ejército de Tierra, Armada o Ejército del Aire y del Espacio. Perfil compatible con itinerario de Suboficiales por GTI destacado.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1026,
+    "completion_tokens": 539,
+    "total_tokens": 1565,
+    "prompt_tokens_details": {
+      "text_tokens": 1026,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24956000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional militar - Perfil técnico-sanitario con alta capacidad de aprendizaje",
+    "narrative": "Candidato con perfil de intereses orientado a Sanidad y Creativo, combinado con alta entrenabilidad. Presenta fortaleza en Disciplina y Resiliencia. Limitaciones en Orientación técnica y Aspiración/Autoridad. Disponibilidad condicionada a aspectos geográficos y de riesgo físico.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.7
+      },
+      "alternative": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.65
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés predominante en Sanidad/Cuidado (67%) y Creativo/Artístico (67%), seguido de Técnica/Mecánica (60%) y Mando/Liderazgo (60%). Baja afinidad con Combate (25%) y nula con Marítimo/Aéreo (0%).",
+      "cognitive": "Índice de entrenabilidad GTI de 90/100, clasificado como destacado. Capacidad elevada para asimilar contenidos formativos y progresar en itinerarios de especialización.",
+      "personality": "Disciplina alta (3/3), Resiliencia alta (3/3), Trabajo en equipo moderado (2/3), Orientación técnica nula (0/3), Aspiración/Autoridad nula (0/3)."
+    },
+    "strengths": [
+      "Alta capacidad de aprendizaje y adaptación formativa",
+      "Elevada Disciplina y Resiliencia",
+      "Interés combinado en áreas sanitarias y creativas"
+    ],
+    "developmentAreas": [
+      "Ausencia de Orientación técnica",
+      "Baja Aspiración/Autoridad",
+      "Restricciones de movilidad geográfica"
+    ],
+    "recommendation": "Acceso a especialidad de Sanidad en Ejército de Tierra, Armada o Ejército del Aire y del Espacio. Perfil compatible con itinerario de Suboficiales por GTI destacado.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

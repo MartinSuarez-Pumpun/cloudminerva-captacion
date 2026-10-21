@@ -1,0 +1,72 @@
+{
+  "id": "L-0175",
+  "conjunto": "desarrollo",
+  "fecha": "2026-10-20T16:45:04.097Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "3ec5134d-24d3-9927-9ab7-b84f553dbd19",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 0%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 50/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 0/3,   Trabajo en equipo: 1/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 85%\nEspecialidad alternativa: Operaciones y Sistemas (Armada) — afinidad 73%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a funciones logísticas y operativas en entorno marítimo\",\n  \"narrative\": \"Intereses elevados en Logística/Admin y Marítimo/Aéreo combinados con GTI competente. Aspiración a Suboficial declarada. Personalidad muestra alta Disciplina y Orientación técnica moderada. Baja Resiliencia y Trabajo en equipo limitan roles de alta exigencia física o liderazgo inmediato.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.85\n    },\n    \"alternative\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.73\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta preferencia por Logística/Admin (100%) y Marítimo/Aéreo (100%). Interés moderado en Tecnología/Cyber (67%) y Creativo/Artístico (67%). Ausencia total de interés en Combate y Sanidad/Cuidado.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 50/100: nivel competente. Requiere preparación adicional para alcanzar umbrales de Suboficiales.\",\n    \"personality\": \"Disciplina alta (3/3), Orientación técnica media (2/3), Aspiración/Autoridad media (2/3). Resiliencia nula (0/3) y Trabajo en equipo bajo (1/3).\"\n  },\n  \"strengths\": [\n    \"Alta motivación logística y marítima\",\n    \"Disciplina elevada\",\n    \"Interés técnico moderado\",\n    \"Disponibilidad para despliegues internacionales\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia nula\",\n    \"Trabajo en equipo reducido\",\n    \"GTI competente requiere refuerzo para Suboficiales\",\n    \"Horizonte temporal y movilidad geográfica condicionados\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) y Operaciones y Sistemas (Armada) presentan afinidades equivalentes. Ambas especialidades son válidas según el perfil observado.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1039,
+    "completion_tokens": 526,
+    "total_tokens": 1565,
+    "prompt_tokens_details": {
+      "text_tokens": 1039,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24793500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a funciones logísticas y operativas en entorno marítimo",
+    "narrative": "Intereses elevados en Logística/Admin y Marítimo/Aéreo combinados con GTI competente. Aspiración a Suboficial declarada. Personalidad muestra alta Disciplina y Orientación técnica moderada. Baja Resiliencia y Trabajo en equipo limitan roles de alta exigencia física o liderazgo inmediato.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.85
+      },
+      "alternative": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.73
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta preferencia por Logística/Admin (100%) y Marítimo/Aéreo (100%). Interés moderado en Tecnología/Cyber (67%) y Creativo/Artístico (67%). Ausencia total de interés en Combate y Sanidad/Cuidado.",
+      "cognitive": "Índice de entrenabilidad GTI 50/100: nivel competente. Requiere preparación adicional para alcanzar umbrales de Suboficiales.",
+      "personality": "Disciplina alta (3/3), Orientación técnica media (2/3), Aspiración/Autoridad media (2/3). Resiliencia nula (0/3) y Trabajo en equipo bajo (1/3)."
+    },
+    "strengths": [
+      "Alta motivación logística y marítima",
+      "Disciplina elevada",
+      "Interés técnico moderado",
+      "Disponibilidad para despliegues internacionales"
+    ],
+    "developmentAreas": [
+      "Resiliencia nula",
+      "Trabajo en equipo reducido",
+      "GTI competente requiere refuerzo para Suboficiales",
+      "Horizonte temporal y movilidad geográfica condicionados"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) y Operaciones y Sistemas (Armada) presentan afinidades equivalentes. Ambas especialidades son válidas según el perfil observado.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

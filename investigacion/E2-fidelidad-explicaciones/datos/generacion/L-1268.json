@@ -1,0 +1,70 @@
+{
+  "id": "L-1268",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:55:02.421Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "59e06304-a141-9a88-9531-6e6e1a51a010",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 100%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 40%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 0%\n\nÍndice de entrenabilidad GTI: 65/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 4/3,   Resiliencia: 2/3,   Trabajo en equipo: 1/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Ingenieros (ET) — afinidad 86%\nEspecialidad alternativa: Caballería (ET) — afinidad 71%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a especialidades técnicas de apoyo con capacidad de adaptación\",\n  \"narrative\": \"El candidato presenta alta afinidad con actividades técnicas y mecánicas combinada con interés en combate. El índice GTI de 65 indica nivel competente para el entrenamiento militar. La disponibilidad condicionada a factores geográficos y temporales requiere confirmación en proceso de selección.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.86\n    },\n    \"alternative\": {\n      \"name\": \"Caballería\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.71\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés dominante en Técnica/Mecánica (100%) y Combate (75%). Interés moderado en Logística/Admin y Marítimo/Aéreo (50%). Ausencia de interés en Sanidad/Cuidado y Creativo/Artístico.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 65/100 corresponde a nivel competente para formación militar básica y especializada.\",\n    \"personality\": \"Disciplina elevada (4/3), Resiliencia moderada (2/3), Trabajo en equipo bajo (1/3), Orientación técnica baja (1/3), Aspiración/Autoridad nula (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta motivación hacia actividades técnicas y mecánicas\",\n    \"Interés significativo en funciones de combate\",\n    \"Capacidad de adaptación demostrada por interés en múltiples áreas\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo requiere refuerzo durante formación\",\n    \"Orientación técnica necesita desarrollo práctico\",\n    \"Disponibilidad geográfica y temporal condicionada\"\n  ],\n  \"recommendation\": \"Ambas especialidades (Ingenieros y Caballería) son igualmente válidas por empate técnico. Se recomienda confirmación de disponibilidad geográfica y temporal antes de asignación definitiva.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1035,
+    "completion_tokens": 498,
+    "total_tokens": 1533,
+    "prompt_tokens_details": {
+      "text_tokens": 1035,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18667500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a especialidades técnicas de apoyo con capacidad de adaptación",
+    "narrative": "El candidato presenta alta afinidad con actividades técnicas y mecánicas combinada con interés en combate. El índice GTI de 65 indica nivel competente para el entrenamiento militar. La disponibilidad condicionada a factores geográficos y temporales requiere confirmación en proceso de selección.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.86
+      },
+      "alternative": {
+        "name": "Caballería",
+        "branch": "ET",
+        "affinity": 0.71
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés dominante en Técnica/Mecánica (100%) y Combate (75%). Interés moderado en Logística/Admin y Marítimo/Aéreo (50%). Ausencia de interés en Sanidad/Cuidado y Creativo/Artístico.",
+      "cognitive": "Índice de entrenabilidad GTI 65/100 corresponde a nivel competente para formación militar básica y especializada.",
+      "personality": "Disciplina elevada (4/3), Resiliencia moderada (2/3), Trabajo en equipo bajo (1/3), Orientación técnica baja (1/3), Aspiración/Autoridad nula (0/3)."
+    },
+    "strengths": [
+      "Alta motivación hacia actividades técnicas y mecánicas",
+      "Interés significativo en funciones de combate",
+      "Capacidad de adaptación demostrada por interés en múltiples áreas"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo requiere refuerzo durante formación",
+      "Orientación técnica necesita desarrollo práctico",
+      "Disponibilidad geográfica y temporal condicionada"
+    ],
+    "recommendation": "Ambas especialidades (Ingenieros y Caballería) son igualmente válidas por empate técnico. Se recomienda confirmación de disponibilidad geográfica y temporal antes de asignación definitiva.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

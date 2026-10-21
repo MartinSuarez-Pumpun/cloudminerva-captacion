@@ -1,0 +1,70 @@
+{
+  "id": "L-1152",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:10.964Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "2b97d0ca-c4bd-9ae3-976a-d001d1a5212f",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 63%\n  Técnica/Mecánica: 80%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 0%\n\nÍndice de entrenabilidad GTI: 50/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 2/3,   Trabajo en equipo: 1/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: depende\n  Riesgo físico: depende\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Protección y Apoyo a la Fuerza (EAE) — afinidad 66%\nEspecialidad alternativa: Ingenieros (ET) — afinidad 62%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Protección y Apoyo a la Fuerza (EAE) e Ingenieros (ET)\",\n  \"narrative\": \"El candidato presenta perfil técnico-mecánico dominante con interés moderado en combate y mando. El índice GTI de 50 indica nivel competente para formación militar. La combinación de rasgos de personalidad sugiere idoneidad para especialidades que requieran aplicación técnica en entornos operativos.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Protección y Apoyo a la Fuerza\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.66\n    },\n    \"alternative\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.62\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés técnico-mecánico alto (80%), interés en combate y mando moderado (63% y 60%), ausencia de interés en tecnología cyber, sanidad, logística, marítimo-aéreo y creativo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 50/100, nivel competente para formación militar básica.\",\n    \"personality\": \"Disciplina moderada, resiliencia media, trabajo en equipo moderado, orientación técnica media, aspiración/autoridad media.\"\n  },\n  \"strengths\": [\n    \"Alta orientación técnica-mecánica\",\n    \"Interés combinado en aspectos operativos y técnicos\",\n    \"Capacidad de aprendizaje competente según GTI\"\n  ],\n  \"developmentAreas\": [\n    \"Bajo interés en trabajo en equipo y disciplina según perfil\",\n    \"Disponibilidad condicional para movilidad y despliegues\",\n    \"Ausencia de interés en especialidades tecnológicas o sanitarias\"\n  ],\n  \"recommendation\": \"Ambas especialidades presentan afinidad similar y son igualmente válidas. Protección y Apoyo a la Fuerza (EAE) aprovecha la combinación de interés técnico y operativo. Ingenieros (ET) permite desarrollo de competencias técnicas en entorno militar.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1041,
+    "completion_tokens": 500,
+    "total_tokens": 1541,
+    "prompt_tokens_details": {
+      "text_tokens": 1041,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18792500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Protección y Apoyo a la Fuerza (EAE) e Ingenieros (ET)",
+    "narrative": "El candidato presenta perfil técnico-mecánico dominante con interés moderado en combate y mando. El índice GTI de 50 indica nivel competente para formación militar. La combinación de rasgos de personalidad sugiere idoneidad para especialidades que requieran aplicación técnica en entornos operativos.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Protección y Apoyo a la Fuerza",
+        "branch": "EAE",
+        "affinity": 0.66
+      },
+      "alternative": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.62
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés técnico-mecánico alto (80%), interés en combate y mando moderado (63% y 60%), ausencia de interés en tecnología cyber, sanidad, logística, marítimo-aéreo y creativo.",
+      "cognitive": "Índice de entrenabilidad GTI 50/100, nivel competente para formación militar básica.",
+      "personality": "Disciplina moderada, resiliencia media, trabajo en equipo moderado, orientación técnica media, aspiración/autoridad media."
+    },
+    "strengths": [
+      "Alta orientación técnica-mecánica",
+      "Interés combinado en aspectos operativos y técnicos",
+      "Capacidad de aprendizaje competente según GTI"
+    ],
+    "developmentAreas": [
+      "Bajo interés en trabajo en equipo y disciplina según perfil",
+      "Disponibilidad condicional para movilidad y despliegues",
+      "Ausencia de interés en especialidades tecnológicas o sanitarias"
+    ],
+    "recommendation": "Ambas especialidades presentan afinidad similar y son igualmente válidas. Protección y Apoyo a la Fuerza (EAE) aprovecha la combinación de interés técnico y operativo. Ingenieros (ET) permite desarrollo de competencias técnicas en entorno militar.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

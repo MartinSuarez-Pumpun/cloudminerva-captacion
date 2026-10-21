@@ -1,0 +1,70 @@
+{
+  "id": "L-1502",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:40.004Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "1f91654f-6493-96a3-b30b-9f42323a1682",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 13%\n  Técnica/Mecánica: 80%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 35/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 3/3,   Trabajo en equipo: 0/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: no\n  Aspiración a Suboficial: no\n\nEspecialidad recomendada por scoring: Mantenimiento Operativo (EAE) — afinidad 64%\nEspecialidad alternativa: Logística (ET) — afinidad 60%\n\nFlags especiales:\n  • GTI_BAJO: motivar y no desanimar, señalar preparación previa\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional: Mantenimiento Operativo (EAE) y Logística (ET)\",\n  \"narrative\": \"El candidato presenta un perfil técnico-mecánico dominante con aspiración de mando. El índice de entrenabilidad GTI 35 indica necesidad de preparación previa. Las especialidades recomendadas son Mantenimiento Operativo y Logística.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Mantenimiento Operativo\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.64\n    },\n    \"alternative\": {\n      \"name\": \"Logística\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.60\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés técnico-mecánico alto (80%) y de mando (80%), con interés logístico-administrativo moderado (50%).\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 35/100, nivel bajo que requiere preparación previa.\",\n    \"personality\": \"Disciplina alta (3/3), Resiliencia alta (3/3), Orientación técnica media (2/3), Trabajo en equipo bajo (0/3), Aspiración/Autoridad baja (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta disciplina y resiliencia\",\n    \"Interés técnico-mecánico elevado\",\n    \"Disponibilidad para movilidad y despliegues\"\n  ],\n  \"developmentAreas\": [\n    \"Preparación previa para mejorar GTI\",\n    \"Desarrollo de trabajo en equipo\",\n    \"Exploración de aspiración a Suboficiales\"\n  ],\n  \"recommendation\": \"Ambas especialidades son igualmente válidas. Se sugiere Mantenimiento Operativo como opción principal por afinidad técnica, con Logística como alternativa. Se recomienda preparación previa para mejorar el índice de entrenabilidad.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1058,
+    "completion_tokens": 471,
+    "total_tokens": 1529,
+    "prompt_tokens_details": {
+      "text_tokens": 1058,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18280000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional: Mantenimiento Operativo (EAE) y Logística (ET)",
+    "narrative": "El candidato presenta un perfil técnico-mecánico dominante con aspiración de mando. El índice de entrenabilidad GTI 35 indica necesidad de preparación previa. Las especialidades recomendadas son Mantenimiento Operativo y Logística.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Mantenimiento Operativo",
+        "branch": "EAE",
+        "affinity": 0.64
+      },
+      "alternative": {
+        "name": "Logística",
+        "branch": "ET",
+        "affinity": 0.6
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés técnico-mecánico alto (80%) y de mando (80%), con interés logístico-administrativo moderado (50%).",
+      "cognitive": "Índice de entrenabilidad GTI 35/100, nivel bajo que requiere preparación previa.",
+      "personality": "Disciplina alta (3/3), Resiliencia alta (3/3), Orientación técnica media (2/3), Trabajo en equipo bajo (0/3), Aspiración/Autoridad baja (0/3)."
+    },
+    "strengths": [
+      "Alta disciplina y resiliencia",
+      "Interés técnico-mecánico elevado",
+      "Disponibilidad para movilidad y despliegues"
+    ],
+    "developmentAreas": [
+      "Preparación previa para mejorar GTI",
+      "Desarrollo de trabajo en equipo",
+      "Exploración de aspiración a Suboficiales"
+    ],
+    "recommendation": "Ambas especialidades son igualmente válidas. Se sugiere Mantenimiento Operativo como opción principal por afinidad técnica, con Logística como alternativa. Se recomienda preparación previa para mejorar el índice de entrenabilidad.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

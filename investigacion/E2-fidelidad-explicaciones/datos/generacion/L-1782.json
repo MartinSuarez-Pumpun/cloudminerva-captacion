@@ -1,0 +1,71 @@
+{
+  "id": "L-1782",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:53:46.294Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "fc4ded2a-8008-9120-b718-940e3108952f",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 0%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 83%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 40%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 50%\n\nÍndice de entrenabilidad GTI: 60/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 0/3,   Trabajo en equipo: 0/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: depende\n  Riesgo físico: depende\n  Horizonte temporal: depende\n  Aspiración a Suboficial: no\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 88%\nEspecialidad alternativa: Transmisiones (ET) — afinidad 76%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia especialidad de apoyo logístico y técnico\",\n  \"narrative\": \"El perfil muestra alta afinidad con tareas de organización y soporte, combinada con interés técnico. La puntuación GTI de 60 indica capacidad de aprendizaje adecuada para especialidades de apoyo. Los rasgos de Disciplina y Orientación técnica destacan, mientras que Resiliencia y Trabajo en equipo presentan valores bajos.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.88\n    },\n    \"alternative\": {\n      \"name\": \"Transmisiones\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.76\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Máximo interés en Logística/Admin (100%). Interés alto en Tecnología/Cyber (83%) y Sanidad/Cuidado (67%). Interés moderado en Técnica/Mecánica (60%). Ausencia de interés en Combate y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice GTI de 60/100 indica nivel competente para formación militar. Capacidad de aprendizaje suficiente para especialidades de apoyo técnico y logístico.\",\n    \"personality\": \"Disciplina alta (3/3) y Orientación técnica alta (3/3). Aspiración/Autoridad moderada (2/3). Resiliencia baja (0/3) y Trabajo en equipo bajo (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta capacidad organizativa y administrativa\",\n    \"Interés técnico y tecnológico\",\n    \"Disciplina elevada\",\n    \"Orientación hacia tareas de soporte\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia ante situaciones de estrés\",\n    \"Habilidades de trabajo en equipo\",\n    \"Disponibilidad para despliegues internacionales\"\n  ],\n  \"recommendation\": \"Se recomienda Aprovisionamiento (Armada) como primera opción por su alta afinidad con el perfil logístico-administrativo. Transmisiones (ET) como alternativa viable por el componente técnico.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1020,
+    "completion_tokens": 516,
+    "total_tokens": 1536,
+    "prompt_tokens_details": {
+      "text_tokens": 1020,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18930000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia especialidad de apoyo logístico y técnico",
+    "narrative": "El perfil muestra alta afinidad con tareas de organización y soporte, combinada con interés técnico. La puntuación GTI de 60 indica capacidad de aprendizaje adecuada para especialidades de apoyo. Los rasgos de Disciplina y Orientación técnica destacan, mientras que Resiliencia y Trabajo en equipo presentan valores bajos.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.88
+      },
+      "alternative": {
+        "name": "Transmisiones",
+        "branch": "ET",
+        "affinity": 0.76
+      }
+    },
+    "profileSummary": {
+      "interests": "Máximo interés en Logística/Admin (100%). Interés alto en Tecnología/Cyber (83%) y Sanidad/Cuidado (67%). Interés moderado en Técnica/Mecánica (60%). Ausencia de interés en Combate y Marítimo/Aéreo.",
+      "cognitive": "Índice GTI de 60/100 indica nivel competente para formación militar. Capacidad de aprendizaje suficiente para especialidades de apoyo técnico y logístico.",
+      "personality": "Disciplina alta (3/3) y Orientación técnica alta (3/3). Aspiración/Autoridad moderada (2/3). Resiliencia baja (0/3) y Trabajo en equipo bajo (0/3)."
+    },
+    "strengths": [
+      "Alta capacidad organizativa y administrativa",
+      "Interés técnico y tecnológico",
+      "Disciplina elevada",
+      "Orientación hacia tareas de soporte"
+    ],
+    "developmentAreas": [
+      "Resiliencia ante situaciones de estrés",
+      "Habilidades de trabajo en equipo",
+      "Disponibilidad para despliegues internacionales"
+    ],
+    "recommendation": "Se recomienda Aprovisionamiento (Armada) como primera opción por su alta afinidad con el perfil logístico-administrativo. Transmisiones (ET) como alternativa viable por el componente técnico.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

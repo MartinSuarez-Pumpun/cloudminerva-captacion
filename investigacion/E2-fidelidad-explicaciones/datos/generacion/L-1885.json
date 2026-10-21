@@ -1,0 +1,71 @@
+{
+  "id": "L-1885",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:52:21.198Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "76a4edc6-a6c8-91e2-8fe9-bfe92b395f2c",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 100%\n  Tecnología/Cyber: 83%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 40%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 83%\n\nÍndice de entrenabilidad GTI: 100/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 1/3,   Trabajo en equipo: 3/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 1/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Energía y Propulsión (Armada) — afinidad 100%\nEspecialidad alternativa: Transmisiones (ET) — afinidad 84%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Energía y Propulsión (Armada)\",\n  \"narrative\": \"El perfil muestra afinidad máxima con sistemas de energía y propulsión naval. Alta puntuación en intereses técnicos y marítimos, GTI máximo y disponibilidad total para despliegues. El patrón de trabajo en equipo alto y orientación técnica media sugiere adaptación a entornos técnicos de alta exigencia.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Energía y Propulsión\",\n      \"branch\": \"Armada\",\n      \"affinity\": 1.0\n    },\n    \"alternative\": {\n      \"name\": \"Transmisiones\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.84\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en áreas técnicas y marítimas. Ausencia de interés en logística y administración. Interés moderado en sanidad y mando.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 100/100 indica capacidad destacada para formación técnica avanzada.\",\n    \"personality\": \"Trabajo en equipo alto, disciplina media, resiliencia baja, orientación técnica baja y aspiración a autoridad baja.\"\n  },\n  \"strengths\": [\n    \"Capacidad máxima de entrenamiento técnico\",\n    \"Interés total en sistemas marítimos y mecánicos\",\n    \"Disponibilidad completa para movilidad y despliegues\",\n    \"Alta capacidad de trabajo en equipo\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia baja requiere seguimiento en entornos de alta exigencia\",\n    \"Orientación técnica baja puede necesitar refuerzo en formación específica\",\n    \"Aspiración a autoridad baja limita opciones de mando inmediato\"\n  ],\n  \"recommendation\": \"Acceso directo a especialidad Energía y Propulsión por afinidad máxima y GTI destacado. Considerar formación adicional en resiliencia operativa.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1022,
+    "completion_tokens": 469,
+    "total_tokens": 1491,
+    "prompt_tokens_details": {
+      "text_tokens": 1022,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 23156000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Energía y Propulsión (Armada)",
+    "narrative": "El perfil muestra afinidad máxima con sistemas de energía y propulsión naval. Alta puntuación en intereses técnicos y marítimos, GTI máximo y disponibilidad total para despliegues. El patrón de trabajo en equipo alto y orientación técnica media sugiere adaptación a entornos técnicos de alta exigencia.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Energía y Propulsión",
+        "branch": "Armada",
+        "affinity": 1
+      },
+      "alternative": {
+        "name": "Transmisiones",
+        "branch": "ET",
+        "affinity": 0.84
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en áreas técnicas y marítimas. Ausencia de interés en logística y administración. Interés moderado en sanidad y mando.",
+      "cognitive": "Índice de entrenabilidad GTI de 100/100 indica capacidad destacada para formación técnica avanzada.",
+      "personality": "Trabajo en equipo alto, disciplina media, resiliencia baja, orientación técnica baja y aspiración a autoridad baja."
+    },
+    "strengths": [
+      "Capacidad máxima de entrenamiento técnico",
+      "Interés total en sistemas marítimos y mecánicos",
+      "Disponibilidad completa para movilidad y despliegues",
+      "Alta capacidad de trabajo en equipo"
+    ],
+    "developmentAreas": [
+      "Resiliencia baja requiere seguimiento en entornos de alta exigencia",
+      "Orientación técnica baja puede necesitar refuerzo en formación específica",
+      "Aspiración a autoridad baja limita opciones de mando inmediato"
+    ],
+    "recommendation": "Acceso directo a especialidad Energía y Propulsión por afinidad máxima y GTI destacado. Considerar formación adicional en resiliencia operativa.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "L-1621",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:55:28.530Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "5d3e1e95-ccee-9981-b7d5-d5552ac436db",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 50%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 0%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 100%\n\nÍndice de entrenabilidad GTI: 100/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 0/3,   Trabajo en equipo: 0/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: no\n\nEspecialidad recomendada por scoring: Sanidad (ET/Armada/EAE) — afinidad 73%\nEspecialidad alternativa: Ingenieros (ET) — afinidad 71%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a Sanidad con afinidad técnica destacada\",\n  \"narrative\": \"El candidato presenta interés máximo en el área Creativo/Artístico y alto interés en Sanidad/Cuidado. El GTI de 100 indica capacidad de aprendizaje superior. El perfil de personalidad muestra Orientación técnica y Aspiración/Autoridad máximas, con Disciplina moderada.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.73\n    },\n    \"alternative\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.71\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Creativo/Artístico (100%) y alto en Sanidad/Cuidado (67%). Nulo interés en Logística/Admin, Mando/Liderazgo y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 100/100, nivel destacado.\",\n    \"personality\": \"Orientación técnica máxima (3/3), Aspiración/Autoridad máxima (3/3), Disciplina moderada (2/3). Resiliencia y Trabajo en equipo nulos (0/3).\"\n  },\n  \"strengths\": [\n    \"Capacidad de aprendizaje superior\",\n    \"Orientación técnica elevada\",\n    \"Interés en Sanidad/Cuidado\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo\",\n    \"Resiliencia\"\n  ],\n  \"recommendation\": \"Ambas especialidades presentan afinidades equivalentes. Sanidad (ET/Armada/EAE) y Ingenieros (ET) son igualmente válidas.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1040,
+    "completion_tokens": 448,
+    "total_tokens": 1488,
+    "prompt_tokens_details": {
+      "text_tokens": 1040,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 17480000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a Sanidad con afinidad técnica destacada",
+    "narrative": "El candidato presenta interés máximo en el área Creativo/Artístico y alto interés en Sanidad/Cuidado. El GTI de 100 indica capacidad de aprendizaje superior. El perfil de personalidad muestra Orientación técnica y Aspiración/Autoridad máximas, con Disciplina moderada.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.73
+      },
+      "alternative": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.71
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Creativo/Artístico (100%) y alto en Sanidad/Cuidado (67%). Nulo interés en Logística/Admin, Mando/Liderazgo y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI de 100/100, nivel destacado.",
+      "personality": "Orientación técnica máxima (3/3), Aspiración/Autoridad máxima (3/3), Disciplina moderada (2/3). Resiliencia y Trabajo en equipo nulos (0/3)."
+    },
+    "strengths": [
+      "Capacidad de aprendizaje superior",
+      "Orientación técnica elevada",
+      "Interés en Sanidad/Cuidado"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo",
+      "Resiliencia"
+    ],
+    "recommendation": "Ambas especialidades presentan afinidades equivalentes. Sanidad (ET/Armada/EAE) y Ingenieros (ET) son igualmente válidas.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

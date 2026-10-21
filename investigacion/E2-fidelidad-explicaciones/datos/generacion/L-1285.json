@@ -1,0 +1,71 @@
+{
+  "id": "L-1285",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:52:30.417Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "9699999d-f804-9f09-b8e2-214051aaf4de",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 80%\n  Tecnología/Cyber: 17%\n  Sanidad/Cuidado: 50%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 90%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 83%\n\nÍndice de entrenabilidad GTI: 90/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 1/3,   Trabajo en equipo: 1/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Energía y Propulsión (Armada) — afinidad 83%\nEspecialidad alternativa: Protección y Apoyo a la Fuerza (EAE) — afinidad 59%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n  • VIA_SUBOFICIALES: mencionar explícitamente como recorrido natural\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Energía y Propulsión (Armada) con vía Suboficiales\",\n  \"narrative\": \"El candidato presenta alta afinidad técnica y aspiración de mando. El GTI de 90 indica capacidad destacada para formación avanzada. El perfil muestra interés dominante en mecánica y liderazgo, compatible con sistemas de propulsión naval.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Energía y Propulsión\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.83\n    },\n    \"alternative\": {\n      \"name\": \"Protección y Apoyo a la Fuerza\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.59\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés técnico-mecánico del 80% y creativo-artístico del 83%. Aspiración de mando elevada al 90%. Ausencia de interés en logística y administración.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 90/100, nivel destacado. Capacidad para asumir formación técnica compleja y acceso a escalafón de Suboficiales.\",\n    \"personality\": \"Disciplina 2/3, Resiliencia 1/3, Trabajo en equipo 1/3, Orientación técnica 1/3, Aspiración/Autoridad 3/3.\"\n  },\n  \"strengths\": [\n    \"Alta capacidad de aprendizaje técnico\",\n    \"Fuerte orientación al mando\",\n    \"Interés en sistemas mecánicos y de propulsión\",\n    \"Disponibilidad para movilidad y despliegues\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia y trabajo en equipo en niveles bajos\",\n    \"Riesgo físico condicionado a evaluación específica\",\n    \"Interés nulo en funciones logísticas y administrativas\"\n  ],\n  \"recommendation\": \"Energía y Propulsión (Armada) constituye la especialidad fundamental más adecuada. El perfil técnico y de mando se alinea con sistemas de propulsión naval. Ambas especialidades evaluadas se consideran igualmente válidas.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1062,
+    "completion_tokens": 516,
+    "total_tokens": 1578,
+    "prompt_tokens_details": {
+      "text_tokens": 1062,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 19455000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Energía y Propulsión (Armada) con vía Suboficiales",
+    "narrative": "El candidato presenta alta afinidad técnica y aspiración de mando. El GTI de 90 indica capacidad destacada para formación avanzada. El perfil muestra interés dominante en mecánica y liderazgo, compatible con sistemas de propulsión naval.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Energía y Propulsión",
+        "branch": "Armada",
+        "affinity": 0.83
+      },
+      "alternative": {
+        "name": "Protección y Apoyo a la Fuerza",
+        "branch": "EAE",
+        "affinity": 0.59
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés técnico-mecánico del 80% y creativo-artístico del 83%. Aspiración de mando elevada al 90%. Ausencia de interés en logística y administración.",
+      "cognitive": "Índice de entrenabilidad GTI 90/100, nivel destacado. Capacidad para asumir formación técnica compleja y acceso a escalafón de Suboficiales.",
+      "personality": "Disciplina 2/3, Resiliencia 1/3, Trabajo en equipo 1/3, Orientación técnica 1/3, Aspiración/Autoridad 3/3."
+    },
+    "strengths": [
+      "Alta capacidad de aprendizaje técnico",
+      "Fuerte orientación al mando",
+      "Interés en sistemas mecánicos y de propulsión",
+      "Disponibilidad para movilidad y despliegues"
+    ],
+    "developmentAreas": [
+      "Resiliencia y trabajo en equipo en niveles bajos",
+      "Riesgo físico condicionado a evaluación específica",
+      "Interés nulo en funciones logísticas y administrativas"
+    ],
+    "recommendation": "Energía y Propulsión (Armada) constituye la especialidad fundamental más adecuada. El perfil técnico y de mando se alinea con sistemas de propulsión naval. Ambas especialidades evaluadas se consideran igualmente válidas.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

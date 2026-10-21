@@ -1,0 +1,71 @@
+{
+  "id": "L-0898",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:27.862Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "50c785be-97a9-9856-8463-c3878d79ffd4",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 50%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 70%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 0%\n\nÍndice de entrenabilidad GTI: 50/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 2/3,   Trabajo en equipo: 3/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Maniobra y Navegación (Armada) — afinidad 81%\nEspecialidad alternativa: Infantería Ligera (ET) — afinidad 72%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional militar - Armada\",\n  \"narrative\": \"El candidato presenta alta afinidad con entornos marítimos y aéreos junto con intereses en combate y mando. El índice GTI de 50 indica nivel competente para formación militar. El perfil muestra preferencia por trabajo en equipo y disposición a asumir riesgos físicos con movilidad geográfica.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Maniobra y Navegación\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.81\n    },\n    \"alternative\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.72\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta preferencia por entornos marítimos y aéreos (100%), seguida de intereses en combate (75%) y mando/liderazgo (70%). Menor interés en áreas técnicas y mecánicas (40%).\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 50, dentro del rango competente para formación militar básica.\",\n    \"personality\": \"Alto nivel de trabajo en equipo (3/3), resiliencia moderada (2/3) y aspiración/autoridad moderada (2/3). Baja disciplina (0/3) y orientación técnica (1/3).\"\n  },\n  \"strengths\": [\n    \"Alta afinidad con entornos marítimos y aéreos\",\n    \"Interés en funciones de mando y liderazgo\",\n    \"Disposición para trabajo en equipo\",\n    \"Aceptación de riesgo físico y movilidad geográfica\"\n  ],\n  \"developmentAreas\": [\n    \"Desarrollo de disciplina personal\",\n    \"Fortalecimiento de orientación técnica\",\n    \"Definición de horizonte temporal y aspiración a suboficiales\"\n  ],\n  \"recommendation\": \"Se orienta hacia Maniobra y Navegación de la Armada por máxima afinidad con intereses marítimos y aéreos. Alternativa viable en Infantería Ligera del Ejército de Tierra.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1025,
+    "completion_tokens": 508,
+    "total_tokens": 1533,
+    "prompt_tokens_details": {
+      "text_tokens": 1025,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18792500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional militar - Armada",
+    "narrative": "El candidato presenta alta afinidad con entornos marítimos y aéreos junto con intereses en combate y mando. El índice GTI de 50 indica nivel competente para formación militar. El perfil muestra preferencia por trabajo en equipo y disposición a asumir riesgos físicos con movilidad geográfica.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Maniobra y Navegación",
+        "branch": "Armada",
+        "affinity": 0.81
+      },
+      "alternative": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.72
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta preferencia por entornos marítimos y aéreos (100%), seguida de intereses en combate (75%) y mando/liderazgo (70%). Menor interés en áreas técnicas y mecánicas (40%).",
+      "cognitive": "Índice de entrenabilidad GTI de 50, dentro del rango competente para formación militar básica.",
+      "personality": "Alto nivel de trabajo en equipo (3/3), resiliencia moderada (2/3) y aspiración/autoridad moderada (2/3). Baja disciplina (0/3) y orientación técnica (1/3)."
+    },
+    "strengths": [
+      "Alta afinidad con entornos marítimos y aéreos",
+      "Interés en funciones de mando y liderazgo",
+      "Disposición para trabajo en equipo",
+      "Aceptación de riesgo físico y movilidad geográfica"
+    ],
+    "developmentAreas": [
+      "Desarrollo de disciplina personal",
+      "Fortalecimiento de orientación técnica",
+      "Definición de horizonte temporal y aspiración a suboficiales"
+    ],
+    "recommendation": "Se orienta hacia Maniobra y Navegación de la Armada por máxima afinidad con intereses marítimos y aéreos. Alternativa viable en Infantería Ligera del Ejército de Tierra.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

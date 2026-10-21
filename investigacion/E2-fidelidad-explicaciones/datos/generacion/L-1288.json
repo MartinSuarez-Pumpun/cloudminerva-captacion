@@ -1,0 +1,71 @@
+{
+  "id": "L-1288",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:50:37.114Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "677a5f98-a783-965c-a2ea-dd04e28fc3c9",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 13%\n  Técnica/Mecánica: 0%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 83%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 50%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 0%\n\nÍndice de entrenabilidad GTI: 90/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 0/3,   Trabajo en equipo: 1/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 97%\nEspecialidad alternativa: Operaciones y Sistemas (Armada) — afinidad 85%\n\nFlags especiales:\n  • VIA_SUBOFICIALES: mencionar explícitamente como recorrido natural\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Aprovisionamiento (Armada)\",\n  \"narrative\": \"El candidato presenta perfil de intereses orientado a Logística/Admin y Marítimo/Aéreo con puntuación máxima. GTI de 90 indica capacidad destacada. La combinación de alta Orientación técnica y Aspiración/Autoridad sugiere idoneidad para funciones de aprovisionamiento naval.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.97\n    },\n    \"alternative\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.85\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta afinidad con Logística/Admin y Marítimo/Aéreo. Interés moderado en Sanidad/Cuidado y Tecnología/Cyber. Nulo interés en Técnica/Mecánica y Creativo/Artístico.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 90/100. Capacidad destacada para asimilación de contenidos técnicos y operativos.\",\n    \"personality\": \"Orientación técnica elevada, Aspiración/Autoridad moderada, Disciplina moderada, Trabajo en equipo bajo, Resiliencia nula.\"\n  },\n  \"strengths\": [\n    \"Capacidad destacada de aprendizaje (GTI 90)\",\n    \"Interés máximo en funciones logísticas y marítimas\",\n    \"Orientación técnica elevada\",\n    \"Disponibilidad para despliegues internacionales y riesgo físico\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia nula requiere atención específica\",\n    \"Trabajo en equipo bajo puede limitar desempeño colectivo\",\n    \"Movilidad geográfica restringida\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) como especialidad fundamental. Perfil compatible con acceso a Suboficiales por vía interna.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1042,
+    "completion_tokens": 480,
+    "total_tokens": 1522,
+    "prompt_tokens_details": {
+      "text_tokens": 1042,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 23681000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Aprovisionamiento (Armada)",
+    "narrative": "El candidato presenta perfil de intereses orientado a Logística/Admin y Marítimo/Aéreo con puntuación máxima. GTI de 90 indica capacidad destacada. La combinación de alta Orientación técnica y Aspiración/Autoridad sugiere idoneidad para funciones de aprovisionamiento naval.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.97
+      },
+      "alternative": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.85
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta afinidad con Logística/Admin y Marítimo/Aéreo. Interés moderado en Sanidad/Cuidado y Tecnología/Cyber. Nulo interés en Técnica/Mecánica y Creativo/Artístico.",
+      "cognitive": "Índice de entrenabilidad GTI 90/100. Capacidad destacada para asimilación de contenidos técnicos y operativos.",
+      "personality": "Orientación técnica elevada, Aspiración/Autoridad moderada, Disciplina moderada, Trabajo en equipo bajo, Resiliencia nula."
+    },
+    "strengths": [
+      "Capacidad destacada de aprendizaje (GTI 90)",
+      "Interés máximo en funciones logísticas y marítimas",
+      "Orientación técnica elevada",
+      "Disponibilidad para despliegues internacionales y riesgo físico"
+    ],
+    "developmentAreas": [
+      "Resiliencia nula requiere atención específica",
+      "Trabajo en equipo bajo puede limitar desempeño colectivo",
+      "Movilidad geográfica restringida"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) como especialidad fundamental. Perfil compatible con acceso a Suboficiales por vía interna.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

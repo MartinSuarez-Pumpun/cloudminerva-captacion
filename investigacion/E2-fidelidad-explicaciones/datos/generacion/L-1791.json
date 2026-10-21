@@ -1,0 +1,70 @@
+{
+  "id": "L-1791",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:52:34.483Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "e0e97647-494e-996a-b552-e5ed465ee549",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 80%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 75/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 0/3,   Trabajo en equipo: 3/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Energía y Propulsión (Armada) — afinidad 75%\nEspecialidad alternativa: Maniobra y Navegación (Armada) — afinidad 71%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n  • VIA_SUBOFICIALES: mencionar explícitamente como recorrido natural\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a sistemas técnicos navales con aptitud para mando.\",\n  \"narrative\": \"Alta afinidad con sistemas de propulsión y navegación. GTI destacado. Aspiración a Suboficiales compatible con el perfil.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Energía y Propulsión\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.75\n    },\n    \"alternative\": {\n      \"name\": \"Maniobra y Navegación\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.71\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en entorno marítimo/aéreo. Interés alto en mando/liderazgo y técnica/mecánica. Interés moderado en tecnología/cyber y sanidad/cuidado. Interés bajo en combate y creativo/artístico. Interés nulo en logística/admin.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 75/100: destacado. Abre puerta a acceso por Suboficiales.\",\n    \"personality\": \"Trabajo en equipo alto. Aspiración/Autoridad alta. Disciplina y Orientación técnica moderadas. Resiliencia baja.\"\n  },\n  \"strengths\": [\n    \"Alta motivación por sistemas técnicos navales\",\n    \"Capacidad de liderazgo y trabajo en equipo\",\n    \"Buena base para formación técnica especializada\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia limitada observada\",\n    \"Orientación técnica moderada\",\n    \"Horizonte temporal condicionado\"\n  ],\n  \"recommendation\": \"Energía y Propulsión (Armada) o Maniobra y Navegación (Armada) son opciones igualmente válidas según afinidad observada.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1060,
+    "completion_tokens": 449,
+    "total_tokens": 1509,
+    "prompt_tokens_details": {
+      "text_tokens": 1060,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 17755000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a sistemas técnicos navales con aptitud para mando.",
+    "narrative": "Alta afinidad con sistemas de propulsión y navegación. GTI destacado. Aspiración a Suboficiales compatible con el perfil.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Energía y Propulsión",
+        "branch": "Armada",
+        "affinity": 0.75
+      },
+      "alternative": {
+        "name": "Maniobra y Navegación",
+        "branch": "Armada",
+        "affinity": 0.71
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en entorno marítimo/aéreo. Interés alto en mando/liderazgo y técnica/mecánica. Interés moderado en tecnología/cyber y sanidad/cuidado. Interés bajo en combate y creativo/artístico. Interés nulo en logística/admin.",
+      "cognitive": "Índice de entrenabilidad GTI 75/100: destacado. Abre puerta a acceso por Suboficiales.",
+      "personality": "Trabajo en equipo alto. Aspiración/Autoridad alta. Disciplina y Orientación técnica moderadas. Resiliencia baja."
+    },
+    "strengths": [
+      "Alta motivación por sistemas técnicos navales",
+      "Capacidad de liderazgo y trabajo en equipo",
+      "Buena base para formación técnica especializada"
+    ],
+    "developmentAreas": [
+      "Resiliencia limitada observada",
+      "Orientación técnica moderada",
+      "Horizonte temporal condicionado"
+    ],
+    "recommendation": "Energía y Propulsión (Armada) o Maniobra y Navegación (Armada) son opciones igualmente válidas según afinidad observada.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

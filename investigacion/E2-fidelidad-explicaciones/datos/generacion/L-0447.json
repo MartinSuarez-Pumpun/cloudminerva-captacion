@@ -1,0 +1,70 @@
+{
+  "id": "L-0447",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:29.419Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "8e032e99-29b3-9f7c-8493-2e0925947d02",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 100%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 0%\n\nÍndice de entrenabilidad GTI: 25/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 1/3,   Trabajo en equipo: 3/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Energía y Propulsión (Armada) — afinidad 68%\nEspecialidad alternativa: Maniobra y Navegación (Armada) — afinidad 56%\n\nFlags especiales:\n  • GTI_BAJO: motivar y no desanimar, señalar preparación previa\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Energía y Propulsión (Armada)\",\n  \"narrative\": \"El perfil muestra interés máximo en el área Técnica/Mecánica y en el ámbito Marítimo/Aéreo. El índice de entrenabilidad GTI se sitúa en zona baja. La combinación de alta aspiración y trabajo en equipo contrasta con disciplina reducida y resiliencia moderada. Se recomienda Energía y Propulsión como especialidad principal y Maniobra y Navegación como alternativa.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Energía y Propulsión\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.68\n    },\n    \"alternative\": {\n      \"name\": \"Maniobra y Navegación\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.56\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Técnica/Mecánica y Marítimo/Aéreo. Nulo interés en Tecnología/Cyber, Sanidad/Cuidado, Logística/Admin y Creativo/Artístico. Interés moderado en Mando/Liderazgo y bajo en Combate.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 25/100 indica zona baja. Se requiere preparación previa antes de la incorporación.\",\n    \"personality\": \"Alto Trabajo en equipo y Aspiración/Autoridad. Baja Disciplina, Resiliencia moderada y Orientación técnica limitada.\"\n  },\n  \"strengths\": [\n    \"Alta motivación por sistemas mecánicos y entornos marítimos\",\n    \"Fuerte orientación al trabajo colectivo\",\n    \"Elevada aspiración de desarrollo profesional\"\n  ],\n  \"developmentAreas\": [\n    \"Preparación previa necesaria debido a GTI bajo\",\n    \"Incrementar disciplina y resiliencia para afrontar exigencias operativas\",\n    \"Reforzar orientación técnica específica del ámbito naval\"\n  ],\n  \"recommendation\": \"Se orienta al candidato hacia Energía y Propulsión (Armada) como especialidad fundamental. Se sugiere completar formación técnica previa y valorar el itinerario de Suboficiales una vez alcanzado el nivel de entrenabilidad requerido.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1049,
+    "completion_tokens": 531,
+    "total_tokens": 1580,
+    "prompt_tokens_details": {
+      "text_tokens": 1049,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 25043500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Energía y Propulsión (Armada)",
+    "narrative": "El perfil muestra interés máximo en el área Técnica/Mecánica y en el ámbito Marítimo/Aéreo. El índice de entrenabilidad GTI se sitúa en zona baja. La combinación de alta aspiración y trabajo en equipo contrasta con disciplina reducida y resiliencia moderada. Se recomienda Energía y Propulsión como especialidad principal y Maniobra y Navegación como alternativa.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Energía y Propulsión",
+        "branch": "Armada",
+        "affinity": 0.68
+      },
+      "alternative": {
+        "name": "Maniobra y Navegación",
+        "branch": "Armada",
+        "affinity": 0.56
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Técnica/Mecánica y Marítimo/Aéreo. Nulo interés en Tecnología/Cyber, Sanidad/Cuidado, Logística/Admin y Creativo/Artístico. Interés moderado en Mando/Liderazgo y bajo en Combate.",
+      "cognitive": "Índice de entrenabilidad GTI de 25/100 indica zona baja. Se requiere preparación previa antes de la incorporación.",
+      "personality": "Alto Trabajo en equipo y Aspiración/Autoridad. Baja Disciplina, Resiliencia moderada y Orientación técnica limitada."
+    },
+    "strengths": [
+      "Alta motivación por sistemas mecánicos y entornos marítimos",
+      "Fuerte orientación al trabajo colectivo",
+      "Elevada aspiración de desarrollo profesional"
+    ],
+    "developmentAreas": [
+      "Preparación previa necesaria debido a GTI bajo",
+      "Incrementar disciplina y resiliencia para afrontar exigencias operativas",
+      "Reforzar orientación técnica específica del ámbito naval"
+    ],
+    "recommendation": "Se orienta al candidato hacia Energía y Propulsión (Armada) como especialidad fundamental. Se sugiere completar formación técnica previa y valorar el itinerario de Suboficiales una vez alcanzado el nivel de entrenabilidad requerido.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

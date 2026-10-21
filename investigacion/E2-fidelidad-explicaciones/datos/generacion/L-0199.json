@@ -1,0 +1,71 @@
+{
+  "id": "L-0199",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:30.601Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "ed99bdc9-f83b-93d4-ab2f-47a72292138a",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 80%\n  Tecnología/Cyber: 17%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 0%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 17%\n\nÍndice de entrenabilidad GTI: 100/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 1/3,   Trabajo en equipo: 1/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: no\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Sanidad (ET/Armada/EAE) — afinidad 73%\nEspecialidad alternativa: Ingenieros (ET) — afinidad 72%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n  • VIA_SUBOFICIALES: mencionar explícitamente como recorrido natural\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil técnico con aspiración a Suboficiales y orientación sanitaria\",\n  \"narrative\": \"El candidato presenta alta afinidad técnica y aspiración de mando, con interés predominante en el área sanitaria. El GTI de 100 indica capacidad destacada para formación avanzada. La restricción de movilidad geográfica y despliegues internacionales condiciona las opciones operativas. Se recomienda considerar Sanidad e Ingenieros como vías equivalentes, ambas compatibles con el perfil de Suboficiales.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.73\n    },\n    \"alternative\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.72\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés técnico-mecánico dominante (80%), seguido de sanidad/cuidado (67%). Ausencia de interés en combate, mando, logística y ámbitos marítimo/aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 100/100, nivel destacado que abre acceso directo a itinerario de Suboficiales.\",\n    \"personality\": \"Orientación técnica máxima (3/3), Aspiración/Autoridad máxima (3/3), Resiliencia y Trabajo en equipo moderados (1/3), Disciplina ausente (0/3).\"\n  },\n  \"strengths\": [\n    \"Capacidad de aprendizaje muy elevada\",\n    \"Fuerte orientación técnica\",\n    \"Alta aspiración de autoridad\",\n    \"Interés sanitario y técnico simultáneo\"\n  ],\n  \"developmentAreas\": [\n    \"Disciplina baja (0/3)\",\n    \"Resiliencia y trabajo en equipo moderados (1/3)\",\n    \"Restricción de movilidad geográfica y despliegues\"\n  ],\n  \"recommendation\": \"Considerar Sanidad e Ingenieros como especialidades igualmente válidas. Ambas permiten itinerario de Suboficiales dada la puntuación GTI de 100.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1057,
+    "completion_tokens": 517,
+    "total_tokens": 1574,
+    "prompt_tokens_details": {
+      "text_tokens": 1057,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 19417500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil técnico con aspiración a Suboficiales y orientación sanitaria",
+    "narrative": "El candidato presenta alta afinidad técnica y aspiración de mando, con interés predominante en el área sanitaria. El GTI de 100 indica capacidad destacada para formación avanzada. La restricción de movilidad geográfica y despliegues internacionales condiciona las opciones operativas. Se recomienda considerar Sanidad e Ingenieros como vías equivalentes, ambas compatibles con el perfil de Suboficiales.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.73
+      },
+      "alternative": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.72
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés técnico-mecánico dominante (80%), seguido de sanidad/cuidado (67%). Ausencia de interés en combate, mando, logística y ámbitos marítimo/aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI 100/100, nivel destacado que abre acceso directo a itinerario de Suboficiales.",
+      "personality": "Orientación técnica máxima (3/3), Aspiración/Autoridad máxima (3/3), Resiliencia y Trabajo en equipo moderados (1/3), Disciplina ausente (0/3)."
+    },
+    "strengths": [
+      "Capacidad de aprendizaje muy elevada",
+      "Fuerte orientación técnica",
+      "Alta aspiración de autoridad",
+      "Interés sanitario y técnico simultáneo"
+    ],
+    "developmentAreas": [
+      "Disciplina baja (0/3)",
+      "Resiliencia y trabajo en equipo moderados (1/3)",
+      "Restricción de movilidad geográfica y despliegues"
+    ],
+    "recommendation": "Considerar Sanidad e Ingenieros como especialidades igualmente válidas. Ambas permiten itinerario de Suboficiales dada la puntuación GTI de 100.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

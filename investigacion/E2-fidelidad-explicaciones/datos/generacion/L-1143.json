@@ -1,0 +1,70 @@
+{
+  "id": "L-1143",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:53:34.539Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "1f14fbad-45ce-9708-96cb-7ba8391640ad",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 0%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 35/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 4/3,   Resiliencia: 1/3,   Trabajo en equipo: 0/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 1/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Mantenimiento Operativo (EAE) — afinidad 56%\nEspecialidad alternativa: Transmisiones (ET) — afinidad 51%\n\nFlags especiales:\n  • GTI_BAJO: motivar y no desanimar, señalar preparación previa\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional: Mantenimiento Operativo (EAE) y Transmisiones (ET)\",\n  \"narrative\": \"El candidato presenta un patrón de intereses centrado en mando y liderazgo, con inclinación moderada hacia lo técnico-mecánico. El índice GTI de 35 indica nivel bajo de entrenabilidad, por lo que se recomienda preparación previa antes de incorporarse. La combinación de aspiración a autoridad y orientación técnica sugiere compatibilidad con especialidades de mantenimiento y apoyo técnico.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Mantenimiento Operativo\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.56\n    },\n    \"alternative\": {\n      \"name\": \"Transmisiones\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.51\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta puntuación en Mando/Liderazgo (80%). Interés moderado en Técnica/Mecánica (60%). Nula atracción por Combate, Logística/Admin y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 35/100. Nivel bajo que requiere preparación previa antes del acceso.\",\n    \"personality\": \"Disciplina alta (4/3). Orientación técnica moderada (2/3). Resiliencia baja (1/3). Aspiración/Autoridad baja (1/3). Trabajo en equipo nulo (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta disciplina\",\n    \"Interés en mando y liderazgo\",\n    \"Orientación técnica moderada\"\n  ],\n  \"developmentAreas\": [\n    \"Entrenabilidad baja (GTI 35)\",\n    \"Trabajo en equipo nulo\",\n    \"Resiliencia baja\"\n  ],\n  \"recommendation\": \"Ambas especialidades resultan igualmente válidas. Se aconseja Mantenimiento Operativo (EAE) como primera opción por mayor afinidad. Se requiere preparación previa por el GTI bajo.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1059,
+    "completion_tokens": 507,
+    "total_tokens": 1566,
+    "prompt_tokens_details": {
+      "text_tokens": 1059,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24568500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional: Mantenimiento Operativo (EAE) y Transmisiones (ET)",
+    "narrative": "El candidato presenta un patrón de intereses centrado en mando y liderazgo, con inclinación moderada hacia lo técnico-mecánico. El índice GTI de 35 indica nivel bajo de entrenabilidad, por lo que se recomienda preparación previa antes de incorporarse. La combinación de aspiración a autoridad y orientación técnica sugiere compatibilidad con especialidades de mantenimiento y apoyo técnico.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Mantenimiento Operativo",
+        "branch": "EAE",
+        "affinity": 0.56
+      },
+      "alternative": {
+        "name": "Transmisiones",
+        "branch": "ET",
+        "affinity": 0.51
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta puntuación en Mando/Liderazgo (80%). Interés moderado en Técnica/Mecánica (60%). Nula atracción por Combate, Logística/Admin y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI 35/100. Nivel bajo que requiere preparación previa antes del acceso.",
+      "personality": "Disciplina alta (4/3). Orientación técnica moderada (2/3). Resiliencia baja (1/3). Aspiración/Autoridad baja (1/3). Trabajo en equipo nulo (0/3)."
+    },
+    "strengths": [
+      "Alta disciplina",
+      "Interés en mando y liderazgo",
+      "Orientación técnica moderada"
+    ],
+    "developmentAreas": [
+      "Entrenabilidad baja (GTI 35)",
+      "Trabajo en equipo nulo",
+      "Resiliencia baja"
+    ],
+    "recommendation": "Ambas especialidades resultan igualmente válidas. Se aconseja Mantenimiento Operativo (EAE) como primera opción por mayor afinidad. Se requiere preparación previa por el GTI bajo.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

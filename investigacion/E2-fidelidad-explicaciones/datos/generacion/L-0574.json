@@ -1,0 +1,70 @@
+{
+  "id": "L-0574",
+  "conjunto": "desarrollo",
+  "fecha": "2026-10-20T16:43:15.754Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "f4802af3-2745-959d-acc4-12729d4fc39d",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 100%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 100%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 40/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 1/3,   Trabajo en equipo: 0/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: no\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Operaciones y Sistemas (Armada) — afinidad 82%\nEspecialidad alternativa: Protección y Apoyo a la Fuerza (EAE) — afinidad 66%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Operaciones y Sistemas (Armada)\",\n  \"narrative\": \"El candidato presenta máxima afinidad con intereses de Combate, Tecnología/Cyber y Marítimo/Aéreo. El GTI de 40 indica nivel competente que requiere preparación adicional. El perfil de personalidad muestra alta Aspiración/Autoridad y Orientación técnica, con baja puntuación en Trabajo en equipo.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.82\n    },\n    \"alternative\": {\n      \"name\": \"Protección y Apoyo a la Fuerza\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.66\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Máxima puntuación en Combate, Tecnología/Cyber y Marítimo/Aéreo. Interés medio en Logística/Admin y Mando/Liderazgo. Baja afinidad con Sanidad/Cuidado.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 40/100, nivel competente que requiere preparación adicional para alcanzar estándares operativos.\",\n    \"personality\": \"Alta Aspiración/Autoridad (3/3) y Orientación técnica (2/3). Disciplina moderada (2/3). Baja Resiliencia (1/3) y nula puntuación en Trabajo en equipo (0/3).\"\n  },\n  \"strengths\": [\n    \"Interés máximo en áreas técnicas y de combate\",\n    \"Alta aspiración hacia posiciones de autoridad\",\n    \"Disponibilidad total para movilidad y despliegues\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo requiere desarrollo específico\",\n    \"Resiliencia por debajo de la media observada\",\n    \"Preparación adicional necesaria para alcanzar umbrales operativos\"\n  ],\n  \"recommendation\": \"Se orienta hacia Operaciones y Sistemas de la Armada por la coincidencia de intereses técnicos, marítimos y de combate. El candidato debe completar formación complementaria para elevar el GTI antes de acceder a procesos de selección.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1027,
+    "completion_tokens": 521,
+    "total_tokens": 1548,
+    "prompt_tokens_details": {
+      "text_tokens": 1027,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24518500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Operaciones y Sistemas (Armada)",
+    "narrative": "El candidato presenta máxima afinidad con intereses de Combate, Tecnología/Cyber y Marítimo/Aéreo. El GTI de 40 indica nivel competente que requiere preparación adicional. El perfil de personalidad muestra alta Aspiración/Autoridad y Orientación técnica, con baja puntuación en Trabajo en equipo.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.82
+      },
+      "alternative": {
+        "name": "Protección y Apoyo a la Fuerza",
+        "branch": "EAE",
+        "affinity": 0.66
+      }
+    },
+    "profileSummary": {
+      "interests": "Máxima puntuación en Combate, Tecnología/Cyber y Marítimo/Aéreo. Interés medio en Logística/Admin y Mando/Liderazgo. Baja afinidad con Sanidad/Cuidado.",
+      "cognitive": "Índice de entrenabilidad GTI 40/100, nivel competente que requiere preparación adicional para alcanzar estándares operativos.",
+      "personality": "Alta Aspiración/Autoridad (3/3) y Orientación técnica (2/3). Disciplina moderada (2/3). Baja Resiliencia (1/3) y nula puntuación en Trabajo en equipo (0/3)."
+    },
+    "strengths": [
+      "Interés máximo en áreas técnicas y de combate",
+      "Alta aspiración hacia posiciones de autoridad",
+      "Disponibilidad total para movilidad y despliegues"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo requiere desarrollo específico",
+      "Resiliencia por debajo de la media observada",
+      "Preparación adicional necesaria para alcanzar umbrales operativos"
+    ],
+    "recommendation": "Se orienta hacia Operaciones y Sistemas de la Armada por la coincidencia de intereses técnicos, marítimos y de combate. El candidato debe completar formación complementaria para elevar el GTI antes de acceder a procesos de selección.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

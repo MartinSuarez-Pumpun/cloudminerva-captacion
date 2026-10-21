@@ -1,0 +1,70 @@
+{
+  "id": "L-0650",
+  "conjunto": "desarrollo",
+  "fecha": "2026-10-20T16:43:26.342Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "b3580144-da46-9f89-8ac2-784d57a1d0d0",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 0%\n  Tecnología/Cyber: 100%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 75/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 3/3,   Trabajo en equipo: 1/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 83%\nEspecialidad alternativa: Infantería Ligera (ET) — afinidad 68%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Aprovisionamiento (Armada)\",\n  \"narrative\": \"El candidato presenta afinidad destacada con perfiles logísticos y tecnológicos. El índice GTI de 75 indica capacidad de aprendizaje competente. La combinación de intereses en Logística/Admin y Tecnología/Cyber, junto con alta disciplina y resiliencia, orienta hacia especialidades de apoyo logístico con componente técnico.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.83\n    },\n    \"alternative\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.68\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta puntuación en Logística/Admin (100%) y Tecnología/Cyber (100%). Interés moderado en Combate (75%) y Creativo/Artístico (67%). Nula afinidad con Técnica/Mecánica y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 75/100. Nivel competente para asimilación de procedimientos técnicos y administrativos.\",\n    \"personality\": \"Disciplina alta (3/3), Resiliencia alta (3/3), Trabajo en equipo bajo (1/3), Orientación técnica baja (1/3), Aspiración/Autoridad nula (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta capacidad de adaptación a procedimientos logísticos y administrativos\",\n    \"Disposición para entornos de riesgo físico y despliegues\",\n    \"Interés simultáneo en tecnología y gestión de recursos\"\n  ],\n  \"developmentAreas\": [\n    \"Baja puntuación en Trabajo en equipo (1/3)\",\n    \"Horizonte temporal dependiente y aspiración a Suboficial condicionada\",\n    \"Ausencia de interés en especialidades marítimas o aéreas\"\n  ],\n  \"recommendation\": \"Se recomienda Aprovisionamiento (Armada) como primera opción por coincidencia entre perfil logístico-tecnológico y requisitos de la especialidad. La alternativa Infantería Ligera (ET) resulta viable si se prioriza componente de combate.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1022,
+    "completion_tokens": 543,
+    "total_tokens": 1565,
+    "prompt_tokens_details": {
+      "text_tokens": 1022,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 25006000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Aprovisionamiento (Armada)",
+    "narrative": "El candidato presenta afinidad destacada con perfiles logísticos y tecnológicos. El índice GTI de 75 indica capacidad de aprendizaje competente. La combinación de intereses en Logística/Admin y Tecnología/Cyber, junto con alta disciplina y resiliencia, orienta hacia especialidades de apoyo logístico con componente técnico.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.83
+      },
+      "alternative": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.68
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta puntuación en Logística/Admin (100%) y Tecnología/Cyber (100%). Interés moderado en Combate (75%) y Creativo/Artístico (67%). Nula afinidad con Técnica/Mecánica y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI 75/100. Nivel competente para asimilación de procedimientos técnicos y administrativos.",
+      "personality": "Disciplina alta (3/3), Resiliencia alta (3/3), Trabajo en equipo bajo (1/3), Orientación técnica baja (1/3), Aspiración/Autoridad nula (0/3)."
+    },
+    "strengths": [
+      "Alta capacidad de adaptación a procedimientos logísticos y administrativos",
+      "Disposición para entornos de riesgo físico y despliegues",
+      "Interés simultáneo en tecnología y gestión de recursos"
+    ],
+    "developmentAreas": [
+      "Baja puntuación en Trabajo en equipo (1/3)",
+      "Horizonte temporal dependiente y aspiración a Suboficial condicionada",
+      "Ausencia de interés en especialidades marítimas o aéreas"
+    ],
+    "recommendation": "Se recomienda Aprovisionamiento (Armada) como primera opción por coincidencia entre perfil logístico-tecnológico y requisitos de la especialidad. La alternativa Infantería Ligera (ET) resulta viable si se prioriza componente de combate.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

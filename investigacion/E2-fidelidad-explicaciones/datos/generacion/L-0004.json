@@ -1,0 +1,71 @@
+{
+  "id": "L-0004",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:53.049Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "f72a0cfd-f669-9547-8be9-13a01a42d821",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 0%\n  Técnica/Mecánica: 20%\n  Tecnología/Cyber: 100%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 100%\n\nÍndice de entrenabilidad GTI: 65/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 2/3,   Trabajo en equipo: 2/3,   Orientación técnica: 0/3,   Aspiración/Autoridad: 1/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: depende\n  Riesgo físico: depende\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Transmisiones (ET) — afinidad 68%\nEspecialidad alternativa: Infantería Ligera (ET) — afinidad 52%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a Transmisiones con opción alternativa en Infantería Ligera\",\n  \"narrative\": \"El candidato presenta máxima afinidad en intereses de Tecnología/Cyber y Creativo/Artístico, junto con puntuación elevada en Mando/Liderazgo. El índice GTI de 65 indica nivel competente para el entrenamiento militar. La personalidad muestra alta disciplina y niveles moderados en resiliencia y trabajo en equipo. La restricción de movilidad geográfica condiciona las opciones disponibles.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Transmisiones\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.68\n    },\n    \"alternative\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.52\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Máxima puntuación en Tecnología/Cyber y Creativo/Artístico. Alta puntuación en Mando/Liderazgo. Ausencia total de interés en Combate, Sanidad/Cuidado, Logística/Admin y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice GTI de 65 indica nivel competente para el entrenamiento militar. Capacidad adecuada para asimilar contenidos técnicos y procedimientos operativos.\",\n    \"personality\": \"Disciplina elevada, resiliencia moderada, trabajo en equipo moderado, orientación técnica baja, aspiración/autoridad moderada.\"\n  },\n  \"strengths\": [\n    \"Alta afinidad con entornos tecnológicos y sistemas de comunicación\",\n    \"Capacidad de liderazgo identificada\",\n    \"Disciplina elevada para el cumplimiento de procedimientos\",\n    \"Disponibilidad para horizonte temporal largo y aspiración a Suboficial\"\n  ],\n  \"developmentAreas\": [\n    \"Orientación técnica baja requiere refuerzo en formación específica\",\n    \"Movilidad geográfica limitada reduce opciones de destino\",\n    \"Resiliencia y trabajo en equipo en nivel moderado\"\n  ],\n  \"recommendation\": \"Transmisiones (ET) constituye la especialidad fundamental más adecuada por afinidad tecnológica. Infantería Ligera (ET) se presenta como alternativa válida en caso de no disponibilidad de plazas en Transmisiones.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1038,
+    "completion_tokens": 539,
+    "total_tokens": 1577,
+    "prompt_tokens_details": {
+      "text_tokens": 1038,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 25106000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a Transmisiones con opción alternativa en Infantería Ligera",
+    "narrative": "El candidato presenta máxima afinidad en intereses de Tecnología/Cyber y Creativo/Artístico, junto con puntuación elevada en Mando/Liderazgo. El índice GTI de 65 indica nivel competente para el entrenamiento militar. La personalidad muestra alta disciplina y niveles moderados en resiliencia y trabajo en equipo. La restricción de movilidad geográfica condiciona las opciones disponibles.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Transmisiones",
+        "branch": "ET",
+        "affinity": 0.68
+      },
+      "alternative": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.52
+      }
+    },
+    "profileSummary": {
+      "interests": "Máxima puntuación en Tecnología/Cyber y Creativo/Artístico. Alta puntuación en Mando/Liderazgo. Ausencia total de interés en Combate, Sanidad/Cuidado, Logística/Admin y Marítimo/Aéreo.",
+      "cognitive": "Índice GTI de 65 indica nivel competente para el entrenamiento militar. Capacidad adecuada para asimilar contenidos técnicos y procedimientos operativos.",
+      "personality": "Disciplina elevada, resiliencia moderada, trabajo en equipo moderado, orientación técnica baja, aspiración/autoridad moderada."
+    },
+    "strengths": [
+      "Alta afinidad con entornos tecnológicos y sistemas de comunicación",
+      "Capacidad de liderazgo identificada",
+      "Disciplina elevada para el cumplimiento de procedimientos",
+      "Disponibilidad para horizonte temporal largo y aspiración a Suboficial"
+    ],
+    "developmentAreas": [
+      "Orientación técnica baja requiere refuerzo en formación específica",
+      "Movilidad geográfica limitada reduce opciones de destino",
+      "Resiliencia y trabajo en equipo en nivel moderado"
+    ],
+    "recommendation": "Transmisiones (ET) constituye la especialidad fundamental más adecuada por afinidad tecnológica. Infantería Ligera (ET) se presenta como alternativa válida en caso de no disponibilidad de plazas en Transmisiones.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

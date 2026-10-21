@@ -1,0 +1,70 @@
+{
+  "id": "L-0750",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:03.590Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "4ca99b0b-26bb-9fe9-9cd2-df7874e33b09",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 88%\n  Técnica/Mecánica: 100%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 17%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 50%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 25/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 2/3,   Trabajo en equipo: 2/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 68%\nEspecialidad alternativa: Infantería Ligera (ET) — afinidad 66%\n\nFlags especiales:\n  • GTI_BAJO: motivar y no desanimar, señalar preparación previa\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional: Aprovisionamiento (Armada) e Infantería Ligera (ET)\",\n  \"narrative\": \"El perfil presenta afinidad alta en intereses logísticos y técnicos, con GTI bajo. Ambas especialidades recomendadas muestran compatibilidad similar.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.68\n    },\n    \"alternative\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.66\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta preferencia por áreas Técnica/Mecánica y Logística/Admin (100%). Interés moderado en Mando/Liderazgo (50%) y Creativo/Artístico (67%). Nulo interés en Tecnología/Cyber y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 25 indica nivel bajo. Se requiere preparación previa antes de acceso.\",\n    \"personality\": \"Disciplina baja (0/3). Resiliencia, Trabajo en equipo, Orientación técnica y Aspiración/Autoridad moderados (2/3).\"\n  },\n  \"strengths\": [\n    \"Interés máximo en funciones técnicas y logísticas\",\n    \"Resiliencia y orientación técnica moderadas\",\n    \"Disponibilidad para movilidad geográfica y riesgo físico\"\n  ],\n  \"developmentAreas\": [\n    \"Preparación previa necesaria por GTI bajo\",\n    \"Disciplina requiere refuerzo\",\n    \"Disponibilidad para despliegues internacionales condicionada\"\n  ],\n  \"recommendation\": \"Ambas especialidades son igualmente válidas. Aprovisionamiento (Armada) y Infantería Ligera (ET) presentan afinidades similares. Se recomienda preparación previa para mejorar índice de entrenabilidad.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1059,
+    "completion_tokens": 469,
+    "total_tokens": 1528,
+    "prompt_tokens_details": {
+      "text_tokens": 1059,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18242500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional: Aprovisionamiento (Armada) e Infantería Ligera (ET)",
+    "narrative": "El perfil presenta afinidad alta en intereses logísticos y técnicos, con GTI bajo. Ambas especialidades recomendadas muestran compatibilidad similar.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.68
+      },
+      "alternative": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.66
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta preferencia por áreas Técnica/Mecánica y Logística/Admin (100%). Interés moderado en Mando/Liderazgo (50%) y Creativo/Artístico (67%). Nulo interés en Tecnología/Cyber y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI de 25 indica nivel bajo. Se requiere preparación previa antes de acceso.",
+      "personality": "Disciplina baja (0/3). Resiliencia, Trabajo en equipo, Orientación técnica y Aspiración/Autoridad moderados (2/3)."
+    },
+    "strengths": [
+      "Interés máximo en funciones técnicas y logísticas",
+      "Resiliencia y orientación técnica moderadas",
+      "Disponibilidad para movilidad geográfica y riesgo físico"
+    ],
+    "developmentAreas": [
+      "Preparación previa necesaria por GTI bajo",
+      "Disciplina requiere refuerzo",
+      "Disponibilidad para despliegues internacionales condicionada"
+    ],
+    "recommendation": "Ambas especialidades son igualmente válidas. Aprovisionamiento (Armada) y Infantería Ligera (ET) presentan afinidades similares. Se recomienda preparación previa para mejorar índice de entrenabilidad.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

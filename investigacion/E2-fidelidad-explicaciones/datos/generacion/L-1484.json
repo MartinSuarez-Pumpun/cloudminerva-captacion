@@ -1,0 +1,70 @@
+{
+  "id": "L-1484",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:32.694Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "85be5abb-267d-9ea0-8562-a2af4fffc00b",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 63%\n  Técnica/Mecánica: 20%\n  Tecnología/Cyber: 17%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 17%\n\nÍndice de entrenabilidad GTI: 20/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 3/3,   Trabajo en equipo: 1/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 66%\nEspecialidad alternativa: Protección y Apoyo a la Fuerza (EAE) — afinidad 57%\n\nFlags especiales:\n  • GTI_BAJO: motivar y no desanimar, señalar preparación previa\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a logística con baja entrenabilidad\",\n  \"narrative\": \"Intereses dominantes en Logística/Admin y Sanidad/Cuidado. GTI 20 indica necesidad de preparación previa. Rasgos de personalidad muestran alta resiliencia y orientación técnica moderada.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.66\n    },\n    \"alternative\": {\n      \"name\": \"Protección y Apoyo a la Fuerza\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.57\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta preferencia por Logística/Admin (100%) y Sanidad/Cuidado (67%). Interés moderado en Combate (63%) y Mando/Liderazgo (60%). Baja atracción por áreas técnicas y marítimas/aéreas.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 20/100. Nivel bajo que requiere preparación previa antes del acceso.\",\n    \"personality\": \"Resiliencia alta (3/3). Orientación técnica y Aspiración/Autoridad moderadas (2/3). Disciplina baja (0/3) y Trabajo en equipo limitado (1/3).\"\n  },\n  \"strengths\": [\n    \"Alta resiliencia ante situaciones exigentes\",\n    \"Interés consolidado en funciones logísticas\",\n    \"Disponibilidad para despliegues internacionales y riesgo físico\"\n  ],\n  \"developmentAreas\": [\n    \"Preparación previa necesaria por GTI bajo\",\n    \"Fortalecimiento de disciplina y trabajo en equipo\",\n    \"Movilidad geográfica condicionada\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) como opción principal. Requiere plan de preparación previo al ingreso.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1049,
+    "completion_tokens": 459,
+    "total_tokens": 1508,
+    "prompt_tokens_details": {
+      "text_tokens": 1049,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 23243500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a logística con baja entrenabilidad",
+    "narrative": "Intereses dominantes en Logística/Admin y Sanidad/Cuidado. GTI 20 indica necesidad de preparación previa. Rasgos de personalidad muestran alta resiliencia y orientación técnica moderada.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.66
+      },
+      "alternative": {
+        "name": "Protección y Apoyo a la Fuerza",
+        "branch": "EAE",
+        "affinity": 0.57
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta preferencia por Logística/Admin (100%) y Sanidad/Cuidado (67%). Interés moderado en Combate (63%) y Mando/Liderazgo (60%). Baja atracción por áreas técnicas y marítimas/aéreas.",
+      "cognitive": "Índice de entrenabilidad GTI 20/100. Nivel bajo que requiere preparación previa antes del acceso.",
+      "personality": "Resiliencia alta (3/3). Orientación técnica y Aspiración/Autoridad moderadas (2/3). Disciplina baja (0/3) y Trabajo en equipo limitado (1/3)."
+    },
+    "strengths": [
+      "Alta resiliencia ante situaciones exigentes",
+      "Interés consolidado en funciones logísticas",
+      "Disponibilidad para despliegues internacionales y riesgo físico"
+    ],
+    "developmentAreas": [
+      "Preparación previa necesaria por GTI bajo",
+      "Fortalecimiento de disciplina y trabajo en equipo",
+      "Movilidad geográfica condicionada"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) como opción principal. Requiere plan de preparación previo al ingreso.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "L-1912",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:57.420Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "eb317e0f-0c27-9318-90d8-5c2e8cb45e84",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 63%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 83%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 17%\n\nÍndice de entrenabilidad GTI: 10/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 2/3,   Trabajo en equipo: 3/3,   Orientación técnica: 0/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Infantería Ligera (ET) — afinidad 57%\nEspecialidad alternativa: Operaciones y Sistemas (Armada) — afinidad 42%\n\nFlags especiales:\n  • GTI_BAJO: motivar y no desanimar, señalar preparación previa\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional: perfil técnico con baja entrenabilidad\",\n  \"narrative\": \"El candidato presenta interés predominante en Tecnología/Cyber y Mando/Liderazgo, con afinidad secundaria en Combate. El índice GTI de 10 indica necesidad de preparación previa. El perfil de personalidad muestra alta puntuación en Trabajo en equipo y moderada en Aspiración/Autoridad y Resiliencia.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.57\n    },\n    \"alternative\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.42\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés elevado en Tecnología/Cyber (83%) y Mando/Liderazgo (80%), moderado en Combate (63%). Ausencia de interés en Sanidad/Cuidado, Logística/Admin y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 10/100. Requiere preparación previa para alcanzar niveles competentes.\",\n    \"personality\": \"Trabajo en equipo alto (3/3), Aspiración/Autoridad moderada (2/3), Resiliencia moderada (2/3), Disciplina baja (1/3), Orientación técnica nula (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta motivación por tecnología y sistemas\",\n    \"Preferencia por roles de liderazgo\",\n    \"Disposición a despliegues internacionales\",\n    \"Capacidad para trabajo en equipo\"\n  ],\n  \"developmentAreas\": [\n    \"Preparación previa requerida por GTI bajo\",\n    \"Movilidad geográfica limitada\",\n    \"Ausencia de orientación técnica medida\",\n    \"Riesgo físico condicionado\"\n  ],\n  \"recommendation\": \"Ambas especialidades resultan igualmente válidas dada la afinidad observada. Infantería Ligera (ET) y Operaciones y Sistemas (Armada) constituyen opciones coherentes con el perfil de intereses. Se requiere preparación previa para alcanzar niveles de entrenabilidad competentes.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1060,
+    "completion_tokens": 535,
+    "total_tokens": 1595,
+    "prompt_tokens_details": {
+      "text_tokens": 1060,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 25281000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional: perfil técnico con baja entrenabilidad",
+    "narrative": "El candidato presenta interés predominante en Tecnología/Cyber y Mando/Liderazgo, con afinidad secundaria en Combate. El índice GTI de 10 indica necesidad de preparación previa. El perfil de personalidad muestra alta puntuación en Trabajo en equipo y moderada en Aspiración/Autoridad y Resiliencia.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.57
+      },
+      "alternative": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.42
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés elevado en Tecnología/Cyber (83%) y Mando/Liderazgo (80%), moderado en Combate (63%). Ausencia de interés en Sanidad/Cuidado, Logística/Admin y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI 10/100. Requiere preparación previa para alcanzar niveles competentes.",
+      "personality": "Trabajo en equipo alto (3/3), Aspiración/Autoridad moderada (2/3), Resiliencia moderada (2/3), Disciplina baja (1/3), Orientación técnica nula (0/3)."
+    },
+    "strengths": [
+      "Alta motivación por tecnología y sistemas",
+      "Preferencia por roles de liderazgo",
+      "Disposición a despliegues internacionales",
+      "Capacidad para trabajo en equipo"
+    ],
+    "developmentAreas": [
+      "Preparación previa requerida por GTI bajo",
+      "Movilidad geográfica limitada",
+      "Ausencia de orientación técnica medida",
+      "Riesgo físico condicionado"
+    ],
+    "recommendation": "Ambas especialidades resultan igualmente válidas dada la afinidad observada. Infantería Ligera (ET) y Operaciones y Sistemas (Armada) constituyen opciones coherentes con el perfil de intereses. Se requiere preparación previa para alcanzar niveles de entrenabilidad competentes.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

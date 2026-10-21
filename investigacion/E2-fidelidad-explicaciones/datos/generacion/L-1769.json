@@ -1,0 +1,70 @@
+{
+  "id": "L-1769",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:12.839Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "bfc4c672-bcf0-98f1-a0ec-ecced2f27238",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 65/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 0/3,   Trabajo en equipo: 0/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Ingenieros (ET) — afinidad 65%\nEspecialidad alternativa: Protección y Apoyo a la Fuerza (EAE) — afinidad 65%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Evaluación de orientación vocacional militar\",\n  \"narrative\": \"El candidato presenta un perfil orientado al ámbito operativo y técnico con interés moderado en mando. El índice de entrenabilidad GTI de 65 indica nivel competente. El patrón de personalidad muestra alta orientación técnica y aspiración a autoridad, con baja puntuación en resiliencia y trabajo en equipo.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.65\n    },\n    \"alternative\": {\n      \"name\": \"Protección y Apoyo a la Fuerza\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.65\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés alto en combate (75%) y mando/liderazgo (60%). Interés moderado en técnico/mecánica (40%) y marítimo/aéreo (50%). Nulo interés en tecnología/cyber y logística/admin.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 65/100, nivel competente.\",\n    \"personality\": \"Alta orientación técnica (3/3) y aspiración/autoridad (3/3). Disciplina moderada (2/3). Baja resiliencia (0/3) y trabajo en equipo (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta orientación técnica\",\n    \"Alta aspiración a autoridad\",\n    \"Interés en combate y mando\"\n  ],\n  \"developmentAreas\": [\n    \"Baja resiliencia\",\n    \"Bajo trabajo en equipo\",\n    \"Movilidad geográfica limitada\"\n  ],\n  \"recommendation\": \"Se recomienda considerar Ingenieros (ET) o Protección y Apoyo a la Fuerza (EAE) como especialidades igualmente válidas por empate de afinidad.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1041,
+    "completion_tokens": 464,
+    "total_tokens": 1505,
+    "prompt_tokens_details": {
+      "text_tokens": 1041,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 23268500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Evaluación de orientación vocacional militar",
+    "narrative": "El candidato presenta un perfil orientado al ámbito operativo y técnico con interés moderado en mando. El índice de entrenabilidad GTI de 65 indica nivel competente. El patrón de personalidad muestra alta orientación técnica y aspiración a autoridad, con baja puntuación en resiliencia y trabajo en equipo.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.65
+      },
+      "alternative": {
+        "name": "Protección y Apoyo a la Fuerza",
+        "branch": "EAE",
+        "affinity": 0.65
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés alto en combate (75%) y mando/liderazgo (60%). Interés moderado en técnico/mecánica (40%) y marítimo/aéreo (50%). Nulo interés en tecnología/cyber y logística/admin.",
+      "cognitive": "Índice de entrenabilidad GTI de 65/100, nivel competente.",
+      "personality": "Alta orientación técnica (3/3) y aspiración/autoridad (3/3). Disciplina moderada (2/3). Baja resiliencia (0/3) y trabajo en equipo (0/3)."
+    },
+    "strengths": [
+      "Alta orientación técnica",
+      "Alta aspiración a autoridad",
+      "Interés en combate y mando"
+    ],
+    "developmentAreas": [
+      "Baja resiliencia",
+      "Bajo trabajo en equipo",
+      "Movilidad geográfica limitada"
+    ],
+    "recommendation": "Se recomienda considerar Ingenieros (ET) o Protección y Apoyo a la Fuerza (EAE) como especialidades igualmente válidas por empate de afinidad.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

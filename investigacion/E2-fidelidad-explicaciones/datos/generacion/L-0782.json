@@ -1,0 +1,72 @@
+{
+  "id": "L-0782",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:36.995Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "7fc4e38b-9e8a-98f1-bf38-836b14ebd48c",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 50%\n  Técnica/Mecánica: 10%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 60%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 50/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 3/3,   Trabajo en equipo: 3/3,   Orientación técnica: 0/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Infantería Ligera (ET) — afinidad 62%\nEspecialidad alternativa: Sanidad (ET/Armada/EAE) — afinidad 42%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Evaluación de orientación vocacional militar\",\n  \"narrative\": \"El candidato presenta interés dominante en el ámbito marítimo/aéreo combinado con aspiraciones de mando y liderazgo. El índice de entrenabilidad GTI de 50 indica nivel competente. El perfil de personalidad muestra alta resiliencia y trabajo en equipo, con baja disciplina y orientación técnica.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.62\n    },\n    \"alternative\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.42\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Marítimo/Aéreo (100%), seguido de Mando/Liderazgo (60%) y Creativo/Artístico (67%). Interés moderado en Combate (50%) y Sanidad/Cuidado (33%).\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 50/100, nivel competente. Requiere preparación adicional para especialidades de alta exigencia técnica.\",\n    \"personality\": \"Alta Resiliencia y Trabajo en equipo. Aspiración/Autoridad moderada. Baja Disciplina y Orientación técnica.\"\n  },\n  \"strengths\": [\n    \"Alta resiliencia ante situaciones adversas\",\n    \"Capacidad de trabajo en equipo\",\n    \"Interés en roles de mando y liderazgo\",\n    \"Disposición al riesgo físico\"\n  ],\n  \"developmentAreas\": [\n    \"Desarrollo de disciplina estructurada\",\n    \"Fortalecimiento de orientación técnica\",\n    \"Clarificación de disponibilidad para despliegues internacionales\",\n    \"Definición de horizonte temporal de compromiso\"\n  ],\n  \"recommendation\": \"Infantería Ligera (ET) y Sanidad (ET/Armada/EAE) presentan afinidades equivalentes. Ambas especialidades son válidas según el perfil evaluado. Se requiere decisión adicional del candidato.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1043,
+    "completion_tokens": 500,
+    "total_tokens": 1543,
+    "prompt_tokens_details": {
+      "text_tokens": 1043,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18817500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Evaluación de orientación vocacional militar",
+    "narrative": "El candidato presenta interés dominante en el ámbito marítimo/aéreo combinado con aspiraciones de mando y liderazgo. El índice de entrenabilidad GTI de 50 indica nivel competente. El perfil de personalidad muestra alta resiliencia y trabajo en equipo, con baja disciplina y orientación técnica.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.62
+      },
+      "alternative": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.42
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Marítimo/Aéreo (100%), seguido de Mando/Liderazgo (60%) y Creativo/Artístico (67%). Interés moderado en Combate (50%) y Sanidad/Cuidado (33%).",
+      "cognitive": "Índice de entrenabilidad GTI de 50/100, nivel competente. Requiere preparación adicional para especialidades de alta exigencia técnica.",
+      "personality": "Alta Resiliencia y Trabajo en equipo. Aspiración/Autoridad moderada. Baja Disciplina y Orientación técnica."
+    },
+    "strengths": [
+      "Alta resiliencia ante situaciones adversas",
+      "Capacidad de trabajo en equipo",
+      "Interés en roles de mando y liderazgo",
+      "Disposición al riesgo físico"
+    ],
+    "developmentAreas": [
+      "Desarrollo de disciplina estructurada",
+      "Fortalecimiento de orientación técnica",
+      "Clarificación de disponibilidad para despliegues internacionales",
+      "Definición de horizonte temporal de compromiso"
+    ],
+    "recommendation": "Infantería Ligera (ET) y Sanidad (ET/Armada/EAE) presentan afinidades equivalentes. Ambas especialidades son válidas según el perfil evaluado. Se requiere decisión adicional del candidato.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

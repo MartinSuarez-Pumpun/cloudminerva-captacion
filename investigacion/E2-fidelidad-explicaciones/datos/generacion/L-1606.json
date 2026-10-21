@@ -1,0 +1,71 @@
+{
+  "id": "L-1606",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:03.760Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "1b2f650b-97ed-93e8-a3b1-6a3d657decdf",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 50%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 0%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 100%\n\nÍndice de entrenabilidad GTI: 75/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 4/3,   Resiliencia: 0/3,   Trabajo en equipo: 0/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 1/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 93%\nEspecialidad alternativa: Ingenieros (ET) — afinidad 64%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Aprovisionamiento (Armada)\",\n  \"narrative\": \"El perfil muestra alta afinidad con tareas de gestión y organización, junto con interés creativo y técnico. El GTI de 75 indica capacidad destacada para formación. La ausencia de aspiración de mando y la preferencia por despliegues internacionales orientan hacia especialidades operativas de apoyo.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.93\n    },\n    \"alternative\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.64\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Logística/Admin y Creativo/Artístico. Interés medio en Combate. Interés bajo en Técnica/Mecánica, Tecnología/Cyber, Sanidad/Cuidado. Nulo interés en Mando/Liderazgo y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 75/100: capacidad destacada para asimilación de contenidos formativos.\",\n    \"personality\": \"Disciplina alta, Orientación técnica alta, Aspiración/Autoridad baja, Resiliencia baja, Trabajo en equipo bajo.\"\n  },\n  \"strengths\": [\n    \"Alta capacidad de aprendizaje según GTI\",\n    \"Fuerte orientación hacia tareas logísticas y administrativas\",\n    \"Interés por aspectos creativos aplicables a procesos de aprovisionamiento\",\n    \"Disponibilidad para despliegues internacionales y riesgo físico\"\n  ],\n  \"developmentAreas\": [\n    \"Desarrollo de resiliencia ante situaciones de estrés\",\n    \"Fortalecimiento del trabajo en equipo\",\n    \"Exploración de motivación hacia roles de autoridad\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) como especialidad principal por máxima afinidad con intereses logísticos y administrativos. Ingenieros (ET) como alternativa técnica.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1019,
+    "completion_tokens": 498,
+    "total_tokens": 1517,
+    "prompt_tokens_details": {
+      "text_tokens": 1019,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18467500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Aprovisionamiento (Armada)",
+    "narrative": "El perfil muestra alta afinidad con tareas de gestión y organización, junto con interés creativo y técnico. El GTI de 75 indica capacidad destacada para formación. La ausencia de aspiración de mando y la preferencia por despliegues internacionales orientan hacia especialidades operativas de apoyo.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.93
+      },
+      "alternative": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.64
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Logística/Admin y Creativo/Artístico. Interés medio en Combate. Interés bajo en Técnica/Mecánica, Tecnología/Cyber, Sanidad/Cuidado. Nulo interés en Mando/Liderazgo y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI 75/100: capacidad destacada para asimilación de contenidos formativos.",
+      "personality": "Disciplina alta, Orientación técnica alta, Aspiración/Autoridad baja, Resiliencia baja, Trabajo en equipo bajo."
+    },
+    "strengths": [
+      "Alta capacidad de aprendizaje según GTI",
+      "Fuerte orientación hacia tareas logísticas y administrativas",
+      "Interés por aspectos creativos aplicables a procesos de aprovisionamiento",
+      "Disponibilidad para despliegues internacionales y riesgo físico"
+    ],
+    "developmentAreas": [
+      "Desarrollo de resiliencia ante situaciones de estrés",
+      "Fortalecimiento del trabajo en equipo",
+      "Exploración de motivación hacia roles de autoridad"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) como especialidad principal por máxima afinidad con intereses logísticos y administrativos. Ingenieros (ET) como alternativa técnica.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

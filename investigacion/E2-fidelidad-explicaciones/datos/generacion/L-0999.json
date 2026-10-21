@@ -1,0 +1,70 @@
+{
+  "id": "L-0999",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:47.658Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "be3152ff-7c07-919e-9949-c4f6e6bd0d9c",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 30%\n  Tecnología/Cyber: 100%\n  Sanidad/Cuidado: 50%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 70%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 100/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 1/3,   Trabajo en equipo: 0/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Operaciones y Sistemas (Armada) — afinidad 93%\nEspecialidad alternativa: Protección y Apoyo a la Fuerza (EAE) — afinidad 77%\n\nFlags especiales:\n  • VIA_SUBOFICIALES: mencionar explícitamente como recorrido natural\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a Operaciones y Sistemas en Armada con alta capacidad de entrenabilidad.\",\n  \"narrative\": \"El candidato presenta interés máximo en Tecnología/Cyber y Combate, junto con puntuaciones elevadas en Mando/Liderazgo. El GTI de 100 indica capacidad destacada para formación avanzada. La personalidad muestra Orientación técnica y Aspiración/Autoridad máximas, con niveles bajos en Trabajo en equipo y Resiliencia.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.93\n    },\n    \"alternative\": {\n      \"name\": \"Protección y Apoyo a la Fuerza\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.77\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés dominante en Tecnología/Cyber (100%) y Combate (75%), secundado por Mando/Liderazgo (70%). Ausencia total de interés en Logística/Admin (0%).\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 100/100, nivel destacado que abre acceso a vías de Suboficiales.\",\n    \"personality\": \"Orientación técnica y Aspiración/Autoridad en nivel máximo (3/3). Disciplina y Resiliencia en nivel bajo (1/3). Trabajo en equipo ausente (0/3).\"\n  },\n  \"strengths\": [\n    \"Capacidad de aprendizaje muy elevada\",\n    \"Fuerte orientación técnica\",\n    \"Alta aspiración de autoridad\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo\",\n    \"Resiliencia bajo estrés\",\n    \"Disciplina\"\n  ],\n  \"recommendation\": \"Operaciones y Sistemas en Armada constituye la especialidad fundamental con mayor afinidad. El perfil técnico y de mando, combinado con GTI destacado, permite considerar el acceso a Suboficiales como trayectoria natural.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1047,
+    "completion_tokens": 491,
+    "total_tokens": 1538,
+    "prompt_tokens_details": {
+      "text_tokens": 1047,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24018500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a Operaciones y Sistemas en Armada con alta capacidad de entrenabilidad.",
+    "narrative": "El candidato presenta interés máximo en Tecnología/Cyber y Combate, junto con puntuaciones elevadas en Mando/Liderazgo. El GTI de 100 indica capacidad destacada para formación avanzada. La personalidad muestra Orientación técnica y Aspiración/Autoridad máximas, con niveles bajos en Trabajo en equipo y Resiliencia.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.93
+      },
+      "alternative": {
+        "name": "Protección y Apoyo a la Fuerza",
+        "branch": "EAE",
+        "affinity": 0.77
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés dominante en Tecnología/Cyber (100%) y Combate (75%), secundado por Mando/Liderazgo (70%). Ausencia total de interés en Logística/Admin (0%).",
+      "cognitive": "Índice de entrenabilidad GTI 100/100, nivel destacado que abre acceso a vías de Suboficiales.",
+      "personality": "Orientación técnica y Aspiración/Autoridad en nivel máximo (3/3). Disciplina y Resiliencia en nivel bajo (1/3). Trabajo en equipo ausente (0/3)."
+    },
+    "strengths": [
+      "Capacidad de aprendizaje muy elevada",
+      "Fuerte orientación técnica",
+      "Alta aspiración de autoridad"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo",
+      "Resiliencia bajo estrés",
+      "Disciplina"
+    ],
+    "recommendation": "Operaciones y Sistemas en Armada constituye la especialidad fundamental con mayor afinidad. El perfil técnico y de mando, combinado con GTI destacado, permite considerar el acceso a Suboficiales como trayectoria natural.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

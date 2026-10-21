@@ -1,0 +1,70 @@
+{
+  "id": "L-1703",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:53:29.022Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "1106981e-ac77-96dd-b4b4-4071be35767c",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 50%\n  Técnica/Mecánica: 20%\n  Tecnología/Cyber: 83%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 100%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 83%\n\nÍndice de entrenabilidad GTI: 60/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 2/3,   Trabajo en equipo: 3/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: depende\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Infantería Ligera (ET) — afinidad 70%\nEspecialidad alternativa: Logística (ET) — afinidad 68%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional: perfil equilibrado entre mando y logística\",\n  \"narrative\": \"El candidato presenta intereses destacados en Logística/Admin y Mando/Liderazgo, ambos al 100%. El índice GTI de 60 indica nivel competente para formación militar. El rasgo Trabajo en equipo alcanza la puntuación máxima (3/3). La disponibilidad geográfica y para despliegues es positiva, aunque el riesgo físico y el horizonte temporal quedan condicionados.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.70\n    },\n    \"alternative\": {\n      \"name\": \"Logística\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.68\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta preferencia por Logística/Admin y Mando/Liderazgo; interés moderado en Combate y Tecnología/Cyber; nulo interés en entornos marítimo/aéreos.\",\n    \"cognitive\": \"Índice GTI de 60/100: nivel competente para el aprendizaje militar.\",\n    \"personality\": \"Trabajo en equipo máximo (3/3); Resiliencia media (2/3); Aspiración/Autoridad media (2/3); Orientación técnica baja (1/3); Disciplina nula (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta motivación hacia funciones de mando y organización logística\",\n    \"Excelente disposición para el trabajo en equipo\",\n    \"Disponibilidad para movilidad geográfica y despliegues internacionales\"\n  ],\n  \"developmentAreas\": [\n    \"Baja puntuación en Disciplina (0/3)\",\n    \"Orientación técnica limitada (1/3)\",\n    \"Riesgo físico y horizonte temporal condicionados\"\n  ],\n  \"recommendation\": \"Se consideran igualmente válidas Infantería Ligera y Logística del Ejército de Tierra. La elección final dependerá de la preferencia del candidato entre roles operativos o de apoyo logístico.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1037,
+    "completion_tokens": 510,
+    "total_tokens": 1547,
+    "prompt_tokens_details": {
+      "text_tokens": 1037,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24368500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional: perfil equilibrado entre mando y logística",
+    "narrative": "El candidato presenta intereses destacados en Logística/Admin y Mando/Liderazgo, ambos al 100%. El índice GTI de 60 indica nivel competente para formación militar. El rasgo Trabajo en equipo alcanza la puntuación máxima (3/3). La disponibilidad geográfica y para despliegues es positiva, aunque el riesgo físico y el horizonte temporal quedan condicionados.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.7
+      },
+      "alternative": {
+        "name": "Logística",
+        "branch": "ET",
+        "affinity": 0.68
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta preferencia por Logística/Admin y Mando/Liderazgo; interés moderado en Combate y Tecnología/Cyber; nulo interés en entornos marítimo/aéreos.",
+      "cognitive": "Índice GTI de 60/100: nivel competente para el aprendizaje militar.",
+      "personality": "Trabajo en equipo máximo (3/3); Resiliencia media (2/3); Aspiración/Autoridad media (2/3); Orientación técnica baja (1/3); Disciplina nula (0/3)."
+    },
+    "strengths": [
+      "Alta motivación hacia funciones de mando y organización logística",
+      "Excelente disposición para el trabajo en equipo",
+      "Disponibilidad para movilidad geográfica y despliegues internacionales"
+    ],
+    "developmentAreas": [
+      "Baja puntuación en Disciplina (0/3)",
+      "Orientación técnica limitada (1/3)",
+      "Riesgo físico y horizonte temporal condicionados"
+    ],
+    "recommendation": "Se consideran igualmente válidas Infantería Ligera y Logística del Ejército de Tierra. La elección final dependerá de la preferencia del candidato entre roles operativos o de apoyo logístico.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

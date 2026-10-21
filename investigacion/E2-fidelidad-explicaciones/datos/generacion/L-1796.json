@@ -1,0 +1,71 @@
+{
+  "id": "L-1796",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:55:47.405Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "3b92060d-4b60-9607-88f4-10dc81a34b9f",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 88%\n  Técnica/Mecánica: 80%\n  Tecnología/Cyber: 100%\n  Sanidad/Cuidado: 83%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 10%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 100%\n\nÍndice de entrenabilidad GTI: 75/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 1/3,   Trabajo en equipo: 0/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 1/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: no\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: no\n\nEspecialidad recomendada por scoring: Operaciones y Sistemas (Armada) — afinidad 93%\nEspecialidad alternativa: Energía y Propulsión (Armada) — afinidad 86%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional: Operaciones y Sistemas / Energía y Propulsión (Armada)\",\n  \"narrative\": \"El perfil presenta alta afinidad con entornos técnicos y marítimos. El índice GTI de 75 indica capacidad destacada para formación especializada. La combinación de intereses en Tecnología/Cyber y Marítimo/Aéreo, junto con Orientación técnica elevada, orienta hacia especialidades de sistemas navales.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.93\n    },\n    \"alternative\": {\n      \"name\": \"Energía y Propulsión\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.86\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Intereses dominantes en Tecnología/Cyber (100%), Marítimo/Aéreo (100%) y Creativo/Artístico (100%). Combate (88%) y Técnica/Mecánica (80%) también elevados. Sanidad/Cuidado (83%) presente. Logística/Admin (50%) y Mando/Liderazgo (10%) bajos.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 75/100: destacado. Capacidad para asimilar contenidos técnicos complejos.\",\n    \"personality\": \"Disciplina alta (3/3), Orientación técnica alta (3/3). Resiliencia baja (1/3), Aspiración/Autoridad baja (1/3), Trabajo en equipo nulo (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta capacidad técnica\",\n    \"Interés fuerte en sistemas marítimos\",\n    \"Disciplina elevada\",\n    \"Capacidad de aprendizaje destacada\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo\",\n    \"Resiliencia bajo estrés\",\n    \"Aspiración a roles de autoridad\"\n  ],\n  \"recommendation\": \"Se recomienda Operaciones y Sistemas (Armada) como primera opción por máxima afinidad con el perfil técnico y marítimo. Energía y Propulsión (Armada) constituye alternativa igualmente válida por coincidencia de intereses en sistemas navales.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1041,
+    "completion_tokens": 536,
+    "total_tokens": 1577,
+    "prompt_tokens_details": {
+      "text_tokens": 1041,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 19692500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional: Operaciones y Sistemas / Energía y Propulsión (Armada)",
+    "narrative": "El perfil presenta alta afinidad con entornos técnicos y marítimos. El índice GTI de 75 indica capacidad destacada para formación especializada. La combinación de intereses en Tecnología/Cyber y Marítimo/Aéreo, junto con Orientación técnica elevada, orienta hacia especialidades de sistemas navales.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.93
+      },
+      "alternative": {
+        "name": "Energía y Propulsión",
+        "branch": "Armada",
+        "affinity": 0.86
+      }
+    },
+    "profileSummary": {
+      "interests": "Intereses dominantes en Tecnología/Cyber (100%), Marítimo/Aéreo (100%) y Creativo/Artístico (100%). Combate (88%) y Técnica/Mecánica (80%) también elevados. Sanidad/Cuidado (83%) presente. Logística/Admin (50%) y Mando/Liderazgo (10%) bajos.",
+      "cognitive": "Índice de entrenabilidad GTI 75/100: destacado. Capacidad para asimilar contenidos técnicos complejos.",
+      "personality": "Disciplina alta (3/3), Orientación técnica alta (3/3). Resiliencia baja (1/3), Aspiración/Autoridad baja (1/3), Trabajo en equipo nulo (0/3)."
+    },
+    "strengths": [
+      "Alta capacidad técnica",
+      "Interés fuerte en sistemas marítimos",
+      "Disciplina elevada",
+      "Capacidad de aprendizaje destacada"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo",
+      "Resiliencia bajo estrés",
+      "Aspiración a roles de autoridad"
+    ],
+    "recommendation": "Se recomienda Operaciones y Sistemas (Armada) como primera opción por máxima afinidad con el perfil técnico y marítimo. Energía y Propulsión (Armada) constituye alternativa igualmente válida por coincidencia de intereses en sistemas navales.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

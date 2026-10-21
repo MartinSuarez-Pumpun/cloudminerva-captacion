@@ -1,0 +1,71 @@
+{
+  "id": "L-1362",
+  "conjunto": "desarrollo",
+  "fecha": "2026-10-20T16:43:54.833Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "e901ca00-6c49-954b-ab74-d1f096624988",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 75%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 40%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 10/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 3/3,   Trabajo en equipo: 1/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 73%\nEspecialidad alternativa: Operaciones y Sistemas (Armada) — afinidad 54%\n\nFlags especiales:\n  • GTI_BAJO: motivar y no desanimar, señalar preparación previa\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a gestión y apoyo logístico con baja entrenabilidad inicial\",\n  \"narrative\": \"El candidato presenta máxima puntuación en intereses logísticos y administrativos junto a alta afinidad por el ámbito marítimo. El índice de entrenabilidad GTI se sitúa en rango bajo, lo que indica necesidad de preparación previa antes de acceder a formación militar. El perfil de personalidad muestra alta resiliencia y disciplina moderada, con baja orientación al trabajo en equipo y nula aspiración a posiciones de autoridad.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.73\n    },\n    \"alternative\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.54\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Logística/Admin (100%) y Combate (75%). Interés moderado en Tecnología/Cyber y Creativo/Artístico (67%). Ausencia total de interés en Sanidad/Cuidado.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 10/100 indica nivel bajo. Requiere preparación previa antes de iniciar formación militar reglada.\",\n    \"personality\": \"Alta resiliencia (3/3) y disciplina moderada (2/3). Orientación técnica media (2/3). Baja capacidad de trabajo en equipo (1/3). Ausencia de aspiración a autoridad (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta resiliencia ante situaciones adversas\",\n    \"Interés máximo en funciones logísticas y administrativas\",\n    \"Disposición para movilidad geográfica y despliegues internacionales\",\n    \"Aceptación del riesgo físico inherente a la función militar\"\n  ],\n  \"developmentAreas\": [\n    \"Preparación previa requerida debido a bajo índice de entrenabilidad\",\n    \"Desarrollo de habilidades de trabajo en equipo\",\n    \"Fortalecimiento de la orientación a posiciones de autoridad\"\n  ],\n  \"recommendation\": \"Acceso a especialidad de Aprovisionamiento en la Armada tras completar programa de preparación previa orientado a elevar el índice de entrenabilidad. Se recomienda formación complementaria en gestión logística y procedimientos administrativos militares.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1045,
+    "completion_tokens": 556,
+    "total_tokens": 1601,
+    "prompt_tokens_details": {
+      "text_tokens": 1045,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 25618500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a gestión y apoyo logístico con baja entrenabilidad inicial",
+    "narrative": "El candidato presenta máxima puntuación en intereses logísticos y administrativos junto a alta afinidad por el ámbito marítimo. El índice de entrenabilidad GTI se sitúa en rango bajo, lo que indica necesidad de preparación previa antes de acceder a formación militar. El perfil de personalidad muestra alta resiliencia y disciplina moderada, con baja orientación al trabajo en equipo y nula aspiración a posiciones de autoridad.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.73
+      },
+      "alternative": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.54
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Logística/Admin (100%) y Combate (75%). Interés moderado en Tecnología/Cyber y Creativo/Artístico (67%). Ausencia total de interés en Sanidad/Cuidado.",
+      "cognitive": "Índice de entrenabilidad GTI de 10/100 indica nivel bajo. Requiere preparación previa antes de iniciar formación militar reglada.",
+      "personality": "Alta resiliencia (3/3) y disciplina moderada (2/3). Orientación técnica media (2/3). Baja capacidad de trabajo en equipo (1/3). Ausencia de aspiración a autoridad (0/3)."
+    },
+    "strengths": [
+      "Alta resiliencia ante situaciones adversas",
+      "Interés máximo en funciones logísticas y administrativas",
+      "Disposición para movilidad geográfica y despliegues internacionales",
+      "Aceptación del riesgo físico inherente a la función militar"
+    ],
+    "developmentAreas": [
+      "Preparación previa requerida debido a bajo índice de entrenabilidad",
+      "Desarrollo de habilidades de trabajo en equipo",
+      "Fortalecimiento de la orientación a posiciones de autoridad"
+    ],
+    "recommendation": "Acceso a especialidad de Aprovisionamiento en la Armada tras completar programa de preparación previa orientado a elevar el índice de entrenabilidad. Se recomienda formación complementaria en gestión logística y procedimientos administrativos militares.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

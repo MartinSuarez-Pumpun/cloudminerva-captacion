@@ -1,0 +1,71 @@
+{
+  "id": "L-1821",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:57.592Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "a97c7c20-b701-9e9e-b49c-9931aeccd380",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 100%\n  Técnica/Mecánica: 90%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 100%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 40%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 40/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 2/3,   Trabajo en equipo: 1/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: si\n  Aspiración a Suboficial: no\n\nEspecialidad recomendada por scoring: Protección y Apoyo a la Fuerza (EAE) — afinidad 73%\nEspecialidad alternativa: Ingenieros (ET) — afinidad 69%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional: Protección y Apoyo a la Fuerza (EAE) e Ingenieros (ET)\",\n  \"narrative\": \"El perfil presenta intereses máximos en Combate, Sanidad/Cuidado y Logística/Admin, junto con alta orientación Técnica/Mecánica. El GTI de 40 indica nivel competente que requiere preparación adicional. La personalidad muestra Aspiración/Autoridad elevada, Resiliencia moderada y puntuaciones bajas en Disciplina, Trabajo en equipo y Orientación técnica. Disponibilidad para despliegues internacionales y horizonte temporal amplio, con limitación de movilidad geográfica y riesgo físico condicionado.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Protección y Apoyo a la Fuerza\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.73\n    },\n    \"alternative\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.69\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Intereses dominantes en Combate, Sanidad/Cuidado y Logística/Admin con componente Técnico/Mecánico alto. Ausencia de interés Marítimo/Aéreo y Tecnología/Cyber.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 40/100, nivel competente que requiere preparación adicional para el acceso.\",\n    \"personality\": \"Aspiración/Autoridad alta, Resiliencia moderada, Disciplina baja, Trabajo en equipo bajo y Orientación técnica baja.\"\n  },\n  \"strengths\": [\n    \"Alta motivación en Combate, Sanidad/Cuidado y Logística/Admin\",\n    \"Componente Técnico/Mecánico sólido\",\n    \"Disponibilidad para despliegues internacionales\",\n    \"Horizonte temporal amplio\"\n  ],\n  \"developmentAreas\": [\n    \"Preparación adicional requerida por GTI 40\",\n    \"Fortalecimiento de Disciplina y Trabajo en equipo\",\n    \"Limitación de movilidad geográfica\"\n  ],\n  \"recommendation\": \"Ambas especialidades presentan afinidad similar y resultan igualmente válidas. Protección y Apoyo a la Fuerza (EAE) y Ingenieros (ET) son opciones coherentes con el perfil de intereses y disponibilidad.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1041,
+    "completion_tokens": 545,
+    "total_tokens": 1586,
+    "prompt_tokens_details": {
+      "text_tokens": 1041,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 19917500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional: Protección y Apoyo a la Fuerza (EAE) e Ingenieros (ET)",
+    "narrative": "El perfil presenta intereses máximos en Combate, Sanidad/Cuidado y Logística/Admin, junto con alta orientación Técnica/Mecánica. El GTI de 40 indica nivel competente que requiere preparación adicional. La personalidad muestra Aspiración/Autoridad elevada, Resiliencia moderada y puntuaciones bajas en Disciplina, Trabajo en equipo y Orientación técnica. Disponibilidad para despliegues internacionales y horizonte temporal amplio, con limitación de movilidad geográfica y riesgo físico condicionado.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Protección y Apoyo a la Fuerza",
+        "branch": "EAE",
+        "affinity": 0.73
+      },
+      "alternative": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.69
+      }
+    },
+    "profileSummary": {
+      "interests": "Intereses dominantes en Combate, Sanidad/Cuidado y Logística/Admin con componente Técnico/Mecánico alto. Ausencia de interés Marítimo/Aéreo y Tecnología/Cyber.",
+      "cognitive": "Índice de entrenabilidad GTI 40/100, nivel competente que requiere preparación adicional para el acceso.",
+      "personality": "Aspiración/Autoridad alta, Resiliencia moderada, Disciplina baja, Trabajo en equipo bajo y Orientación técnica baja."
+    },
+    "strengths": [
+      "Alta motivación en Combate, Sanidad/Cuidado y Logística/Admin",
+      "Componente Técnico/Mecánico sólido",
+      "Disponibilidad para despliegues internacionales",
+      "Horizonte temporal amplio"
+    ],
+    "developmentAreas": [
+      "Preparación adicional requerida por GTI 40",
+      "Fortalecimiento de Disciplina y Trabajo en equipo",
+      "Limitación de movilidad geográfica"
+    ],
+    "recommendation": "Ambas especialidades presentan afinidad similar y resultan igualmente válidas. Protección y Apoyo a la Fuerza (EAE) y Ingenieros (ET) son opciones coherentes con el perfil de intereses y disponibilidad.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

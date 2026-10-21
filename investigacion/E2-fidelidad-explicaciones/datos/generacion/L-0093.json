@@ -1,0 +1,70 @@
+{
+  "id": "L-0093",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:51:43.979Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "12bde7ab-69f1-9042-9eec-fd6e9ce21e6b",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 20%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 20%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 50/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 4/3,   Resiliencia: 2/3,   Trabajo en equipo: 2/3,   Orientación técnica: 0/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: no\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 75%\nEspecialidad alternativa: Sanidad (ET/Armada/EAE) — afinidad 58%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a gestión y apoyo logístico con afinidad destacada en Aprovisionamiento.\",\n  \"narrative\": \"El candidato presenta interés máximo en Logística y Administración (100%) y secundario en Sanidad/Cuidado (67%). El índice GTI de 50 indica nivel competente para formación militar. El patrón de personalidad muestra disciplina elevada (4/3) y puntuaciones moderadas en resiliencia y trabajo en equipo (2/3). La combinación de intereses logísticos con disciplina alta sugiere idoneidad para funciones de aprovisionamiento y control de recursos.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.75\n    },\n    \"alternative\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.58\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés dominante en Logística y Administración (100%). Interés secundario en Sanidad/Cuidado (67%). Intereses bajos en Combate (25%), Técnica/Mecánica (20%), Mando/Liderazgo (20%) y nulo en Marítimo/Aéreo (0%).\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 50/100, nivel competente para formación militar básica.\",\n    \"personality\": \"Disciplina alta (4/3), Resiliencia moderada (2/3), Trabajo en equipo moderado (2/3), Orientación técnica baja (0/3), Aspiración/Autoridad baja (0/3).\"\n  },\n  \"strengths\": [\n    \"Interés máximo en funciones logísticas y administrativas\",\n    \"Disciplina elevada para cumplimiento de procedimientos\",\n    \"Capacidad de trabajo en equipo demostrada\"\n  ],\n  \"developmentAreas\": [\n    \"Desarrollo de resiliencia ante situaciones de estrés\",\n    \"Ampliación de orientación técnica para sistemas de gestión\",\n    \"Fortalecimiento de liderazgo para posibles ascensos\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) como especialidad principal. Sanidad como alternativa viable si se confirma interés en funciones de apoyo sanitario.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1025,
+    "completion_tokens": 547,
+    "total_tokens": 1572,
+    "prompt_tokens_details": {
+      "text_tokens": 1025,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 25143500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a gestión y apoyo logístico con afinidad destacada en Aprovisionamiento.",
+    "narrative": "El candidato presenta interés máximo en Logística y Administración (100%) y secundario en Sanidad/Cuidado (67%). El índice GTI de 50 indica nivel competente para formación militar. El patrón de personalidad muestra disciplina elevada (4/3) y puntuaciones moderadas en resiliencia y trabajo en equipo (2/3). La combinación de intereses logísticos con disciplina alta sugiere idoneidad para funciones de aprovisionamiento y control de recursos.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.75
+      },
+      "alternative": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.58
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés dominante en Logística y Administración (100%). Interés secundario en Sanidad/Cuidado (67%). Intereses bajos en Combate (25%), Técnica/Mecánica (20%), Mando/Liderazgo (20%) y nulo en Marítimo/Aéreo (0%).",
+      "cognitive": "Índice de entrenabilidad GTI 50/100, nivel competente para formación militar básica.",
+      "personality": "Disciplina alta (4/3), Resiliencia moderada (2/3), Trabajo en equipo moderado (2/3), Orientación técnica baja (0/3), Aspiración/Autoridad baja (0/3)."
+    },
+    "strengths": [
+      "Interés máximo en funciones logísticas y administrativas",
+      "Disciplina elevada para cumplimiento de procedimientos",
+      "Capacidad de trabajo en equipo demostrada"
+    ],
+    "developmentAreas": [
+      "Desarrollo de resiliencia ante situaciones de estrés",
+      "Ampliación de orientación técnica para sistemas de gestión",
+      "Fortalecimiento de liderazgo para posibles ascensos"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) como especialidad principal. Sanidad como alternativa viable si se confirma interés en funciones de apoyo sanitario.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

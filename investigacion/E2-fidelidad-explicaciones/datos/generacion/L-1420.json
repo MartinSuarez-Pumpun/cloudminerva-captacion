@@ -1,0 +1,71 @@
+{
+  "id": "L-1420",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:55:30.455Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "aa3c4d7f-cbf7-9d88-96bf-5ce76296d6bb",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 100%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 17%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 40%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 83%\n\nÍndice de entrenabilidad GTI: 100/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 0/3,   Trabajo en equipo: 0/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: no\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Caballería (ET) — afinidad 81%\nEspecialidad alternativa: Ingenieros (ET) — afinidad 79%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional militar - Perfil de alto potencial técnico\",\n  \"narrative\": \"El candidato presenta un patrón de intereses centrado en combate y creatividad técnica con capacidad de entrenabilidad máxima. La combinación de puntuaciones altas en combate y creativo/artístico, junto con orientación técnica elevada, sugiere adecuación a especialidades que requieran precisión técnica en entornos operativos dinámicos.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Caballería\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.81\n    },\n    \"alternative\": {\n      \"name\": \"Ingenieros\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.79\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en combate (100%) y creativo/artístico (83%). Interés moderado en sanidad/cuidado (67%) y marítimo/aéreo (50%). Interés bajo en tecnología/cyber (17%).\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 100/100 indica capacidad destacada para asimilar contenidos formativos complejos.\",\n    \"personality\": \"Disciplina máxima (3/3) y orientación técnica máxima (3/3). Aspiración/autoridad moderada (2/3). Resiliencia y trabajo en equipo en nivel bajo (0/3).\"\n  },\n  \"strengths\": [\n    \"Capacidad de aprendizaje superior\",\n    \"Precisión técnica elevada\",\n    \"Disciplina operativa consistente\",\n    \"Interés fuerte en funciones de combate\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia bajo presión\",\n    \"Integración en equipos operativos\",\n    \"Disponibilidad para despliegues internacionales limitada\"\n  ],\n  \"recommendation\": \"Ambas especialidades resultan igualmente válidas por afinidad técnica y operativa. Caballería ofrece mayor componente de maniobra y contacto. Ingenieros proporciona mayor desarrollo técnico especializado.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1035,
+    "completion_tokens": 491,
+    "total_tokens": 1526,
+    "prompt_tokens_details": {
+      "text_tokens": 1035,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 23868500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional militar - Perfil de alto potencial técnico",
+    "narrative": "El candidato presenta un patrón de intereses centrado en combate y creatividad técnica con capacidad de entrenabilidad máxima. La combinación de puntuaciones altas en combate y creativo/artístico, junto con orientación técnica elevada, sugiere adecuación a especialidades que requieran precisión técnica en entornos operativos dinámicos.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Caballería",
+        "branch": "ET",
+        "affinity": 0.81
+      },
+      "alternative": {
+        "name": "Ingenieros",
+        "branch": "ET",
+        "affinity": 0.79
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en combate (100%) y creativo/artístico (83%). Interés moderado en sanidad/cuidado (67%) y marítimo/aéreo (50%). Interés bajo en tecnología/cyber (17%).",
+      "cognitive": "Índice de entrenabilidad GTI de 100/100 indica capacidad destacada para asimilar contenidos formativos complejos.",
+      "personality": "Disciplina máxima (3/3) y orientación técnica máxima (3/3). Aspiración/autoridad moderada (2/3). Resiliencia y trabajo en equipo en nivel bajo (0/3)."
+    },
+    "strengths": [
+      "Capacidad de aprendizaje superior",
+      "Precisión técnica elevada",
+      "Disciplina operativa consistente",
+      "Interés fuerte en funciones de combate"
+    ],
+    "developmentAreas": [
+      "Resiliencia bajo presión",
+      "Integración en equipos operativos",
+      "Disponibilidad para despliegues internacionales limitada"
+    ],
+    "recommendation": "Ambas especialidades resultan igualmente válidas por afinidad técnica y operativa. Caballería ofrece mayor componente de maniobra y contacto. Ingenieros proporciona mayor desarrollo técnico especializado.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": "L-1074",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:50:59.667Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "edf7224f-db16-9201-bf75-f2eeff7df1ae",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 13%\n  Técnica/Mecánica: 0%\n  Tecnología/Cyber: 33%\n  Sanidad/Cuidado: 83%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 50%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 100%\n\nÍndice de entrenabilidad GTI: 25/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 2/3,   Trabajo en equipo: 2/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 1/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: no\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: no\n\nEspecialidad recomendada por scoring: Sanidad (ET/Armada/EAE) — afinidad 69%\nEspecialidad alternativa: Infantería Ligera (ET) — afinidad 39%\n\nFlags especiales:\n  • GTI_BAJO: motivar y no desanimar, señalar preparación previa\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Evaluación de orientación vocacional militar\",\n  \"narrative\": \"El perfil muestra interés predominante en Sanidad/Cuidado y Creativo/Artístico. El índice GTI de 25 indica nivel bajo de entrenabilidad. La personalidad presenta puntuaciones moderadas en Resiliencia, Trabajo en equipo y Orientación técnica, con puntuaciones bajas en Disciplina y Aspiración/Autoridad. Los filtros de disponibilidad permiten despliegues internacionales, riesgo físico y horizonte temporal, pero excluyen movilidad geográfica y aspiración a Suboficial.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.69\n    },\n    \"alternative\": {\n      \"name\": \"Infantería Ligera\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.39\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés alto en Sanidad/Cuidado (83%) y Creativo/Artístico (100%). Interés moderado en Mando/Liderazgo (50%) y Tecnología/Cyber (33%). Interés bajo en Combate (13%) y nulo en Técnica/Mecánica, Logística/Admin y Marítimo/Aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 25/100, nivel bajo que requiere preparación previa antes de acceder a formación militar.\",\n    \"personality\": \"Disciplina 1/3, Resiliencia 2/3, Trabajo en equipo 2/3, Orientación técnica 2/3, Aspiración/Autoridad 1/3.\"\n  },\n  \"strengths\": [\n    \"Interés elevado en Sanidad/Cuidado\",\n    \"Interés elevado en Creativo/Artístico\",\n    \"Disponibilidad para despliegues internacionales\",\n    \"Aceptación de riesgo físico\",\n    \"Disponibilidad de horizonte temporal\"\n  ],\n  \"developmentAreas\": [\n    \"Índice GTI bajo requiere preparación previa\",\n    \"Disciplina baja (1/3)\",\n    \"Aspiración/Autoridad baja (1/3)\",\n    \"Movilidad geográfica limitada\"\n  ],\n  \"recommendation\": \"Orientación hacia Sanidad (ET/Armada/EAE) por afinidad de 0.69. Se requiere preparación previa debido al GTI bajo. No se recomienda vía de Suboficiales por aspiración declarada negativa.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1049,
+    "completion_tokens": 594,
+    "total_tokens": 1643,
+    "prompt_tokens_details": {
+      "text_tokens": 1049,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 26618500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Evaluación de orientación vocacional militar",
+    "narrative": "El perfil muestra interés predominante en Sanidad/Cuidado y Creativo/Artístico. El índice GTI de 25 indica nivel bajo de entrenabilidad. La personalidad presenta puntuaciones moderadas en Resiliencia, Trabajo en equipo y Orientación técnica, con puntuaciones bajas en Disciplina y Aspiración/Autoridad. Los filtros de disponibilidad permiten despliegues internacionales, riesgo físico y horizonte temporal, pero excluyen movilidad geográfica y aspiración a Suboficial.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.69
+      },
+      "alternative": {
+        "name": "Infantería Ligera",
+        "branch": "ET",
+        "affinity": 0.39
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés alto en Sanidad/Cuidado (83%) y Creativo/Artístico (100%). Interés moderado en Mando/Liderazgo (50%) y Tecnología/Cyber (33%). Interés bajo en Combate (13%) y nulo en Técnica/Mecánica, Logística/Admin y Marítimo/Aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI de 25/100, nivel bajo que requiere preparación previa antes de acceder a formación militar.",
+      "personality": "Disciplina 1/3, Resiliencia 2/3, Trabajo en equipo 2/3, Orientación técnica 2/3, Aspiración/Autoridad 1/3."
+    },
+    "strengths": [
+      "Interés elevado en Sanidad/Cuidado",
+      "Interés elevado en Creativo/Artístico",
+      "Disponibilidad para despliegues internacionales",
+      "Aceptación de riesgo físico",
+      "Disponibilidad de horizonte temporal"
+    ],
+    "developmentAreas": [
+      "Índice GTI bajo requiere preparación previa",
+      "Disciplina baja (1/3)",
+      "Aspiración/Autoridad baja (1/3)",
+      "Movilidad geográfica limitada"
+    ],
+    "recommendation": "Orientación hacia Sanidad (ET/Armada/EAE) por afinidad de 0.69. Se requiere preparación previa debido al GTI bajo. No se recomienda vía de Suboficiales por aspiración declarada negativa.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

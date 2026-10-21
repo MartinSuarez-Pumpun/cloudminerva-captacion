@@ -1,0 +1,71 @@
+{
+  "id": "L-1052",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:53:19.623Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "2ab54fff-d174-951f-9a77-eeab7c4c294f",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 100%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 40%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 100%\n\nÍndice de entrenabilidad GTI: 100/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 3/3,   Trabajo en equipo: 3/3,   Orientación técnica: 0/3,   Aspiración/Autoridad: 1/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: no\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: no\n\nEspecialidad recomendada por scoring: Operaciones y Sistemas (Armada) — afinidad 90%\nEspecialidad alternativa: Maniobra y Navegación (Armada) — afinidad 89%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a Operaciones y Sistemas o Maniobra y Navegación en la Armada.\",\n  \"narrative\": \"Alta afinidad en intereses tecnológicos, marítimos y logísticos. GTI máximo indica capacidad destacada para formación técnica. Personalidad muestra resiliencia y trabajo en equipo elevados con orientación técnica baja.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.90\n    },\n    \"alternative\": {\n      \"name\": \"Maniobra y Navegación\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.89\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Máxima puntuación en Tecnología/Cyber, Logística/Admin y Marítimo/Aéreo. Interés moderado en Sanidad/Cuidado y Técnica/Mecánica. Baja atracción por Combate.\",\n    \"cognitive\": \"GTI 100/100. Capacidad destacada para entrenamiento técnico avanzado.\",\n    \"personality\": \"Resiliencia alta, Trabajo en equipo alto, Disciplina baja, Orientación técnica baja, Aspiración/Autoridad baja.\"\n  },\n  \"strengths\": [\n    \"Capacidad máxima de aprendizaje técnico\",\n    \"Alta resiliencia ante exigencias operativas\",\n    \"Preferencia por entornos marítimos y tecnológicos\",\n    \"Interés en funciones logísticas y de sistemas\"\n  ],\n  \"developmentAreas\": [\n    \"Desarrollo de disciplina estructurada\",\n    \"Fortalecimiento de orientación técnica aplicada\",\n    \"Gestión de limitaciones de despliegue internacional\"\n  ],\n  \"recommendation\": \"Se orienta a Operaciones y Sistemas o Maniobra y Navegación en la Armada. Ambas especialidades presentan afinidad equivalente y son igualmente válidas según el perfil evaluado.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1042,
+    "completion_tokens": 466,
+    "total_tokens": 1508,
+    "prompt_tokens_details": {
+      "text_tokens": 1042,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 17955000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a Operaciones y Sistemas o Maniobra y Navegación en la Armada.",
+    "narrative": "Alta afinidad en intereses tecnológicos, marítimos y logísticos. GTI máximo indica capacidad destacada para formación técnica. Personalidad muestra resiliencia y trabajo en equipo elevados con orientación técnica baja.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.9
+      },
+      "alternative": {
+        "name": "Maniobra y Navegación",
+        "branch": "Armada",
+        "affinity": 0.89
+      }
+    },
+    "profileSummary": {
+      "interests": "Máxima puntuación en Tecnología/Cyber, Logística/Admin y Marítimo/Aéreo. Interés moderado en Sanidad/Cuidado y Técnica/Mecánica. Baja atracción por Combate.",
+      "cognitive": "GTI 100/100. Capacidad destacada para entrenamiento técnico avanzado.",
+      "personality": "Resiliencia alta, Trabajo en equipo alto, Disciplina baja, Orientación técnica baja, Aspiración/Autoridad baja."
+    },
+    "strengths": [
+      "Capacidad máxima de aprendizaje técnico",
+      "Alta resiliencia ante exigencias operativas",
+      "Preferencia por entornos marítimos y tecnológicos",
+      "Interés en funciones logísticas y de sistemas"
+    ],
+    "developmentAreas": [
+      "Desarrollo de disciplina estructurada",
+      "Fortalecimiento de orientación técnica aplicada",
+      "Gestión de limitaciones de despliegue internacional"
+    ],
+    "recommendation": "Se orienta a Operaciones y Sistemas o Maniobra y Navegación en la Armada. Ambas especialidades presentan afinidad equivalente y son igualmente válidas según el perfil evaluado.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

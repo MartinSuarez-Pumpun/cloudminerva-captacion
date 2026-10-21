@@ -1,0 +1,70 @@
+{
+  "id": "L-1931",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:52:09.316Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "952a217f-90f5-9000-8c39-fb3a77eac1b0",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 13%\n  Técnica/Mecánica: 80%\n  Tecnología/Cyber: 17%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 17%\n\nÍndice de entrenabilidad GTI: 50/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 2/3,   Trabajo en equipo: 1/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Energía y Propulsión (Armada) — afinidad 78%\nEspecialidad alternativa: Logística (ET) — afinidad 65%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil orientado a especialidades técnicas navales con capacidad de mando.\",\n  \"narrative\": \"El candidato presenta alta afinidad con sistemas mecánicos y técnicos, combinada con interés en mando y liderazgo. El índice GTI de 50 indica capacidad de entrenamiento competente. La personalidad muestra orientación técnica elevada y disciplina moderada, con baja puntuación en trabajo en equipo y aspiración a autoridad.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Energía y Propulsión\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.78\n    },\n    \"alternative\": {\n      \"name\": \"Logística\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.65\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta preferencia por entornos marítimos y aéreos (100%) y orientación técnica/mecánica (80%). Interés moderado en logística y administración (50%). Nula preferencia por sanidad/cuidado (0%).\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 50/100. Nivel competente para formación militar.\",\n    \"personality\": \"Orientación técnica alta (3/3), disciplina moderada (2/3), resiliencia moderada (2/3), trabajo en equipo bajo (1/3), aspiración/autoridad nula (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta orientación técnica y mecánica\",\n    \"Interés en sistemas de propulsión y energía\",\n    \"Capacidad de entrenamiento competente\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo reducido\",\n    \"Aspiración a posiciones de autoridad limitada\",\n    \"Disponibilidad para despliegues internacionales condicionada\"\n  ],\n  \"recommendation\": \"Energía y Propulsión (Armada) es la especialidad fundamental más adecuada. El perfil técnico y el interés marítimo/aéreo alinean con sistemas de propulsión naval. La alternativa Logística (ET) es viable si se prioriza el componente logístico-administrativo.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1021,
+    "completion_tokens": 511,
+    "total_tokens": 1532,
+    "prompt_tokens_details": {
+      "text_tokens": 1021,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18817500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil orientado a especialidades técnicas navales con capacidad de mando.",
+    "narrative": "El candidato presenta alta afinidad con sistemas mecánicos y técnicos, combinada con interés en mando y liderazgo. El índice GTI de 50 indica capacidad de entrenamiento competente. La personalidad muestra orientación técnica elevada y disciplina moderada, con baja puntuación en trabajo en equipo y aspiración a autoridad.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Energía y Propulsión",
+        "branch": "Armada",
+        "affinity": 0.78
+      },
+      "alternative": {
+        "name": "Logística",
+        "branch": "ET",
+        "affinity": 0.65
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta preferencia por entornos marítimos y aéreos (100%) y orientación técnica/mecánica (80%). Interés moderado en logística y administración (50%). Nula preferencia por sanidad/cuidado (0%).",
+      "cognitive": "Índice de entrenabilidad GTI 50/100. Nivel competente para formación militar.",
+      "personality": "Orientación técnica alta (3/3), disciplina moderada (2/3), resiliencia moderada (2/3), trabajo en equipo bajo (1/3), aspiración/autoridad nula (0/3)."
+    },
+    "strengths": [
+      "Alta orientación técnica y mecánica",
+      "Interés en sistemas de propulsión y energía",
+      "Capacidad de entrenamiento competente"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo reducido",
+      "Aspiración a posiciones de autoridad limitada",
+      "Disponibilidad para despliegues internacionales condicionada"
+    ],
+    "recommendation": "Energía y Propulsión (Armada) es la especialidad fundamental más adecuada. El perfil técnico y el interés marítimo/aéreo alinean con sistemas de propulsión naval. La alternativa Logística (ET) es viable si se prioriza el componente logístico-administrativo.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

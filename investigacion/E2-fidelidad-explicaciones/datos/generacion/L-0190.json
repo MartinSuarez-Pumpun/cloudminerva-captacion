@@ -1,0 +1,70 @@
+{
+  "id": "L-0190",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:48.816Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "76911ce9-20d9-9969-b856-62cdbec6c804",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 100%\n  Tecnología/Cyber: 100%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 100%\n\nÍndice de entrenabilidad GTI: 90/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 2/3,   Trabajo en equipo: 0/3,   Orientación técnica: 3/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Operaciones y Sistemas (Armada) — afinidad 90%\nEspecialidad alternativa: Mantenimiento Operativo (EAE) — afinidad 87%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia Operaciones y Sistemas (Armada) y Mantenimiento Operativo (EAE)\",\n  \"narrative\": \"El perfil muestra alta afinidad con especialidades técnicas y de sistemas. GTI de 90 indica capacidad destacada para formación avanzada.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Operaciones y Sistemas\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.9\n    },\n    \"alternative\": {\n      \"name\": \"Mantenimiento Operativo\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.87\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Máxima puntuación en Técnica/Mecánica, Tecnología/Cyber y Creativo/Artístico. Interés alto en Mando/Liderazgo (80%).\",\n    \"cognitive\": \"GTI 90: nivel destacado. Capacidad para formación de Suboficiales.\",\n    \"personality\": \"Orientación técnica máxima (3/3). Aspiración/Autoridad y Resiliencia moderadas (2/3). Disciplina baja (1/3). Trabajo en equipo nulo (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta capacidad técnica y tecnológica\",\n    \"GTI destacado para formación avanzada\",\n    \"Interés en mando y liderazgo\"\n  ],\n  \"developmentAreas\": [\n    \"Trabajo en equipo ausente\",\n    \"Disciplina baja\",\n    \"Disponibilidad para despliegues internacionales condicionada\"\n  ],\n  \"recommendation\": \"Ambas especialidades son igualmente válidas. Operaciones y Sistemas (Armada) y Mantenimiento Operativo (EAE) presentan afinidades similares. Selección según preferencia de rama y entorno operativo.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1041,
+    "completion_tokens": 449,
+    "total_tokens": 1490,
+    "prompt_tokens_details": {
+      "text_tokens": 1041,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 17517500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia Operaciones y Sistemas (Armada) y Mantenimiento Operativo (EAE)",
+    "narrative": "El perfil muestra alta afinidad con especialidades técnicas y de sistemas. GTI de 90 indica capacidad destacada para formación avanzada.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Operaciones y Sistemas",
+        "branch": "Armada",
+        "affinity": 0.9
+      },
+      "alternative": {
+        "name": "Mantenimiento Operativo",
+        "branch": "EAE",
+        "affinity": 0.87
+      }
+    },
+    "profileSummary": {
+      "interests": "Máxima puntuación en Técnica/Mecánica, Tecnología/Cyber y Creativo/Artístico. Interés alto en Mando/Liderazgo (80%).",
+      "cognitive": "GTI 90: nivel destacado. Capacidad para formación de Suboficiales.",
+      "personality": "Orientación técnica máxima (3/3). Aspiración/Autoridad y Resiliencia moderadas (2/3). Disciplina baja (1/3). Trabajo en equipo nulo (0/3)."
+    },
+    "strengths": [
+      "Alta capacidad técnica y tecnológica",
+      "GTI destacado para formación avanzada",
+      "Interés en mando y liderazgo"
+    ],
+    "developmentAreas": [
+      "Trabajo en equipo ausente",
+      "Disciplina baja",
+      "Disponibilidad para despliegues internacionales condicionada"
+    ],
+    "recommendation": "Ambas especialidades son igualmente válidas. Operaciones y Sistemas (Armada) y Mantenimiento Operativo (EAE) presentan afinidades similares. Selección según preferencia de rama y entorno operativo.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

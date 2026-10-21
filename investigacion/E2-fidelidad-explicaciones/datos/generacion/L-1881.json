@@ -1,0 +1,70 @@
+{
+  "id": "L-1881",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:53:09.414Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "f81d5a8e-9448-9024-a30e-7693345af53f",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 25%\n  Técnica/Mecánica: 10%\n  Tecnología/Cyber: 67%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 40%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 0%\n\nÍndice de entrenabilidad GTI: 25/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 0/3,   Resiliencia: 1/3,   Trabajo en equipo: 2/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 3/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: depende\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Sanidad (ET/Armada/EAE) — afinidad 44%\nEspecialidad alternativa: Aprovisionamiento (Armada) — afinidad 43%\n\nFlags especiales:\n  • GTI_BAJO: motivar y no desanimar, señalar preparación previa\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional militar - GTI bajo con perfil técnico-administrativo\",\n  \"narrative\": \"El candidato presenta interés predominante en tecnología y cibernética (67%) con afinidad secundaria en logística y administración (50%). El índice GTI de 25 indica necesidad de preparación previa. El perfil de personalidad muestra aspiración alta y orientación técnica moderada, con disciplina baja y resiliencia limitada. Las especialidades recomendadas son Sanidad y Aprovisionamiento, ambas con afinidad similar.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Sanidad\",\n      \"branch\": \"ET/Armada/EAE\",\n      \"affinity\": 0.44\n    },\n    \"alternative\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.43\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés principal en tecnología y cibernética (67%), seguido de logística y administración (50%). Baja afinidad con combate (25%) y nula con ámbitos marítimo/aéreo y creativo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 25/100, nivel bajo que requiere preparación previa antes de acceder a formación militar.\",\n    \"personality\": \"Aspiración/Autoridad alta (3/3), Orientación técnica moderada (2/3), Trabajo en equipo moderado (2/3), Resiliencia baja (1/3), Disciplina nula (0/3).\"\n  },\n  \"strengths\": [\n    \"Alta aspiración y motivación hacia roles de autoridad\",\n    \"Interés técnico orientado a sistemas y tecnología\",\n    \"Disponibilidad para movilidad geográfica y riesgo físico\"\n  ],\n  \"developmentAreas\": [\n    \"Índice de entrenabilidad bajo requiere preparación previa\",\n    \"Disciplina y resiliencia necesitan desarrollo\",\n    \"Interés en combate y ámbitos marítimo/aéreo muy limitado\"\n  ],\n  \"recommendation\": \"Ambas especialidades (Sanidad y Aprovisionamiento) presentan afinidad similar. Se recomienda iniciar preparación formativa para elevar el GTI antes de presentarse a pruebas de acceso. El perfil técnico-administrativo se alinea mejor con funciones de apoyo que con roles de combate directo.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1062,
+    "completion_tokens": 553,
+    "total_tokens": 1615,
+    "prompt_tokens_details": {
+      "text_tokens": 1062,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 20380000
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional militar - GTI bajo con perfil técnico-administrativo",
+    "narrative": "El candidato presenta interés predominante en tecnología y cibernética (67%) con afinidad secundaria en logística y administración (50%). El índice GTI de 25 indica necesidad de preparación previa. El perfil de personalidad muestra aspiración alta y orientación técnica moderada, con disciplina baja y resiliencia limitada. Las especialidades recomendadas son Sanidad y Aprovisionamiento, ambas con afinidad similar.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Sanidad",
+        "branch": "ET/Armada/EAE",
+        "affinity": 0.44
+      },
+      "alternative": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.43
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés principal en tecnología y cibernética (67%), seguido de logística y administración (50%). Baja afinidad con combate (25%) y nula con ámbitos marítimo/aéreo y creativo.",
+      "cognitive": "Índice de entrenabilidad GTI 25/100, nivel bajo que requiere preparación previa antes de acceder a formación militar.",
+      "personality": "Aspiración/Autoridad alta (3/3), Orientación técnica moderada (2/3), Trabajo en equipo moderado (2/3), Resiliencia baja (1/3), Disciplina nula (0/3)."
+    },
+    "strengths": [
+      "Alta aspiración y motivación hacia roles de autoridad",
+      "Interés técnico orientado a sistemas y tecnología",
+      "Disponibilidad para movilidad geográfica y riesgo físico"
+    ],
+    "developmentAreas": [
+      "Índice de entrenabilidad bajo requiere preparación previa",
+      "Disciplina y resiliencia necesitan desarrollo",
+      "Interés en combate y ámbitos marítimo/aéreo muy limitado"
+    ],
+    "recommendation": "Ambas especialidades (Sanidad y Aprovisionamiento) presentan afinidad similar. Se recomienda iniciar preparación formativa para elevar el GTI antes de presentarse a pruebas de acceso. El perfil técnico-administrativo se alinea mejor con funciones de apoyo que con roles de combate directo.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "L-1140",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:56:02.735Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "053b2bd1-c11d-9be7-b966-cf8f54e1bd25",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 50%\n  Técnica/Mecánica: 80%\n  Tecnología/Cyber: 100%\n  Sanidad/Cuidado: 33%\n  Logística/Admin: 100%\n  Mando/Liderazgo: 20%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 35/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 1/3,   Resiliencia: 1/3,   Trabajo en equipo: 2/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 2/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: depende\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 71%\nEspecialidad alternativa: Transmisiones (ET) — afinidad 68%\n\nFlags especiales:\n  • GTI_BAJO: motivar y no desanimar, señalar preparación previa\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Evaluación de orientación vocacional militar\",\n  \"narrative\": \"El perfil muestra afinidad destacada hacia tareas técnicas y de gestión de recursos. El índice de entrenabilidad GTI de 35 indica necesidad de preparación previa. Las preferencias apuntan a especialidades que combinan aspectos técnicos y logísticos.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.71\n    },\n    \"alternative\": {\n      \"name\": \"Transmisiones\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.68\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Intereses elevados en Tecnología/Cyber (100%) y Logística/Admin (100%). Interés moderado en Técnica/Mecánica (80%) y Combate (50%). Bajo interés en Mando/Liderazgo (20%) y nulo en Marítimo/Aéreo (0%).\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 35/100. Nivel bajo que requiere preparación adicional antes del acceso.\",\n    \"personality\": \"Disciplina 1/3, Resiliencia 1/3, Trabajo en equipo 2/3, Orientación técnica 2/3, Aspiración/Autoridad 2/3.\"\n  },\n  \"strengths\": [\n    \"Alta afinidad con procesos logísticos y técnicos\",\n    \"Disposición para movilidad y despliegues\",\n    \"Interés en sistemas tecnológicos\"\n  ],\n  \"developmentAreas\": [\n    \"Preparación previa requerida por GTI bajo\",\n    \"Desarrollo de disciplina y resiliencia\",\n    \"Fortalecimiento de capacidad de liderazgo\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) y Transmisiones (ET) presentan afinidades similares y son opciones igualmente válidas según el perfil evaluado.\",\n  \"suboficialesPath\": false,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1057,
+    "completion_tokens": 477,
+    "total_tokens": 1534,
+    "prompt_tokens_details": {
+      "text_tokens": 1057,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 18417500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Evaluación de orientación vocacional militar",
+    "narrative": "El perfil muestra afinidad destacada hacia tareas técnicas y de gestión de recursos. El índice de entrenabilidad GTI de 35 indica necesidad de preparación previa. Las preferencias apuntan a especialidades que combinan aspectos técnicos y logísticos.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.71
+      },
+      "alternative": {
+        "name": "Transmisiones",
+        "branch": "ET",
+        "affinity": 0.68
+      }
+    },
+    "profileSummary": {
+      "interests": "Intereses elevados en Tecnología/Cyber (100%) y Logística/Admin (100%). Interés moderado en Técnica/Mecánica (80%) y Combate (50%). Bajo interés en Mando/Liderazgo (20%) y nulo en Marítimo/Aéreo (0%).",
+      "cognitive": "Índice de entrenabilidad GTI 35/100. Nivel bajo que requiere preparación adicional antes del acceso.",
+      "personality": "Disciplina 1/3, Resiliencia 1/3, Trabajo en equipo 2/3, Orientación técnica 2/3, Aspiración/Autoridad 2/3."
+    },
+    "strengths": [
+      "Alta afinidad con procesos logísticos y técnicos",
+      "Disposición para movilidad y despliegues",
+      "Interés en sistemas tecnológicos"
+    ],
+    "developmentAreas": [
+      "Preparación previa requerida por GTI bajo",
+      "Desarrollo de disciplina y resiliencia",
+      "Fortalecimiento de capacidad de liderazgo"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) y Transmisiones (ET) presentan afinidades similares y son opciones igualmente válidas según el perfil evaluado.",
+    "suboficialesPath": false,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

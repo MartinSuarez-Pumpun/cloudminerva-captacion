@@ -1,0 +1,73 @@
+{
+  "id": "L-0435",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:52:24.263Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "315fe6cf-5348-9d1e-9537-b7ce36e8d1c5",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 50%\n  Técnica/Mecánica: 100%\n  Tecnología/Cyber: 100%\n  Sanidad/Cuidado: 67%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 80%\n  Marítimo/Aéreo: 50%\n  Creativo/Artístico: 33%\n\nÍndice de entrenabilidad GTI: 90/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 3/3,   Resiliencia: 1/3,   Trabajo en equipo: 2/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: depende\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Transmisiones (ET) — afinidad 97%\nEspecialidad alternativa: Mantenimiento Operativo (EAE) — afinidad 97%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Perfil técnico con alta entrenabilidad y aspiración a suboficiales\",\n  \"narrative\": \"Candidato con interés dominante en áreas técnicas y tecnológicas. Índice de entrenabilidad destacado. Perfil de personalidad orientado a disciplina y orientación técnica. Disponibilidad para despliegues internacionales y aspiración a suboficiales.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Transmisiones\",\n      \"branch\": \"ET\",\n      \"affinity\": 0.97\n    },\n    \"alternative\": {\n      \"name\": \"Mantenimiento Operativo\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.97\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Interés máximo en Técnica/Mecánica y Tecnología/Cyber. Interés alto en Mando/Liderazgo. Interés moderado en Sanidad/Cuidado, Combate, Logística/Admin y Marítimo/Aéreo. Interés bajo en Creativo/Artístico.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI 90/100. Nivel destacado. Cumple requisitos para acceso a formación de suboficiales.\",\n    \"personality\": \"Disciplina alta, Orientación técnica media, Trabajo en equipo medio, Resiliencia baja, Aspiración/Autoridad baja.\"\n  },\n  \"strengths\": [\n    \"Alta capacidad de aprendizaje técnico\",\n    \"Interés consolidado en sistemas y tecnología\",\n    \"Disciplina elevada\",\n    \"Disponibilidad para despliegues internacionales\",\n    \"Aspiración a suboficiales\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia baja\",\n    \"Aspiración/Autoridad baja\",\n    \"Movilidad geográfica condicionada\",\n    \"Riesgo físico condicionado\"\n  ],\n  \"recommendation\": \"Transmisiones (ET) y Mantenimiento Operativo (EAE) presentan afinidad equivalente. Ambas especialidades son igualmente válidas según el perfil evaluado.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1039,
+    "completion_tokens": 493,
+    "total_tokens": 1532,
+    "prompt_tokens_details": {
+      "text_tokens": 1039,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 23968500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Perfil técnico con alta entrenabilidad y aspiración a suboficiales",
+    "narrative": "Candidato con interés dominante en áreas técnicas y tecnológicas. Índice de entrenabilidad destacado. Perfil de personalidad orientado a disciplina y orientación técnica. Disponibilidad para despliegues internacionales y aspiración a suboficiales.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Transmisiones",
+        "branch": "ET",
+        "affinity": 0.97
+      },
+      "alternative": {
+        "name": "Mantenimiento Operativo",
+        "branch": "EAE",
+        "affinity": 0.97
+      }
+    },
+    "profileSummary": {
+      "interests": "Interés máximo en Técnica/Mecánica y Tecnología/Cyber. Interés alto en Mando/Liderazgo. Interés moderado en Sanidad/Cuidado, Combate, Logística/Admin y Marítimo/Aéreo. Interés bajo en Creativo/Artístico.",
+      "cognitive": "Índice de entrenabilidad GTI 90/100. Nivel destacado. Cumple requisitos para acceso a formación de suboficiales.",
+      "personality": "Disciplina alta, Orientación técnica media, Trabajo en equipo medio, Resiliencia baja, Aspiración/Autoridad baja."
+    },
+    "strengths": [
+      "Alta capacidad de aprendizaje técnico",
+      "Interés consolidado en sistemas y tecnología",
+      "Disciplina elevada",
+      "Disponibilidad para despliegues internacionales",
+      "Aspiración a suboficiales"
+    ],
+    "developmentAreas": [
+      "Resiliencia baja",
+      "Aspiración/Autoridad baja",
+      "Movilidad geográfica condicionada",
+      "Riesgo físico condicionado"
+    ],
+    "recommendation": "Transmisiones (ET) y Mantenimiento Operativo (EAE) presentan afinidad equivalente. Ambas especialidades son igualmente válidas según el perfil evaluado.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

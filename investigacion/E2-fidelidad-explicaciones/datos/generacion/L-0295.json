@@ -1,0 +1,72 @@
+{
+  "id": "L-0295",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:55:14.463Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "730ef138-bd79-9a3c-be52-84543819cb95",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 50%\n  Técnica/Mecánica: 60%\n  Tecnología/Cyber: 0%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 0%\n  Mando/Liderazgo: 0%\n  Marítimo/Aéreo: 100%\n  Creativo/Artístico: 67%\n\nÍndice de entrenabilidad GTI: 65/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 4/3,   Resiliencia: 0/3,   Trabajo en equipo: 2/3,   Orientación técnica: 1/3,   Aspiración/Autoridad: 1/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: si\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: depende\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Energía y Propulsión (Armada) — afinidad 75%\nEspecialidad alternativa: Maniobra y Navegación (Armada) — afinidad 72%\n\nFlags especiales:\n  • EMPATE: mencionar ambas especialidades como igualmente válidas\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación hacia especialidades marítimas con perfil técnico-mecánico\",\n  \"narrative\": \"El candidato presenta afinidad máxima con el ámbito marítimo/aéreo y puntuación elevada en intereses técnicos/mecánicos. El índice GTI de 65 indica nivel competente para el entrenamiento militar. La combinación de disponibilidad total para movilidad y despliegues, junto con aspiración a suboficiales, orienta hacia especialidades de la Armada con componente técnico.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Energía y Propulsión\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.75\n    },\n    \"alternative\": {\n      \"name\": \"Maniobra y Navegación\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.72\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Máxima puntuación en Marítimo/Aéreo (100%). Interés técnico/mecánico moderado (60%). Ausencia de interés en áreas sanitarias, logísticas, de mando o tecnológicas.\",\n    \"cognitive\": \"Índice GTI de 65 indica nivel competente para el entrenamiento militar. No requiere preparación adicional específica.\",\n    \"personality\": \"Disciplina elevada (4/3). Trabajo en equipo moderado (2/3). Orientación técnica y aspiración a autoridad en niveles bajos (1/3). Resiliencia no observada en esta evaluación.\"\n  },\n  \"strengths\": [\n    \"Alta afinidad con entorno marítimo\",\n    \"Interés técnico-mecánico presente\",\n    \"Disponibilidad total para movilidad y despliegues\",\n    \"Aspiración a suboficiales declarada\",\n    \"Nivel GTI competente\"\n  ],\n  \"developmentAreas\": [\n    \"Resiliencia no evaluada en esta sesión\",\n    \"Interés en mando y liderazgo ausente\",\n    \"Horizonte temporal condicionado\"\n  ],\n  \"recommendation\": \"Se recomienda Energía y Propulsión (Armada) como primera opción por su afinidad del 75%. Maniobra y Navegación (Armada) constituye alternativa válida con afinidad del 72%. Ambas especialidades son igualmente apropiadas según los datos disponibles.\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1043,
+    "completion_tokens": 547,
+    "total_tokens": 1590,
+    "prompt_tokens_details": {
+      "text_tokens": 1043,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 19992500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación hacia especialidades marítimas con perfil técnico-mecánico",
+    "narrative": "El candidato presenta afinidad máxima con el ámbito marítimo/aéreo y puntuación elevada en intereses técnicos/mecánicos. El índice GTI de 65 indica nivel competente para el entrenamiento militar. La combinación de disponibilidad total para movilidad y despliegues, junto con aspiración a suboficiales, orienta hacia especialidades de la Armada con componente técnico.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Energía y Propulsión",
+        "branch": "Armada",
+        "affinity": 0.75
+      },
+      "alternative": {
+        "name": "Maniobra y Navegación",
+        "branch": "Armada",
+        "affinity": 0.72
+      }
+    },
+    "profileSummary": {
+      "interests": "Máxima puntuación en Marítimo/Aéreo (100%). Interés técnico/mecánico moderado (60%). Ausencia de interés en áreas sanitarias, logísticas, de mando o tecnológicas.",
+      "cognitive": "Índice GTI de 65 indica nivel competente para el entrenamiento militar. No requiere preparación adicional específica.",
+      "personality": "Disciplina elevada (4/3). Trabajo en equipo moderado (2/3). Orientación técnica y aspiración a autoridad en niveles bajos (1/3). Resiliencia no observada en esta evaluación."
+    },
+    "strengths": [
+      "Alta afinidad con entorno marítimo",
+      "Interés técnico-mecánico presente",
+      "Disponibilidad total para movilidad y despliegues",
+      "Aspiración a suboficiales declarada",
+      "Nivel GTI competente"
+    ],
+    "developmentAreas": [
+      "Resiliencia no evaluada en esta sesión",
+      "Interés en mando y liderazgo ausente",
+      "Horizonte temporal condicionado"
+    ],
+    "recommendation": "Se recomienda Energía y Propulsión (Armada) como primera opción por su afinidad del 75%. Maniobra y Navegación (Armada) constituye alternativa válida con afinidad del 72%. Ambas especialidades son igualmente apropiadas según los datos disponibles.",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

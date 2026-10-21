@@ -1,0 +1,71 @@
+{
+  "id": "L-1290",
+  "conjunto": "evaluacion",
+  "fecha": "2026-10-20T16:54:34.683Z",
+  "via": "proxy_produccion",
+  "modelo_solicitado": "grok-4-fast-non-reasoning",
+  "modelo_respuesta": "grok-4.3",
+  "respuesta_id": "fa2406ae-5f70-9c81-963f-6d99dae0a532",
+  "parametros": {
+    "temperature": 0.4,
+    "max_tokens": 1800
+  },
+  "entrada": "Candidato evaluado:\n\nPerfil de intereses vocacionales (0-100%):\n  Combate: 0%\n  Técnica/Mecánica: 40%\n  Tecnología/Cyber: 17%\n  Sanidad/Cuidado: 0%\n  Logística/Admin: 50%\n  Mando/Liderazgo: 0%\n  Marítimo/Aéreo: 0%\n  Creativo/Artístico: 83%\n\nÍndice de entrenabilidad GTI: 60/100\n\nPerfil de personalidad (0-3 por rasgo):\n  Disciplina: 2/3,   Resiliencia: 2/3,   Trabajo en equipo: 2/3,   Orientación técnica: 2/3,   Aspiración/Autoridad: 0/3\n\nFiltros de disponibilidad:\n  Movilidad geográfica: depende\n  Despliegues internacionales: si\n  Riesgo físico: si\n  Horizonte temporal: si\n  Aspiración a Suboficial: si\n\nEspecialidad recomendada por scoring: Aprovisionamiento (Armada) — afinidad 63%\nEspecialidad alternativa: Mantenimiento Operativo (EAE) — afinidad 54%\n\n\nGenera el informe en JSON siguiendo este esquema exacto. IMPORTANTE: affinity debe ser un decimal entre 0 y 1 (ejemplo: 0.72 para 72% de afinidad), NUNCA un porcentaje entero.\n{\"headline\":\"string\",\"narrative\":\"string\",\"specialtyMatch\":{\"primary\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1},\"alternative\":{\"name\":\"string\",\"branch\":\"string\",\"affinity\":decimal_0_a_1}},\"profileSummary\":{\"interests\":\"string\",\"cognitive\":\"string\",\"personality\":\"string\"},\"strengths\":[\"string\"],\"developmentAreas\":[\"string\"],\"recommendation\":\"string\",\"suboficialesPath\":boolean,\"disclaimer\":\"string\"}",
+  "respuesta_bruta": "{\n  \"headline\": \"Orientación vocacional: Aprovisionamiento (Armada)\",\n  \"narrative\": \"El perfil muestra interés predominante en el área Creativo/Artístico (83%) y secundario en Logística/Admin (50%). El GTI de 60 indica nivel competente. La personalidad presenta valores moderados en Disciplina, Resiliencia, Trabajo en equipo y Orientación técnica, con ausencia de Aspiración/Autoridad. Los filtros de disponibilidad son compatibles con la especialidad propuesta.\",\n  \"specialtyMatch\": {\n    \"primary\": {\n      \"name\": \"Aprovisionamiento\",\n      \"branch\": \"Armada\",\n      \"affinity\": 0.63\n    },\n    \"alternative\": {\n      \"name\": \"Mantenimiento Operativo\",\n      \"branch\": \"EAE\",\n      \"affinity\": 0.54\n    }\n  },\n  \"profileSummary\": {\n    \"interests\": \"Alta preferencia por actividades creativas y artísticas (83%). Interés moderado en logística y administración (50%). Ausencia de interés en combate, sanidad, mando y ámbitos marítimo/aéreo.\",\n    \"cognitive\": \"Índice de entrenabilidad GTI de 60/100, dentro del rango competente. Capacidad suficiente para completar formación técnica básica.\",\n    \"personality\": \"Valores moderados en Disciplina (2/3), Resiliencia (2/3), Trabajo en equipo (2/3) y Orientación técnica (2/3). Ausencia de Aspiración/Autoridad (0/3).\"\n  },\n  \"strengths\": [\n    \"Interés creativo-artístico elevado\",\n    \"Disponibilidad para despliegues internacionales\",\n    \"Aceptación de riesgo físico\",\n    \"Horizonte temporal compatible con carrera militar\"\n  ],\n  \"developmentAreas\": [\n    \"Ausencia de aspiración a posiciones de autoridad\",\n    \"Interés nulo en áreas de combate y sanidad\",\n    \"Movilidad geográfica condicionada\"\n  ],\n  \"recommendation\": \"Aprovisionamiento (Armada) presenta la mayor afinidad observada (0.63). La especialidad alternativa Mantenimiento Operativo (EAE) ofrece afinidad secundaria (0.54).\",\n  \"suboficialesPath\": true,\n  \"disclaimer\": \"Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa.\"\n}",
+  "uso": {
+    "prompt_tokens": 1023,
+    "completion_tokens": 533,
+    "total_tokens": 1556,
+    "prompt_tokens_details": {
+      "text_tokens": 1023,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    },
+    "num_sources_used": 0,
+    "cost_in_usd_ticks": 24768500
+  },
+  "cumple_esquema": true,
+  "error_esquema": null,
+  "informe": {
+    "headline": "Orientación vocacional: Aprovisionamiento (Armada)",
+    "narrative": "El perfil muestra interés predominante en el área Creativo/Artístico (83%) y secundario en Logística/Admin (50%). El GTI de 60 indica nivel competente. La personalidad presenta valores moderados en Disciplina, Resiliencia, Trabajo en equipo y Orientación técnica, con ausencia de Aspiración/Autoridad. Los filtros de disponibilidad son compatibles con la especialidad propuesta.",
+    "specialtyMatch": {
+      "primary": {
+        "name": "Aprovisionamiento",
+        "branch": "Armada",
+        "affinity": 0.63
+      },
+      "alternative": {
+        "name": "Mantenimiento Operativo",
+        "branch": "EAE",
+        "affinity": 0.54
+      }
+    },
+    "profileSummary": {
+      "interests": "Alta preferencia por actividades creativas y artísticas (83%). Interés moderado en logística y administración (50%). Ausencia de interés en combate, sanidad, mando y ámbitos marítimo/aéreo.",
+      "cognitive": "Índice de entrenabilidad GTI de 60/100, dentro del rango competente. Capacidad suficiente para completar formación técnica básica.",
+      "personality": "Valores moderados en Disciplina (2/3), Resiliencia (2/3), Trabajo en equipo (2/3) y Orientación técnica (2/3). Ausencia de Aspiración/Autoridad (0/3)."
+    },
+    "strengths": [
+      "Interés creativo-artístico elevado",
+      "Disponibilidad para despliegues internacionales",
+      "Aceptación de riesgo físico",
+      "Horizonte temporal compatible con carrera militar"
+    ],
+    "developmentAreas": [
+      "Ausencia de aspiración a posiciones de autoridad",
+      "Interés nulo en áreas de combate y sanidad",
+      "Movilidad geográfica condicionada"
+    ],
+    "recommendation": "Aprovisionamiento (Armada) presenta la mayor afinidad observada (0.63). La especialidad alternativa Mantenimiento Operativo (EAE) ofrece afinidad secundaria (0.54).",
+    "suboficialesPath": true,
+    "disclaimer": "Esta evaluación es una demostración tecnológica orientativa. No sustituye una valoración psicotécnica profesional completa ni puede usarse como criterio único de selección. Las pruebas oficiales se realizan en los Centros de Reclutamiento del Ministerio de Defensa."
+  }
+}

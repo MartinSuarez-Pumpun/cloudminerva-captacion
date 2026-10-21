@@ -1,0 +1,639 @@
+{
+  "prueba": "T03 · Estabilidad de la puntuación de ARA",
+  "fecha_ejecucion": "2026-10-20T09:24:50.847Z",
+  "semilla": 20261020,
+  "n_por_poblacion": 2000,
+  "commit": "f1d442f",
+  "src_modificado_sin_commit": true,
+  "pesos_base": {
+    "interests": 0.5,
+    "gti": 0.3,
+    "personality": 0.2
+  },
+  "poblaciones": {
+    "U": {
+      "perfiles": 2000,
+      "redirigidos": 663,
+      "analizados": 1337,
+      "discrepancias_con_produccion": 0,
+      "linea_base": {
+        "empate_exacto_primer_puesto": 0.086,
+        "aviso_empate_menor_005": 0.5632,
+        "margen_primer_segundo_mediana": 0.0437
+      },
+      "condiciones": {
+        "peso_interests_x0.8": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 0.9678,
+          "tau_p05": 0.8701,
+          "tau_media": 0.9561,
+          "cambio_principal": 0.0591,
+          "cambio_principal_entre_empatadas": 0.0015,
+          "cambio_alternativa": 0.1369,
+          "solape_top5_medio": 0.9607,
+          "puestos_top5_cambiados_medio": 0.9267
+        },
+        "peso_interests_x0.9": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 0.9221,
+          "tau_media": 0.9785,
+          "cambio_principal": 0.0232,
+          "cambio_principal_entre_empatadas": 0.0015,
+          "cambio_alternativa": 0.0583,
+          "solape_top5_medio": 0.9812,
+          "puestos_top5_cambiados_medio": 0.4787
+        },
+        "peso_interests_x1.1": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 0.9273,
+          "tau_media": 0.9858,
+          "cambio_principal": 0.0262,
+          "cambio_principal_entre_empatadas": 0.003,
+          "cambio_alternativa": 0.0516,
+          "solape_top5_medio": 0.9877,
+          "puestos_top5_cambiados_medio": 0.3777
+        },
+        "peso_interests_x1.2": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 0.974,
+          "tau_p05": 0.8859,
+          "tau_media": 0.9637,
+          "cambio_principal": 0.0531,
+          "cambio_principal_entre_empatadas": 0.003,
+          "cambio_alternativa": 0.1025,
+          "solape_top5_medio": 0.971,
+          "puestos_top5_cambiados_medio": 0.7741
+        },
+        "peso_gti_x0.8": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0015,
+          "cambio_principal_entre_empatadas": 0.0015,
+          "cambio_alternativa": 0.0022,
+          "solape_top5_medio": 0.999,
+          "puestos_top5_cambiados_medio": 0.0269
+        },
+        "peso_gti_x0.9": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0,
+          "cambio_principal_entre_empatadas": 0,
+          "cambio_alternativa": 0.0022,
+          "solape_top5_medio": 0.9994,
+          "puestos_top5_cambiados_medio": 0.0194
+        },
+        "peso_gti_x1.1": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0007,
+          "cambio_principal_entre_empatadas": 0.0007,
+          "cambio_alternativa": 0.003,
+          "solape_top5_medio": 0.9993,
+          "puestos_top5_cambiados_medio": 0.0239
+        },
+        "peso_gti_x1.2": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0007,
+          "cambio_principal_entre_empatadas": 0.0007,
+          "cambio_alternativa": 0.0007,
+          "solape_top5_medio": 0.9997,
+          "puestos_top5_cambiados_medio": 0.018
+        },
+        "peso_personality_x0.8": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 0.9678,
+          "tau_p05": 0.8645,
+          "tau_media": 0.9574,
+          "cambio_principal": 0.0643,
+          "cambio_principal_entre_empatadas": 0.003,
+          "cambio_alternativa": 0.1242,
+          "solape_top5_medio": 0.9651,
+          "puestos_top5_cambiados_medio": 0.8923
+        },
+        "peso_personality_x0.9": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 0.9273,
+          "tau_media": 0.9842,
+          "cambio_principal": 0.0284,
+          "cambio_principal_entre_empatadas": 0.003,
+          "cambio_alternativa": 0.0553,
+          "solape_top5_medio": 0.9865,
+          "puestos_top5_cambiados_medio": 0.4121
+        },
+        "peso_personality_x1.1": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 0.9221,
+          "tau_media": 0.9807,
+          "cambio_principal": 0.0217,
+          "cambio_principal_entre_empatadas": 0.0015,
+          "cambio_alternativa": 0.0546,
+          "solape_top5_medio": 0.9823,
+          "puestos_top5_cambiados_medio": 0.4555
+        },
+        "peso_personality_x1.2": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1337,
+          "tau_mediana": 0.974,
+          "tau_p05": 0.8868,
+          "tau_media": 0.9627,
+          "cambio_principal": 0.0516,
+          "cambio_principal_entre_empatadas": 0.0015,
+          "cambio_alternativa": 0.1167,
+          "solape_top5_medio": 0.965,
+          "puestos_top5_cambiados_medio": 0.801
+        },
+        "pesos_conjunto_10": {
+          "grupo": "pesos_conjunto",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 0.9343,
+          "tau_media": 0.9879,
+          "cambio_principal": 0.0172,
+          "cambio_principal_entre_empatadas": 0.0015,
+          "cambio_alternativa": 0.0359,
+          "solape_top5_medio": 0.9892,
+          "puestos_top5_cambiados_medio": 0.3029
+        },
+        "pesos_conjunto_20": {
+          "grupo": "pesos_conjunto",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 0.8947,
+          "tau_media": 0.9756,
+          "cambio_principal": 0.0366,
+          "cambio_principal_entre_empatadas": 0.0037,
+          "cambio_alternativa": 0.0748,
+          "solape_top5_medio": 0.9785,
+          "puestos_top5_cambiados_medio": 0.5071
+        },
+        "pesos_sin_renormalizar_x1.2": {
+          "grupo": "control",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0,
+          "cambio_principal_entre_empatadas": 0,
+          "cambio_alternativa": 0.0015,
+          "solape_top5_medio": 0.9994,
+          "puestos_top5_cambiados_medio": 0.0269
+        },
+        "faltan_1": {
+          "grupo": "faltantes",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 0.641,
+          "tau_media": 0.9249,
+          "cambio_principal": 0.0815,
+          "cambio_principal_entre_empatadas": 0.0037,
+          "cambio_alternativa": 0.1675,
+          "solape_top5_medio": 0.94,
+          "puestos_top5_cambiados_medio": 0.9723
+        },
+        "faltan_2": {
+          "grupo": "faltantes",
+          "n": 1337,
+          "tau_mediana": 0.9128,
+          "tau_p05": 0.5169,
+          "tau_media": 0.8576,
+          "cambio_principal": 0.1556,
+          "cambio_principal_entre_empatadas": 0.0067,
+          "cambio_alternativa": 0.2939,
+          "solape_top5_medio": 0.8871,
+          "puestos_top5_cambiados_medio": 1.6978
+        },
+        "faltan_4": {
+          "grupo": "faltantes",
+          "n": 1337,
+          "tau_mediana": 0.7736,
+          "tau_p05": 0.2876,
+          "tau_media": 0.7363,
+          "cambio_principal": 0.2999,
+          "cambio_principal_entre_empatadas": 0.0165,
+          "cambio_alternativa": 0.5019,
+          "solape_top5_medio": 0.812,
+          "puestos_top5_cambiados_medio": 2.6687
+        },
+        "faltan_8": {
+          "grupo": "faltantes",
+          "n": 1337,
+          "tau_mediana": 0.6185,
+          "tau_p05": 0.1122,
+          "tau_media": 0.5799,
+          "cambio_principal": 0.469,
+          "cambio_principal_entre_empatadas": 0.0187,
+          "cambio_alternativa": 0.6791,
+          "solape_top5_medio": 0.7194,
+          "puestos_top5_cambiados_medio": 3.5266
+        },
+        "falta_1_q1": {
+          "grupo": "faltantes_bloque",
+          "n": 1337,
+          "tau_mediana": 0.9259,
+          "tau_p05": 0.5065,
+          "tau_media": 0.8658,
+          "cambio_principal": 0.1743,
+          "cambio_principal_entre_empatadas": 0.0112,
+          "cambio_alternativa": 0.279,
+          "solape_top5_medio": 0.9013,
+          "puestos_top5_cambiados_medio": 1.5482
+        },
+        "falta_1_q2": {
+          "grupo": "faltantes_bloque",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0,
+          "cambio_principal_entre_empatadas": 0,
+          "cambio_alternativa": 0,
+          "solape_top5_medio": 0.9997,
+          "puestos_top5_cambiados_medio": 0.0045
+        },
+        "falta_1_q3": {
+          "grupo": "faltantes_bloque",
+          "n": 1337,
+          "tau_mediana": 0.9396,
+          "tau_p05": 0.6579,
+          "tau_media": 0.8952,
+          "cambio_principal": 0.1331,
+          "cambio_principal_entre_empatadas": 0.012,
+          "cambio_alternativa": 0.2498,
+          "solape_top5_medio": 0.9092,
+          "puestos_top5_cambiados_medio": 1.5131
+        },
+        "falta_1_q4": {
+          "grupo": "faltantes_bloque",
+          "n": 1337,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0067,
+          "cambio_principal_entre_empatadas": 0,
+          "cambio_alternativa": 0.0165,
+          "solape_top5_medio": 0.9919,
+          "puestos_top5_cambiados_medio": 0.0935
+        }
+      }
+    },
+    "L": {
+      "perfiles": 2000,
+      "redirigidos": 190,
+      "analizados": 1810,
+      "discrepancias_con_produccion": 0,
+      "linea_base": {
+        "empate_exacto_primer_puesto": 0.1735,
+        "aviso_empate_menor_005": 0.5586,
+        "margen_primer_segundo_mediana": 0.04
+      },
+      "condiciones": {
+        "peso_interests_x0.8": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 0.9737,
+          "tau_p05": 0.8667,
+          "tau_media": 0.9577,
+          "cambio_principal": 0.0541,
+          "cambio_principal_entre_empatadas": 0.0028,
+          "cambio_alternativa": 0.121,
+          "solape_top5_medio": 0.9649,
+          "puestos_top5_cambiados_medio": 0.8099
+        },
+        "peso_interests_x0.9": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 0.9231,
+          "tau_media": 0.9833,
+          "cambio_principal": 0.016,
+          "cambio_principal_entre_empatadas": 0.0028,
+          "cambio_alternativa": 0.0475,
+          "solape_top5_medio": 0.985,
+          "puestos_top5_cambiados_medio": 0.3547
+        },
+        "peso_interests_x1.1": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 0.9467,
+          "tau_media": 0.9881,
+          "cambio_principal": 0.0166,
+          "cambio_principal_entre_empatadas": 0.0039,
+          "cambio_alternativa": 0.0448,
+          "solape_top5_medio": 0.9884,
+          "puestos_top5_cambiados_medio": 0.2829
+        },
+        "peso_interests_x1.2": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 0.974,
+          "tau_p05": 0.8701,
+          "tau_media": 0.961,
+          "cambio_principal": 0.0436,
+          "cambio_principal_entre_empatadas": 0.0039,
+          "cambio_alternativa": 0.1039,
+          "solape_top5_medio": 0.966,
+          "puestos_top5_cambiados_medio": 0.7564
+        },
+        "peso_gti_x0.8": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0017,
+          "cambio_principal_entre_empatadas": 0.0017,
+          "cambio_alternativa": 0.0044,
+          "solape_top5_medio": 0.9991,
+          "puestos_top5_cambiados_medio": 0.0271
+        },
+        "peso_gti_x0.9": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0028,
+          "cambio_principal_entre_empatadas": 0.0028,
+          "cambio_alternativa": 0.0055,
+          "solape_top5_medio": 0.999,
+          "puestos_top5_cambiados_medio": 0.0287
+        },
+        "peso_gti_x1.1": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0022,
+          "cambio_principal_entre_empatadas": 0.0022,
+          "cambio_alternativa": 0.0044,
+          "solape_top5_medio": 0.999,
+          "puestos_top5_cambiados_medio": 0.0381
+        },
+        "peso_gti_x1.2": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0028,
+          "cambio_principal_entre_empatadas": 0.0028,
+          "cambio_alternativa": 0.0055,
+          "solape_top5_medio": 0.999,
+          "puestos_top5_cambiados_medio": 0.0282
+        },
+        "peso_personality_x0.8": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 0.9733,
+          "tau_p05": 0.8667,
+          "tau_media": 0.9562,
+          "cambio_principal": 0.0536,
+          "cambio_principal_entre_empatadas": 0.0039,
+          "cambio_alternativa": 0.126,
+          "solape_top5_medio": 0.9624,
+          "puestos_top5_cambiados_medio": 0.8613
+        },
+        "peso_personality_x0.9": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 0.9412,
+          "tau_media": 0.9857,
+          "cambio_principal": 0.0199,
+          "cambio_principal_entre_empatadas": 0.0039,
+          "cambio_alternativa": 0.0492,
+          "solape_top5_medio": 0.9862,
+          "puestos_top5_cambiados_medio": 0.358
+        },
+        "peso_personality_x1.1": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 0.9254,
+          "tau_media": 0.9848,
+          "cambio_principal": 0.0149,
+          "cambio_principal_entre_empatadas": 0.0028,
+          "cambio_alternativa": 0.0448,
+          "solape_top5_medio": 0.9857,
+          "puestos_top5_cambiados_medio": 0.3409
+        },
+        "peso_personality_x1.2": {
+          "grupo": "pesos_uno_a_uno",
+          "n": 1810,
+          "tau_mediana": 0.974,
+          "tau_p05": 0.8846,
+          "tau_media": 0.9657,
+          "cambio_principal": 0.0497,
+          "cambio_principal_entre_empatadas": 0.0028,
+          "cambio_alternativa": 0.1083,
+          "solape_top5_medio": 0.9703,
+          "puestos_top5_cambiados_medio": 0.689
+        },
+        "pesos_conjunto_10": {
+          "grupo": "pesos_conjunto",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 0.9404,
+          "tau_media": 0.9882,
+          "cambio_principal": 0.0166,
+          "cambio_principal_entre_empatadas": 0.0039,
+          "cambio_alternativa": 0.0425,
+          "solape_top5_medio": 0.9892,
+          "puestos_top5_cambiados_medio": 0.2619
+        },
+        "pesos_conjunto_20": {
+          "grupo": "pesos_conjunto",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 0.8947,
+          "tau_media": 0.9744,
+          "cambio_principal": 0.0326,
+          "cambio_principal_entre_empatadas": 0.0039,
+          "cambio_alternativa": 0.0818,
+          "solape_top5_medio": 0.9794,
+          "puestos_top5_cambiados_medio": 0.5044
+        },
+        "pesos_sin_renormalizar_x1.2": {
+          "grupo": "control",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0022,
+          "cambio_principal_entre_empatadas": 0.0022,
+          "cambio_alternativa": 0.005,
+          "solape_top5_medio": 0.999,
+          "puestos_top5_cambiados_medio": 0.0348
+        },
+        "faltan_1": {
+          "grupo": "faltantes",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 0.6536,
+          "tau_media": 0.9351,
+          "cambio_principal": 0.0829,
+          "cambio_principal_entre_empatadas": 0.0138,
+          "cambio_alternativa": 0.1514,
+          "solape_top5_medio": 0.9478,
+          "puestos_top5_cambiados_medio": 0.8768
+        },
+        "faltan_2": {
+          "grupo": "faltantes",
+          "n": 1810,
+          "tau_mediana": 0.9429,
+          "tau_p05": 0.5185,
+          "tau_media": 0.8729,
+          "cambio_principal": 0.1613,
+          "cambio_principal_entre_empatadas": 0.0331,
+          "cambio_alternativa": 0.2746,
+          "solape_top5_medio": 0.9033,
+          "puestos_top5_cambiados_medio": 1.579
+        },
+        "faltan_4": {
+          "grupo": "faltantes",
+          "n": 1810,
+          "tau_mediana": 0.8182,
+          "tau_p05": 0.36,
+          "tau_media": 0.7781,
+          "cambio_principal": 0.3022,
+          "cambio_principal_entre_empatadas": 0.042,
+          "cambio_alternativa": 0.4613,
+          "solape_top5_medio": 0.8339,
+          "puestos_top5_cambiados_medio": 2.5221
+        },
+        "faltan_8": {
+          "grupo": "faltantes",
+          "n": 1810,
+          "tau_mediana": 0.659,
+          "tau_p05": 0.1481,
+          "tau_media": 0.6198,
+          "cambio_principal": 0.474,
+          "cambio_principal_entre_empatadas": 0.0575,
+          "cambio_alternativa": 0.679,
+          "solape_top5_medio": 0.7314,
+          "puestos_top5_cambiados_medio": 3.4525
+        },
+        "falta_1_q1": {
+          "grupo": "faltantes_bloque",
+          "n": 1810,
+          "tau_mediana": 0.9692,
+          "tau_p05": 0.5166,
+          "tau_media": 0.8791,
+          "cambio_principal": 0.1508,
+          "cambio_principal_entre_empatadas": 0.0287,
+          "cambio_alternativa": 0.2602,
+          "solape_top5_medio": 0.906,
+          "puestos_top5_cambiados_medio": 1.4591
+        },
+        "falta_1_q2": {
+          "grupo": "faltantes_bloque",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0011,
+          "cambio_principal_entre_empatadas": 0.0011,
+          "cambio_alternativa": 0.0022,
+          "solape_top5_medio": 0.999,
+          "puestos_top5_cambiados_medio": 0.021
+        },
+        "falta_1_q3": {
+          "grupo": "faltantes_bloque",
+          "n": 1810,
+          "tau_mediana": 0.987,
+          "tau_p05": 0.7179,
+          "tau_media": 0.9247,
+          "cambio_principal": 0.0967,
+          "cambio_principal_entre_empatadas": 0.0138,
+          "cambio_alternativa": 0.1762,
+          "solape_top5_medio": 0.934,
+          "puestos_top5_cambiados_medio": 1.153
+        },
+        "falta_1_q4": {
+          "grupo": "faltantes_bloque",
+          "n": 1810,
+          "tau_mediana": 1,
+          "tau_p05": 1,
+          "tau_media": 1,
+          "cambio_principal": 0.0039,
+          "cambio_principal_entre_empatadas": 0,
+          "cambio_alternativa": 0.0055,
+          "solape_top5_medio": 0.9978,
+          "puestos_top5_cambiados_medio": 0.032
+        }
+      }
+    }
+  },
+  "criterios": {
+    "U": {
+      "pesos_10": {
+        "tau_mediana_min": 1,
+        "cambio_principal_max": 0.0284,
+        "cumple": true
+      },
+      "pesos_20": {
+        "tau_mediana_min": 0.9678,
+        "cambio_principal_max": 0.0643,
+        "cumple": true
+      },
+      "falta_1": {
+        "cambio_principal": 0.0815,
+        "cumple": true
+      }
+    },
+    "L": {
+      "pesos_10": {
+        "tau_mediana_min": 1,
+        "cambio_principal_max": 0.0199,
+        "cumple": true
+      },
+      "pesos_20": {
+        "tau_mediana_min": 0.9733,
+        "cambio_principal_max": 0.0541,
+        "cumple": true
+      },
+      "falta_1": {
+        "cambio_principal": 0.0829,
+        "cumple": true
+      }
+    }
+  },
+  "predicciones": {
+    "U": {
+      "p1_peso_gti_no_cambia_orden": true,
+      "p2_escalar_pesos_no_cambia_orden": true,
+      "p3_faltar_aptitud_no_cambia_orden": true
+    },
+    "L": {
+      "p1_peso_gti_no_cambia_orden": true,
+      "p2_escalar_pesos_no_cambia_orden": true,
+      "p3_faltar_aptitud_no_cambia_orden": true
+    }
+  }
+}
