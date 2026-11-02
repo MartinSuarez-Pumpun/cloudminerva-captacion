@@ -1,3 +1,4 @@
+import { aiHeaders } from './aiToken'
 import { z } from 'zod'
 
 export const Schema = z.object({
@@ -111,9 +112,7 @@ export async function generateReport(scores) {
   try {
     const res = await fetch('/api/xai/v1/chat/completions', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: await aiHeaders(),
       body: JSON.stringify({
         model: 'grok-4-fast-non-reasoning',
         max_tokens: 1800,

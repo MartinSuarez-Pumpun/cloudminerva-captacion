@@ -3,11 +3,14 @@
  *
  * In dev the browser connects to /ws-tts (Vite proxy) which adds the
  * Authorization header server-side — browsers cannot set headers on WebSocket
- * upgrades, so a proxy is required (as xAI docs recommend).
+ * upgrades, so a proxy is required (as xAI docs recommend). Inside the kiosk
+ * the Node server proxies it instead and requires a token from /api/ai-token.
  *
  * Client → server: {"type":"text.delta","delta":"<text>"} then {"type":"text.done"}
  * Server → client: {"type":"audio.delta","delta":"<base64 mp3>"} then {"type":"audio.done"}
  */
+import { getAiToken } from './aiToken'
+
 export function streamTTS(text, { onChunk, onDone, onError }) {
   const params = new URLSearchParams({
     language:    'es',
@@ -17,42 +20,47 @@ export function streamTTS(text, { onChunk, onDone, onError }) {
     bit_rate:    '128000',
   })
 
-  const wsUrl = `/ws-tts?${params}`
-
-  const ws = new WebSocket(wsUrl)
-  ws.binaryType = 'arraybuffer'
   let done = false
+  let ws = null
 
-  ws.onopen = () => {
-    ws.send(JSON.stringify({ type: 'text.delta', delta: "<fast>"+text+"</fast>" }))
-    ws.send(JSON.stringify({ type: 'text.done' }))
-  }
+  // The kiosk server only accepts TTS sockets that carry an AI token
+  getAiToken().then((token) => {
+    if (done) return
+    if (token) params.set('token', token)
+    ws = new WebSocket(`/ws-tts?${params}`)
+    ws.binaryType = 'arraybuffer'
 
-  ws.onmessage = (e) => {
-    if (e.data instanceof ArrayBuffer) {
-      if (e.data.byteLength > 0) onChunk(e.data)
-      return
+    ws.onopen = () => {
+      ws.send(JSON.stringify({ type: 'text.delta', delta: "<fast>"+text+"</fast>" }))
+      ws.send(JSON.stringify({ type: 'text.done' }))
     }
-    try {
-      const msg = JSON.parse(e.data)
-      if (msg.type === 'audio.delta' && msg.delta) {
-        const binary = atob(msg.delta)
-        const buf = new ArrayBuffer(binary.length)
-        const view = new Uint8Array(buf)
-        for (let i = 0; i < binary.length; i++) view[i] = binary.charCodeAt(i)
-        onChunk(buf)
-      } else if (msg.type === 'audio.done' && !done) {
-        done = true; onDone()
-      } else if (msg.type === 'error') {
-        if (!done) { done = true; onError(new Error(msg.message)) }
+
+    ws.onmessage = (e) => {
+      if (e.data instanceof ArrayBuffer) {
+        if (e.data.byteLength > 0) onChunk(e.data)
+        return
       }
-    } catch { /* ignore non-JSON */ }
-  }
+      try {
+        const msg = JSON.parse(e.data)
+        if (msg.type === 'audio.delta' && msg.delta) {
+          const binary = atob(msg.delta)
+          const buf = new ArrayBuffer(binary.length)
+          const view = new Uint8Array(buf)
+          for (let i = 0; i < binary.length; i++) view[i] = binary.charCodeAt(i)
+          onChunk(buf)
+        } else if (msg.type === 'audio.done' && !done) {
+          done = true; onDone()
+        } else if (msg.type === 'error') {
+          if (!done) { done = true; onError(new Error(msg.message)) }
+        }
+      } catch { /* ignore non-JSON */ }
+    }
 
-  ws.onclose = () => { if (!done) { done = true; onDone() } }
-  ws.onerror = () => { if (!done) { done = true; onError(new Error('WebSocket TTS error')) } }
+    ws.onclose = () => { if (!done) { done = true; onDone() } }
+    ws.onerror = () => { if (!done) { done = true; onError(new Error('WebSocket TTS error')) } }
+  })
 
-  return () => { done = true; try { ws.close() } catch { /* ignore */ } }
+  return () => { done = true; try { ws?.close() } catch { /* ignore */ } }
 }
 
 /** Streams TTS and resolves with a blob URL (or null on failure/timeout). */
